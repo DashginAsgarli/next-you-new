@@ -7,10 +7,10 @@ const stats = [
     { label: "İmkan", value: "∞" },
 ];
 
-const Hero = () => {
+function Hero() {
     return (
         <section className=" home-wrapper bg-[#06090f] w-full overflow-hidden">
-            <div className="  flex items-center relative py-20 lg:py-19">
+            <div className="  flex items-center relative py-18 lg:py-16">
 
                 <div className="absolute inset-0 z-0 pointer-events-none bg-[linear-gradient(rgba(255,255,255,0.025)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.025)_1px,transparent_1px)] bg-size-[40px_40px] md:bg-size-[60px_60px]" />
 

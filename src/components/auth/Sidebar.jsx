@@ -10,7 +10,7 @@ const Sidebar = ({ isOpen, onClose }) => {
         { to: "/music", label: "Musiqi", icon: <HiOutlineMusicNote size={18} /> },
         { to: "/library", label: "Kitabxana", icon: <HiOutlineBookOpen size={18} /> },
         { to: "/language", label: "Dillər", icon: <HiOutlineAcademicCap size={18} /> },
-        { to: "/code", label: "Kod", icon: <HiOutlineCode size={18} /> },
+        { to: "/code", label: "Proqramlaşdırma", icon: <HiOutlineCode size={18} /> },
     ];
 
     useEffect(() => { isOpen ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'unset' }, [isOpen]);

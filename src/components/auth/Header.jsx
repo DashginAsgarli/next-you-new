@@ -7,11 +7,11 @@ const Header = ({ onProfileClick }) => {
         { to: "/music", label: "Musiqi", icon: <HiOutlineMusicNote size={16} /> },
         { to: "/library", label: "Kitabxana", icon: <HiOutlineBookOpen size={16} /> },
         { to: "/language", label: "Dillər", icon: <HiOutlineTranslate size={16} /> },
-        { to: "/code", label: "Proqramlaşdırma", icon: <HiOutlineCode size={16} /> },
+        { to: "/code", label: "Kod", icon: <HiOutlineCode size={16} /> },
     ];
 
     return (
-        <header className="h-20 bg-[#06090f] flex justify-between items-center px-[6%] sticky top-0 z-[1000] border-b border-[#378079]/15">
+        <header className="h-20 bg-[#06090f] flex justify-between items-center px-[6%] sticky top-0 z-1000 border-b border-[#378079]/15">
             <Link to="/" className="no-underline group">
                 <div className="flex items-center gap-1.5 tracking-tighter">
                     <span className="text-2xl font-black text-[#378079] group-hover:text-[#f0ebe2] transition-colors duration-300">

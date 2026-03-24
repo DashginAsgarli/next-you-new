@@ -16,7 +16,7 @@ function PopularLanguages() {
         <section className="bg-[#06090f] py-24 px-6 md:px-10 lg:px-16 text-[#f0ebe2]  font-sans selection:bg-[#378079]/30 overflow-x-hidden">
 
             <div className="text-center mb-20">
-                <h2 className="text-[clamp(2.5rem,6vw,4rem)] font-black tracking-[-3px] m-0 uppercase leading-[0.9]">
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-[-3px] m-0 uppercase leading-[0.9]">
                     POPULYAR <span className="text-transparent [-webkit-text-stroke:1px_rgba(240,235,226,0.8)]">DİLLƏR</span>
                 </h2>
             </div>

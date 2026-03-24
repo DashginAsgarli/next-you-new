@@ -43,7 +43,7 @@ function LangLearnView({ lesson, onBack, onComplete, isCompleted }) {
       </button>
 
       <div className="space-y-6 w-full">
-        <div className="bg-[#0d1117] border border-white/5 rounded-3xl overflow-hidden shadow-2xl w-full">
+        <div className="bg-[#0d1117] border border-white/5 rounded-3xl overflow-hidden w-full">
           <div className="h-1.5 bg-[#378079]" />
           <div className="p-6 sm:p-10">
             <div className="flex flex-wrap gap-3 mb-6">

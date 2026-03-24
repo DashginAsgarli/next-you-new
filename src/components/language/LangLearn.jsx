@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BookText, Clock, Star, Terminal } from 'lucide-react';
+import { Clock, Star, Terminal } from 'lucide-react';
 import LangLearnView from "./LangLearnView";
 import langData from "../../data/languages.json";
 
@@ -23,9 +23,6 @@ function LangLearn() {
         <h2 className="text-3xl sm:text-5xl font-black flex items-center justify-center gap-4 mb-4">
           İNGİLİS <span className="text-transparent" style={{ WebkitTextStroke: '1px #f0ebe2' }}>QRAMMATİKASI</span>
         </h2>
-        <p className="text-slate-500 text-sm sm:text-base font-medium max-w-md mx-auto italic">
-          Strukturları terminal rejimində analiz edin və mənimsəyin.
-        </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

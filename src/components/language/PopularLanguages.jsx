@@ -13,7 +13,7 @@ function PopularLanguages() {
     ];
 
     return (
-        <section className="bg-[#06090f] py-24 px-5 text-[#f0ebe2] min-h-screen font-sans selection:bg-[#378079]/30">
+        <section className="bg-[#06090f] py-24 px-6 md:px-10 lg:px-16 text-[#f0ebe2]  font-sans selection:bg-[#378079]/30 overflow-x-hidden">
 
             <div className="text-center mb-20">
                 <h2 className="text-[clamp(2.5rem,6vw,4rem)] font-black tracking-[-3px] m-0 uppercase leading-[0.9]">

@@ -5,8 +5,11 @@ import MusicHeader from '../components/music/MusicHeader'
 function MusicPage() {
     return (
         <>
-            {/* <MusicHeader /> */}
-            <Music />
+            <section className=" w-full overflow-hidden relative">
+                <div className='background-tor'></div>
+                <div className='background-shadow'></div>
+                <Music />
+            </section>
         </>
     )
 }

@@ -47,10 +47,8 @@ function AudioPractice() {
   }
 
   return (
-    <div className="w-full bg-[#06090f] py-12 px-4 relative overflow-hidden border-b border-white/5">
-      <div className="grid-overlay absolute inset-0 z-0 pointer-events-none" 
-        style={{ backgroundImage: `linear-gradient(rgba(255,255,255,0.01) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.01) 1px, transparent 1px)`, backgroundSize: '40px 40px' }}>
-      </div>
+    <div className="w-full  py-12 px-4 relative overflow-hidden">
+    
 
       <div className="max-w-6xl mx-auto relative z-10">
         

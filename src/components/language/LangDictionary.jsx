@@ -32,9 +32,8 @@ function LangDictionary() {
     };
 
     return (
-        <div className="w-full bg-[#06090f] border-y border-white/5 py-12 md:py-20 px-4 relative overflow-hidden">
+        <div className="w-full  py-12 md:py-20 px-4 relative overflow-hidden">
 
-            <div className="grid-overlay absolute inset-0 z-0 pointer-events-none" style={{ backgroundImage: `linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px)`, backgroundSize: '60px 60px' }}></div>
 
             <div className="relative z-10">
 
@@ -50,7 +49,7 @@ function LangDictionary() {
                 </div>
 
                 <form onSubmit={handleSubmit} className="mb-16 md:max-w-xl lg:max-w-4xl mx-auto">
-                    <div className="flex flex-row items-center gap-2 bg-[#06090f] border border-white/10 p-2 rounded-2xl focus-within:border-[#378079]/50 transition-all duration-300 shadow-xl">
+                    <div className="flex flex-row items-center gap-2 bg-[#06090f] border border-white/10 p-2 rounded-2xl focus-within:border-[#378079]/50 transition-all duration-300">
                         <input className="flex-1 bg-transparent border-none px-4 py-3 text-[#f0ebe2] text-base md:text-xl outline-none placeholder:text-slate-700 min-w-20" type="text" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} placeholder="Söz..." />
                         <button type="submit" className="bg-[#378079] hover:bg-[#45a098] text-[#06090f] px-6 md:px-12 py-3 md:py-4 rounded-xl font-black uppercase text-[10px] md:text-xs tracking-widest transition-all active:scale-95 disabled:opacity-50 whitespace-nowrap" disabled={loading}>
                             {loading ? '...' : 'Axtar'}

@@ -1,7 +1,7 @@
 import { Routes, Route, NavLink } from "react-router-dom";
-import { HiOutlineBookOpen, HiOutlineCpuChip, HiOutlineSquaresPlus, HiOutlinePuzzlePiece, HiOutlineEnvelope, HiOutlineLockClosed, HiArrowRightOnRectangle, HiUserPlus } from "react-icons/hi2";
+import { HiOutlineBookOpen, HiOutlineCpuChip, HiOutlineSquaresPlus, HiOutlinePuzzlePiece, HiOutlineEnvelope, HiOutlineLockClosed, HiOutlineUser, HiArrowRightOnRectangle, HiUserPlus } from "react-icons/hi2";
 
-function Login() {
+function Register() {
     const features = [
         { icon: <HiOutlineBookOpen />, title: "Kurslar", desc: "Proqramlaşdırma / Musiqi / Kitab / Dil" },
         { icon: <HiOutlineCpuChip />, title: "Süni İntellekt", desc: "Güclü öyrənmə", sub: "Fərdiləşdirilmiş öyrənmə yolu" },
@@ -12,9 +12,9 @@ function Login() {
     return (
         <section className="w-full min-h-screen overflow-hidden relative">
             <div className='background-tor'></div>
-
+            
             <div className="flex items-center justify-center px-4 md:px-10 lg:px-16 py-10 font-sans relative z-20">
-
+                
                 <div className="w-full max-w-6xl flex flex-col md:flex-row rounded-3xl bg-white/5 border border-white/10 overflow-hidden backdrop-blur-md">
 
                     <div className="w-full md:w-[45%] p-6 md:p-8 lg:p-10 bg-linear-to-br from-[#378079]/20 to-transparent">
@@ -49,6 +49,11 @@ function Login() {
                         <div className="max-w-md mx-auto w-full">
                             <form className="space-y-4 lg:space-y-5">
                                 <div className="relative group">
+                                    <HiOutlineUser className="absolute left-4 top-1/2 -translate-y-1/2 text-white/20 group-focus-within:text-white transition-colors text-xl" />
+                                    <input type="text" placeholder="Ad və Soyad" className="w-full bg-white/3 border border-white/10 rounded-2xl py-4 pl-12 pr-4 text-white text-[11px] focus:outline-none focus:border-[#378079] transition-all placeholder:text-white/30 font-bold tracking-[0.2em]" required />
+                                </div>
+
+                                <div className="relative group">
                                     <HiOutlineEnvelope className="absolute left-4 top-1/2 -translate-y-1/2 text-white/20 group-focus-within:text-white transition-colors text-xl" />
                                     <input type="email" placeholder="Email" className="w-full bg-white/3 border border-white/10 rounded-2xl py-4 pl-12 pr-4 text-white text-[11px] focus:outline-none focus:border-[#378079] transition-all placeholder:text-white/30 font-bold tracking-[0.2em]" required />
                                 </div>
@@ -58,13 +63,8 @@ function Login() {
                                     <input type="password" placeholder="Şifrə" className="w-full bg-white/3 border border-white/10 rounded-2xl py-4 pl-12 pr-4 text-white text-[11px] focus:outline-none focus:border-[#378079] transition-all placeholder:text-white/30 font-bold tracking-[0.2em]" required />
                                 </div>
 
-                                <div className="flex items-center gap-3 px-2">
-                                    <input type="checkbox" id="remember" className="w-4 h-4 rounded border-white/10 bg-white/5 checked:bg-[#378079] cursor-pointer appearance-none checked:border-transparent relative checked:before:content-['✓'] checked:before:absolute checked:before:text-black checked:before:text-[10px] checked:before:font-bold checked:before:left-1/2 checked:before:top-1/2 checked:before:-translate-x-1/2 checked:before:-translate-y-1/2" />
-                                    <label htmlFor="remember" className="text-white/30 text-[9px] font-black tracking-widest cursor-pointer">Xatırla</label>
-                                </div>
-
                                 <button className="w-full bg-[#378079] hover:bg-white text-black font-black py-4 lg:py-5 rounded-2xl text-[11px] tracking-[0.4em] transition-all duration-300 active:scale-[0.98] mt-4 lg:mt-6 border border-transparent hover:border-[#378079]">
-                                    Daxil ol
+                                    Hesab yarat
                                 </button>
                             </form>
                         </div>
@@ -75,4 +75,4 @@ function Login() {
     );
 }
 
-export default Login;
+export default Register;

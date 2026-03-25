@@ -17,16 +17,7 @@ function BookReadingTracker({ books, onUpdateBookStatus }) {
   const RatingStars = ({ bookId }) => (
     <div className="flex gap-1">
       {[1, 2, 3, 4, 5].map(star => (
-        <HiStar 
-          key={star} 
-          className={`cursor-pointer transition-all duration-300 ${
-            star <= (ratingMap[bookId] || 0) 
-              ? 'text-[#378079] drop-shadow-[0_0_8px_rgba(55,128,121,0.6)]' 
-              : 'text-white/10 hover:text-[#378079]/40'
-          }`} 
-          size={18}
-          onClick={() => updateRating(bookId, star)}
-        />
+        <HiStar key={star} className={`cursor-pointer transition-all duration-300 ${star <= (ratingMap[bookId] || 0) ? 'text-[#378079] drop-shadow-[0_0_8px_rgba(55,128,121,0.6)]' : 'text-white/10 hover:text-[#378079]/40'}`} size={18} onClick={() => updateRating(bookId, star)} />
       ))}
     </div>
   );
@@ -38,7 +29,7 @@ function BookReadingTracker({ books, onUpdateBookStatus }) {
   ];
 
   return (
-    <div className="relative py-12 px-4 md:px-0 max-w-6xl mx-auto">
+    <div className="relative py-12 px-4 md:px-0">
       <div className="flex items-center gap-4 mb-12 border-l-2 border-[#378079] pl-6">
         <h2 className="text-[#f0ebe2] font-black text-2xl md:text-3xl tracking-widest uppercase italic">
           KOLLEKSİYA <span className="text-[#378079]">ANALİZİ</span>
@@ -54,7 +45,7 @@ function BookReadingTracker({ books, onUpdateBookStatus }) {
 
           return (
             <div key={book.id} className="relative bg-[#0a0e14] border border-white/4 p-5 group hover:border-[#378079]/30 transition-all duration-500">
-              
+
               <div className="absolute top-0 right-0 w-8 h-8 bg-[#378079]/5 rotate-45 translate-x-4 -translate-y-4 border-b border-[#378079]/20" />
 
               <div className="flex flex-col md:flex-row gap-6 relative z-10">
@@ -73,15 +64,7 @@ function BookReadingTracker({ books, onUpdateBookStatus }) {
 
                   <div className="flex flex-wrap gap-2 mt-6">
                     {statuses.map(s => (
-                      <button
-                        key={s.key}
-                        onClick={() => updateStatus(book.id, s.key)}
-                        className={`flex items-center gap-2 px-3 py-1.5 text-[9px] font-black tracking-widest uppercase transition-all duration-300 border ${
-                          status === s.key 
-                            ? 'bg-[#378079] border-[#378079] text-[#06090f]' 
-                            : 'bg-transparent border-white/5 text-white/30 hover:border-[#378079]/40 hover:text-white'
-                        }`}
-                      >
+                      <button key={s.key} onClick={() => updateStatus(book.id, s.key)} className={`flex items-center gap-2 px-3 py-1.5 text-[9px] font-black tracking-widest uppercase transition-all duration-300 border ${status === s.key ? 'bg-[#378079] border-[#378079] text-[#06090f]' : 'bg-transparent border-white/5 text-white/30 hover:border-[#378079]/40 hover:text-white'}`}>
                         {s.icon} {s.label}
                       </button>
                     ))}
@@ -90,7 +73,7 @@ function BookReadingTracker({ books, onUpdateBookStatus }) {
               </div>
 
               <div className="mt-8 grid grid-cols-1 md:grid-cols-12 gap-6 border-t border-white/3 pt-6">
-                
+
                 <div className="md:col-span-4 flex flex-col gap-3">
                   <span className="text-[7px] font-mono text-white/20 uppercase tracking-[3px]">Sistem Reytinqi</span>
                   <div className="flex items-center gap-3">
@@ -102,16 +85,8 @@ function BookReadingTracker({ books, onUpdateBookStatus }) {
                 <div className="md:col-span-8 flex flex-col gap-3">
                   <span className="text-[7px] font-mono text-white/20 uppercase tracking-[3px]">Fərdi Qeydlər</span>
                   <div className="relative">
-                    <textarea
-                      placeholder="ANALİZİ DAXİL EDİN..."
-                      value={review}
-                      onChange={e => updateReview(book.id, e.target.value)}
-                      className="w-full bg-[#06090f] border border-white/5 p-3 text-[10px] text-white/70 focus:outline-none focus:border-[#378079]/40 min-h-20 tracking-wide placeholder:text-white/5 uppercase font-medium"
-                    />
-                    <button 
-                      onClick={() => alert('Məlumat bazaya yazıldı!')}
-                      className="absolute bottom-3 right-3 p-2 bg-[#378079]/10 text-[#378079] hover:bg-[#378079] hover:text-[#06090f] transition-all rounded-sm"
-                    >
+                    <textarea placeholder="ANALİZİ DAXİL EDİN..." value={review} onChange={e => updateReview(book.id, e.target.value)} className="w-full bg-[#06090f] border border-white/5 p-3 text-[10px] text-white/70 focus:outline-none focus:border-[#378079]/40 min-h-20 tracking-wide placeholder:text-white/5 uppercase font-medium" />
+                    <button onClick={() => alert('Məlumat bazaya yazıldı!')} className="absolute bottom-3 right-3 p-2 bg-[#378079]/10 text-[#378079] hover:bg-[#378079] hover:text-[#06090f] transition-all rounded-sm">
                       <HiSave size={16} />
                     </button>
                   </div>

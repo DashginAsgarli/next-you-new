@@ -34,10 +34,8 @@ function QuickTranslate() {
   }
 
   return (
-    <section className="w-full bg-[#06090f] border-y border-white/5 py-12 px-4 relative overflow-hidden">
-      <div className="grid-overlay absolute inset-0 z-0 pointer-events-none" 
-        style={{ backgroundImage: `linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px)`, backgroundSize: '60px 60px' }}>
-      </div>
+    <section className="w-full  py-12 px-4 relative overflow-hidden">
+    
 
       <div className="max-w-5xl mx-auto relative z-10">
         

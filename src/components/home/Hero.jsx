@@ -9,69 +9,52 @@ const stats = [
 
 function Hero() {
   return (
-    <section className="bg-[#06090f] w-full overflow-hidden relative">
+    <>
+      <section >
+        <div className="relative z-10 px-6 md:px-16 py-20 md:py-24  lg:py-20">
+          <div className="flex items-center gap-2.5 mb-8 md:mb-10 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.05s]">
+            <div className="w-7 md:w-9 h-px bg-[#378079]" />
+            <span className="text-[10px] md:text-[11px] tracking-[0.22em] text-[#378079] uppercase font-semibold">
+              Öyrən. Yarat. İrələ.
+            </span>
+          </div>
 
-      <div className="absolute inset-0 z-0 pointer-events-none" style={{ backgroundImage: `linear-gradient(rgba(255,255,255,0.022) 1px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,0.022) 1px, transparent 1px)`, backgroundSize: '60px 60px' }} />
+          <h1 className="text-[#f0ebe2] font-black text-[2.4rem] md:text-[3.5rem] lg:text-[5rem] leading-[1.07] tracking-[-0.01em] mb-9 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.15s]">
+            ÖZ{" "}
+            <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">
+              TEMPİNDƏ
+            </span><br />
+            <span className="text-[#378079]">İRƏLİLƏ</span>
+          </h1>
 
-      <div className="absolute -top-32 -left-20 w-125 h-[500px] pointer-events-none" style={{ background: 'radial-gradient(circle, rgba(55,128,121,0.07) 0%, transparent 70%)' }} />
+          <div className="flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-8 mb-10  md:mb-14 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.3s]">
+            <button className="flex items-center justify-center gap-2.5 px-9 h-12 bg-[#378079] text-white text-[10px] font-bold tracking-[0.18em] uppercase transition-all duration-200 cursor-pointer hover:bg-[#45a098] active:scale-[0.97] w-fit relative overflow-hidden" style={{ clipPath: 'polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 14px 100%, 0 calc(100% - 14px))' }}>
+              <HiSparkles size={16} />Kəşfetməyə başla
+            </button>
 
-      <div className="relative z-10 px-8 md:px-16 py-16 md:py-20">
+            <p className="text-[10px] md:text-[11px] font-light text-[rgba(240,235,226,0.35)] tracking-[0.18em] uppercase leading-loose border-l border-[rgba(55,128,121,0.3)] pl-5">
+              Kitab &nbsp;·&nbsp; Musiqi &nbsp;·&nbsp; Kod &nbsp;·&nbsp; Dil<br />
+              Hər sahədə özünü kəşf et
+            </p>
+          </div>
 
-        <div className="flex items-center gap-2.5 mb-8 md:mb-10 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.05s]">
-          <div className="w-7 md:w-9 h-px bg-[#378079]" />
-          <span className="text-[10px] md:text-[11px] tracking-[0.22em] text-[#378079] uppercase font-semibold">
-            Öyrən. Yarat. İrələ.
-          </span>
+          <div className="flex items-stretch gap-0 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.45s]">
+            {stats.map((stat, i) => (
+              <div key={i} className={`relative ${i !== 0 ? 'pl-7 ml-7 before:absolute before:left-0 before:top-1 before:bottom-1 before:w-px before:bg-[rgba(55,128,121,0.2)]' : ''}`}>
+                <span className="font-['Bebas_Neue'] text-[1.7rem] md:text-[2.2rem] text-[#378079] leading-none block tracking-wide">
+                  {stat.value}
+                </span>
+                <span className="text-[7px] tracking-[0.2em] text-[rgba(240,235,226,0.28)] uppercase block mt-1">
+                  {stat.label}
+                </span>
+              </div>
+            ))}
+          </div>
+
         </div>
 
-        <h1 className="text-[#f0ebe2] font-black text-[clamp(2.4rem,6vw,5rem)] leading-[1.07] tracking-[-0.01em] mb-9 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.15s]">
-          ÖZ{" "}
-          <span
-            className="text-transparent"
-            style={{ WebkitTextStroke: '1.5px #f0ebe2' }}
-          >
-            TEMPİNDƏ
-          </span>
-          <br />
-          <span className="text-[#378079]">İRƏLİLƏ</span>
-        </h1>
-
-        <div className="flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-8 mb-14 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.3s]">
-          <button className="flex items-center justify-center gap-2.5 px-9 h-12 bg-[#378079] text-white text-[10px] font-bold tracking-[0.18em] uppercase transition-all duration-200 cursor-pointer hover:bg-[#45a098] active:scale-[0.97] w-fit relative overflow-hidden"
-            style={{ clipPath: 'polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 14px 100%, 0 calc(100% - 14px))' }}
-          >
-            <HiSparkles size={16} />
-            Kəşfetməyə başla
-          </button>
-
-          <p className="text-[10px] md:text-[11px] font-light text-[rgba(240,235,226,0.35)] tracking-[0.18em] uppercase leading-loose border-l border-[rgba(55,128,121,0.3)] pl-5">
-            Kitab &nbsp;·&nbsp; Musiqi &nbsp;·&nbsp; Kod &nbsp;·&nbsp; Dil<br />
-            Hər sahədə özünü kəşf et
-          </p>
-        </div>
-
-        <div className="flex items-stretch gap-0 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.45s]">
-          {stats.map((stat, i) => (
-            <div key={i} className={`relative ${i !== 0 ? 'pl-7 ml-7 before:absolute before:left-0 before:top-1 before:bottom-1 before:w-px before:bg-[rgba(55,128,121,0.2)]' : ''}`}>
-              <span className="font-['Bebas_Neue'] text-[2rem] md:text-[2.2rem] text-[#378079] leading-none block tracking-wide">
-                {stat.value}
-              </span>
-              <span className="text-[9px] tracking-[0.2em] text-[rgba(240,235,226,0.28)] uppercase block mt-1">
-                {stat.label}
-              </span>
-            </div>
-          ))}
-        </div>
-
-      </div>
-
-      <style>{`
-        @keyframes fadeUp {
-          from { opacity: 0; transform: translateY(24px); }
-          to   { opacity: 1; transform: translateY(0); }
-        }
-      `}</style>
-    </section>
+      </section>
+    </>
   );
 }
 

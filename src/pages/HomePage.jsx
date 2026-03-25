@@ -5,8 +5,13 @@ import About from '../components/home/About'
 function HomePage() {
     return (
         <>
-            <Hero />
-            <About />
+            <section className=" w-full overflow-hidden relative">
+                <div className='background-tor'></div>
+                <div className='background-shadow'></div>
+                <Hero />
+                <About />
+            </section>
+
         </>
     )
 }

@@ -8,11 +8,8 @@ const stats = [
 
 function About() {
   return (
-    <section className="bg-[#06090f] w-full overflow-hidden relative border-t border-[rgba(55,128,121,0.1)]">
+    <section>
       
-      <div className="absolute inset-0 z-0 pointer-events-none" 
-           style={{ backgroundImage: `linear-gradient(rgba(255,255,255,0.022) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.022) 1px, transparent 1px)`, backgroundSize: '60px 60px' }} />
-
       <div className="absolute -top-32 -left-20 w-125 h-125 pointer-events-none" 
            style={{ background: 'radial-gradient(circle, rgba(55,128,121,0.07) 0%, transparent 70%)' }} />
 

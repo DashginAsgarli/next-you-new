@@ -24,7 +24,7 @@ const Sidebar = ({ isOpen, onClose }) => {
                     <HiX size={26} />
                 </button>
 
-                <div className="md:hidden mb-8">
+                <div className="lg:hidden mb-8">
                     <p className="text-[#378079] text-[8px] font-bold tracking-[4px] uppercase mb-4 opacity-40 px-2">Menyu</p>
                     <div className="flex flex-col gap-1">
                         {mobileNavLinks.map((item) => (

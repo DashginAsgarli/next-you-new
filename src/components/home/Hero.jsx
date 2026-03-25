@@ -11,7 +11,7 @@ function Hero() {
   return (
     <>
       <section >
-        <div className="relative z-10 px-6 md:px-16 py-20 md:py-24  lg:py-20">
+        <div className="relative z-10 px-8 md:px-16 py-30 md:py-22  lg:py-23 border-b border-b-white">
           <div className="flex items-center gap-2.5 mb-8 md:mb-10 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.05s]">
             <div className="w-7 md:w-9 h-px bg-[#378079]" />
             <span className="text-[10px] md:text-[11px] tracking-[0.22em] text-[#378079] uppercase font-semibold">

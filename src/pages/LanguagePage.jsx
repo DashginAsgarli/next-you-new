@@ -12,15 +12,18 @@ import AudioPractice from '../components/language/AudioPractice'
 function LanguagePage() {
     return (
         <>
-            <LangTerminal />
-            <PopularLanguages />
-            <OtherLanguagesList />
-            <LangDictionary />
-            <QuickTranslate />
-            <AudioPractice />
-            <LangLearn />
-            <DailyChallenges />
-
+            <section className=" w-full overflow-hidden relative">
+                <div className='background-tor'></div>
+                <div className='background-shadow'></div>
+                <LangTerminal />
+                <PopularLanguages />
+                <OtherLanguagesList />
+                <LangDictionary />
+                <QuickTranslate />
+                <AudioPractice />
+                <LangLearn />
+                <DailyChallenges />
+            </section>
         </>
     )
 }

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
-import { HiPlay, HiPause, HiFastForward, HiRewind, HiHeart, HiOutlineHeart, HiMusicNote, HiClock, HiLightningBolt } from "react-icons/hi";
+import { HiPlay, HiPause, HiFastForward, HiRewind, HiHeart, HiOutlineHeart, HiLightningBolt } from "react-icons/hi";
 import MusicHeader from "./MusicHeader";
 
 function Music() {
@@ -106,22 +106,12 @@ function Music() {
 
     return (
         <div className=" min-h-screen text-[#f0ebe2] relative font-sans overflow-x-hidden">
-            <div
-                className="absolute inset-0 z-0 pointer-events-none opacity-40"
-                style={{ backgroundImage: `linear-gradient(rgba(55, 128, 121, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(55, 128, 121, 0.1) 1px, transparent 1px)`, backgroundSize: '60px 60px' }}
-            />
+
 
             <div className="relative z-10">
-                <MusicHeader
-                    searchTerm={searchTerm}
-                    setSearchTerm={setSearchTerm}
-                    onSearch={fetchSongs}
-                    activeTab={activeTab}
-                    setActiveTab={setActiveTab}
-                    isLoading={isLoading}
-                />
+                <MusicHeader searchTerm={searchTerm} setSearchTerm={setSearchTerm} onSearch={fetchSongs} activeTab={activeTab} setActiveTab={setActiveTab} isLoading={isLoading} />
 
-                <div className="max-w-7xl mx-auto px-4 lg:px-6 mt-4 pb-24">
+                <div className="px-8 md:px-16 mt-4 pb-10">
                     <div className="flex flex-col md:flex-row gap-6 lg:gap-12 items-start justify-center">
 
                         <div className="w-full md:w-87.5 lg:w-105 md:h-145 lg:h-155 shrink-0">
@@ -163,15 +153,7 @@ function Music() {
                             <div className="flex-1 relative overflow-y-auto pr-2 custom-scrollbar">
                                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 pb-12">
                                     {songs.map((song, i) => (
-                                        <div
-                                            key={`${song.id}-${i}`}
-                                            onClick={() => selectSong(i)}
-                                            className={`group relative p-4 rounded-[25px] border transition-all duration-500 cursor-pointer overflow-hidden flex items-center
-                                                ${i === currentIndex
-                                                    ? 'bg-[#378079]/20 border-[#378079]/40 shadow-lg'
-                                                    : 'bg-[#0a0e14] border-white/5 hover:border-white/20 hover:bg-[#11171f]'
-                                                }`}
-                                        >
+                                        <div key={`${song.id}-${i}`} onClick={() => selectSong(i)} className={`group relative p-4 rounded-[25px] border transition-all duration-500 cursor-pointer overflow-hidden flex items-center        ${i === currentIndex ? 'bg-[#378079]/20 border-[#378079]/40 shadow-lg' : 'bg-[#0a0e14] border-white/5 hover:border-white/20 hover:bg-[#11171f]'}`}>
                                             <div className="relative z-10 flex items-center gap-4 w-full">
                                                 <div className="relative w-12 h-12 rounded-xl overflow-hidden shrink-0">
                                                     <img src={song.imageUrl} className="w-full h-full object-cover" alt="" />
@@ -189,15 +171,7 @@ function Music() {
                                                     <h4 className={`text-[11px] font-bold uppercase truncate ${i === currentIndex ? 'text-[#378079]' : 'text-white/90'}`}>{song.title}</h4>
                                                     <p className="text-[9px] opacity-30 uppercase truncate font-mono mt-1 italic">{song.artist}</p>
                                                 </div>
-                                                <button
-                                                    onClick={(e) => {
-                                                        e.stopPropagation();
-                                                        const newLikes = likedSongs.includes(song.id) ? likedSongs.filter(id => id !== song.id) : [...likedSongs, song.id];
-                                                        setLikedSongs(newLikes);
-                                                        localStorage.setItem("music-likedSongs", JSON.stringify(newLikes));
-                                                    }}
-                                                    className={`p-2 rounded-xl transition-all ${likedSongs.includes(song.id) ? 'text-[#378079] bg-[#378079]/10' : 'text-white/5 group-hover:text-white/20'}`}
-                                                >
+                                                <button onClick={(e) => { e.stopPropagation(); const newLikes = likedSongs.includes(song.id) ? likedSongs.filter(id => id !== song.id) : [...likedSongs, song.id]; setLikedSongs(newLikes); localStorage.setItem("music-likedSongs", JSON.stringify(newLikes)); }} className={`p-2 rounded-xl transition-all ${likedSongs.includes(song.id) ? 'text-[#378079] bg-[#378079]/10' : 'text-white/5 group-hover:text-white/20'}`}>
                                                     {likedSongs.includes(song.id) ? <HiHeart size={18} /> : <HiOutlineHeart size={18} />}
                                                 </button>
                                             </div>

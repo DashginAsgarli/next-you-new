@@ -12,7 +12,7 @@ function LangLearn() {
   }
 
   return (
-    <div className="min-h-screen bg-[#06090f] text-[#f0ebe2]  px-6 md:px-10 lg:px-16 py-12">
+    <div className="min-h-screen  text-[#f0ebe2]  px-6 md:px-10 lg:px-16 py-12">
 
       <div className="text-center mb-16">
         <div className="flex items-center justify-center gap-2 mb-4">

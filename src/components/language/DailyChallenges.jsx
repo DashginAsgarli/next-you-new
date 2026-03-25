@@ -12,11 +12,7 @@ function DailyChallenges() {
     ];
 
     return (
-        <div className="w-full bg-[#06090f] border border-white/5  px-6 md:px-10 lg:px-16 py-12 relative overflow-hidden">
-
-            <div className="absolute inset-0 z-0 pointer-events-none opacity-10"
-                style={{ backgroundImage: `linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px)`, backgroundSize: '60px 60px' }}>
-            </div>
+        <div className="w-full   px-6 md:px-10 lg:px-16 py-12 relative overflow-hidden">
 
             <div className="relative z-10">
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-12">

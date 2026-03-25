@@ -105,7 +105,7 @@ function Music() {
     const currentSong = songs[currentIndex] || allSongs[0] || {};
 
     return (
-        <div className="bg-[#06090f] min-h-screen text-[#f0ebe2] relative font-sans overflow-x-hidden">
+        <div className=" min-h-screen text-[#f0ebe2] relative font-sans overflow-x-hidden">
             <div
                 className="absolute inset-0 z-0 pointer-events-none opacity-40"
                 style={{ backgroundImage: `linear-gradient(rgba(55, 128, 121, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(55, 128, 121, 0.1) 1px, transparent 1px)`, backgroundSize: '60px 60px' }}

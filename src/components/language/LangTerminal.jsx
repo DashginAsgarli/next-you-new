@@ -18,7 +18,7 @@ function LangTerminal() {
                         </span>
                     </div>
 
-                    <h1 className="text-[clamp(2rem,6vw,4.5rem)] font-black leading-[1.1] tracking-[-1px] text-[#f0ebe2]">
+                    <h1 className="text-[clamp(2.4rem,6vw,5rem)] font-black leading-[1.1] tracking-[-1px] text-[#f0ebe2]">
                         DİL ÖYRƏNMƏNİN <br />
                         <span className="outline-text text-transparent" style={{ WebkitTextStroke: '1.5px #f0ebe2' }}>
                             EFEKTİV

@@ -41,7 +41,7 @@ const Sidebar = ({ isOpen, onClose }) => {
                         {[
                             { to: "/parameters", label: "Xüsusiyyətlər", icon: <HiOutlineStar size={18} /> },
                             { to: "/planner", label: "Planlayıcı", icon: <HiOutlineCalendar size={18} /> },
-                            { to: "/social", label: "Əlaqə", icon: <HiOutlineLink size={18} /> },
+                            { to: "/contact", label: "Əlaqə", icon: <HiOutlineLink size={18} /> },
                         ].map((item) => (
                             <NavLink key={item.to} to={item.to} onClick={onClose} className="flex items-center gap-3 p-3 text-[11px] uppercase tracking-widest text-[#f0ebe2]/30 hover:text-[#378079] hover:bg-[#378079]/5 rounded-lg transition-all">
                                 {item.icon} {item.label}

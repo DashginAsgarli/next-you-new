@@ -1,0 +1,830 @@
+[
+    {
+        "id": 1,
+        "title": "HTML Giriş",
+        "category": "Əsaslar",
+        "level": "Başlanğıc",
+        "duration": "15 dəqiqə",
+        "points": 50,
+        "icon": "LuFileCode",
+        "content": {
+            "description": "HTML veb-in skeletidir. Bu dərsdə sənədin necə qurulduğunu və brauzerin onu necə oxuduğunu öyrənəcəksiniz. HTML sənədləri brauzer tərəfindən oxunur və istifadəçiyə qrafik interfeys kimi göstərilir. Bu dərsin sonunda siz sadə bir veb səhifəsinin strukturunu qura biləcəksiniz. HTML elementləri brauzerə məzmunu necə göstərəcəyini bildirir",
+            "formula": "<tagname> məzmun buraya yazılır </tagname>",
+            "theory": "HTML (HyperText Markup Language) proqramlaşdırma dili deyil, işarələmə dilidir. O, teqlər vasitəsilə brauzerə məzmunun strukturunu (başlıq, paraqraf, siyahı və s.) izah edir.",
+            "rules": [
+                "Hər bir sənəd <!DOCTYPE html> ilə başlamalıdır.",
+                "Teqlər adətən cüt olur (açılış və bağlanış).",
+                "Kiçik hərflərlə yazılış (lowercase) standart hesab olunur.",
+                "Fayl uzantısı .html və ya .htm olur",
+                "CSS və JavaScript ilə birlikdə işləyir",
+                "Veb səhifələrinin quruluşunu yaradır"
+            ],
+            "examples": [
+                "<h1>Bu bir başlıqdır</h1>",
+                "<p>Bu bir paraqrafdır.</p>"
+            ],
+            "commonMistakes": [
+                "Bağlanış teqini (forward slash '/') unudulması.",
+                "Teqlərin səhv ardıcıllıqla iç-içə yerləşdirilməsi (məs: <b><i>mətn</b></i>).",
+                "<!DOCTYPE html> bəyannaməsinin yazılmaması.",
+                "Böyük hərflə teq yazmaq: <BODY>",
+                "<head> bölməsini atlamaq"
+            ],
+            "practice": [
+                {
+                    "type": "code",
+                    "question": "Səhifənin əsas konteynerini və başlığını tamamlayın:",
+                    "initialCode": "<html>\n  <______>\n    <h1>Xoş gəlmisiniz!</h1>\n  </______>\n</html>",
+                    "correctAnswers": {
+                        "body": "body"
+                    }
+                },
+                {
+                    "type": "dragDrop",
+                    "question": "Düzgün sıranı düzün:",
+                    "steps": [
+                        "DOCTYPE",
+                        "html",
+                        "head",
+                        "body"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "title": "HTML Atributları",
+        "category": "Əsaslar",
+        "level": "Başlanğıc",
+        "duration": "20 dəqiqə",
+        "points": 60,
+        "icon": "LuSettings",
+        "content": {
+            "description": "HTML atributları elementlər haqqında əlavə məlumat verir. Bu dərsdə atributların necə istifadə olunduğunu, məcburi və ixtiyari atributları öyrənəcəksiniz.",
+            "formula": "<tagname atribut='dəyər'>məzmun</tagname>",
+            "theory": "Atributlar HTML elementlərinə əlavə xüsusiyyətlər verir. Ən çox istifadə olunan atributlar: href (linklər üçün), src (şəkillər üçün), alt (alternativ mətn), style (CSS üçün), class və id (seçicilər üçün).",
+            "rules": [
+                "Atribut adları kiçik hərflə yazılmalıdır.",
+                "Atribut dəyərləri dırnaq içərisində yazılmalıdır.",
+                "Bir elementdə birdən çox atribut ola bilər.",
+                "Atributlar açılış teqində yazılır.",
+                "Bəzi atributlar dəyər tələb etmir (məs: disabled, checked)."
+            ],
+            "examples": [
+                "<a href='https://example.com'>Link</a>",
+                "<img src='sekil.jpg' alt='Təsvir'>",
+                "<p class='important' id='para1'>Mətn</p>"
+            ],
+            "commonMistakes": [
+                "Dırnaq işarələrini unutmaq.",
+                "Atributları bağlanış teqində yazmaq.",
+                "Dəyərlərdə boşluq buraxmaq.",
+                "href ilə src-ni qarışdırmaq."
+            ],
+            "practice": [
+                {
+                    "type": "code",
+                    "question": "Linkə doğru ünvanı və atributu əlavə edin:",
+                    "initialCode": "<a ______='https://www.google.com'>Google</a>",
+                    "correctAnswers": {
+                        "href": "href"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "id": 3,
+        "title": "HTML Başlıqları",
+        "category": "Məzmun",
+        "level": "Başlanğıc",
+        "duration": "12 dəqiqə",
+        "points": 40,
+        "icon": "LuHeading1",
+        "content": {
+            "description": "HTML-də 6 səviyyəli başlıq teqi var. Bu dərsdə h1-dən h6-ya qədər olan başlıqların istifadəsini və SEO baxımından əhəmiyyətini öyrənəcəksiniz.",
+            "formula": "<h1>Ən vacib başlıq</h1> ... <h6>Ən az vacib başlıq</h6>",
+            "theory": "Başlıqlar sənədin strukturunu qurur. Axtarış motorları başlıqları səhifənin məzmununu anlamaq üçün istifadə edir. Hər səhifədə yalnız bir dənə <h1> olması tövsiyə olunur.",
+            "rules": [
+                "H1 ən vacib başlıqdır, səhifədə bir dəfə istifadə edilməlidir.",
+                "Başlıqlar ardıcıl qaydada istifadə edilməlidir (H1-dən sonra H2, H3...).",
+                "Başlıqları sadəcə formatlaşdırma üçün deyil, struktur üçün istifadə edin.",
+                "Başlıqlar axtarış motorları üçün vacibdir."
+            ],
+            "examples": [
+                "<h1>Əsas Başlıq</h1>",
+                "<h2>Alt Başlıq</h2>",
+                "<h3>Alt Başlığın Altı</h3>"
+            ],
+            "commonMistakes": [
+                "Mətn ölçüsü üçün başlıq teqlərindən yanlış istifadə.",
+                "H1-dən sonra birbaşa H3-ə keçmək.",
+                "Bir səhifədə birdən çox H1 istifadə etmək."
+            ],
+            "practice": [
+                {
+                    "type": "code",
+                    "question": "Ən vacib başlığı yaradın:",
+                    "initialCode": "______HTML Dərsləri______",
+                    "correctAnswers": {
+                        "opening": "<h1>",
+                        "closing": "</h1>"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "id": 4,
+        "title": "HTML Şərhləri",
+        "category": "Əsaslar",
+        "level": "Başlanğıc",
+        "duration": "10 dəqiqə",
+        "points": 30,
+        "icon": "LuMessageSquare",
+        "content": {
+            "description": "HTML şərhləri kodunuzu izah etmək və müvəqqəti olaraq kod bloklarını söndürmək üçün istifadə olunur. Bu dərsdə şərhlərin necə yazıldığını öyrənəcəksiniz.",
+            "formula": "<!-- Şərh mətni buraya yazılır -->",
+            "theory": "Şərhlər brauzerdə göstərilmir, ancaq kodun içərisində qalır. Şərhlər digər tərtibatçılara kod haqqında məlumat vermək və ya müəyyən hissələri müvəqqəti deaktiv etmək üçün faydalıdır.",
+            "rules": [
+                "Şərhlər <!-- ilə başlayır və --> ilə bitir.",
+                "Şərhlər iç-içə yazıla bilməz.",
+                "Şərhlər bir neçə sətir ola bilər.",
+                "Şərhlər kodun oxunaqlılığını artırır."
+            ],
+            "examples": [
+                "<!-- Bu bir şərhdir -->",
+                "<!-- \n  Çoxsətirli\n  şərh\n-->"
+            ],
+            "commonMistakes": [
+                "Şərhi bağlamağı unutmaq (-->).",
+                "İç-içə şərh yazmağa çalışmaq.",
+                "Şərhlərdə --> işarəsini mətn kimi istifadə etmək."
+            ],
+            "practice": [
+                {
+                    "type": "code",
+                    "question": "Aşağıdakı mətni şərh halına gətirin:",
+                    "initialCode": "Bu kod müvəqqəti deaktiv edilib",
+                    "correctAnswers": {
+                        "commented": "<!-- Bu kod müvəqqəti deaktiv edilib -->"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "id": 5,
+        "title": "HTML Linkləri",
+        "category": "Naviqasiya",
+        "level": "Başlanğıc",
+        "duration": "18 dəqiqə",
+        "points": 55,
+        "icon": "LuLink2",
+        "content": {
+            "description": "HTML linkləri istifadəçiləri başqa səhifələrə və ya eyni səhifədəki bölmələrə yönləndirir. Bu dərsdə <a> teqini və href atributunu öyrənəcəksiniz.",
+            "formula": "<a href='url'>Link mətni</a>",
+            "theory": "Linklər veb-in əsasını təşkil edir. Href atributu linkin hədəfini göstərir. Target atributu linkin hansı pəncərədə açılacağını təyin edir. Daxili linklər eyni saytda, xarici linklər başqa saytlara aparır.",
+            "rules": [
+                "Href atributu mütləqdir.",
+                "Daxili linklərdə nisbi yol istifadə edilə bilər.",
+                "Target='_blank' linki yeni tabda açır.",
+                "Link mətni istifadəçi üçün mənalı olmalıdır."
+            ],
+            "examples": [
+                "<a href='haqqinda.html'>Haqqımızda</a>",
+                "<a href='https://google.com' target='_blank'>Google</a>",
+                "<a href='#bolum1'>1-ci Bölümə keç</a>"
+            ],
+            "commonMistakes": [
+                "Href dəyərində http:// və ya https:// yazmamaq.",
+                "Link mətni kimi 'buraya kliklə' kimi ümumi ifadələr istifadə etmək.",
+                "Bağlanış teqini unutmaq."
+            ],
+            "practice": [
+                {
+                    "type": "code",
+                    "question": "Yeni tabda açılan link yaradın:",
+                    "initialCode": "<a href='https://example.com' ______>Sayt</a>",
+                    "correctAnswers": {
+                        "target": "target='_blank'"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "id": 6,
+        "title": "HTML Şəkilləri",
+        "category": "Media",
+        "level": "Başlanğıc",
+        "duration": "15 dəqiqə",
+        "points": 50,
+        "icon": "LuImage",
+        "content": {
+            "description": "HTML-də şəkillər img teqi ilə əlavə olunur. Bu dərsdə şəkillərin səhifəyə əlavə edilməsini, alt mətnin əhəmiyyətini və şəkil ölçülərini öyrənəcəksiniz.",
+            "formula": "<img src='sekil.jpg' alt='təsvir'>",
+            "theory": "Img teqi boş teqdir (bağlanışı yoxdur). Src atributu şəkil faylının yolunu, alt atributu isə şəkil yüklənməzsə göstəriləcək alternativ mətni təyin edir. Alt mətn həm də ekran oxuyucuları üçün vacibdir.",
+            "rules": [
+                "Src atributu mütləqdir.",
+                "Alt atributu hər şəkil üçün tövsiyə olunur (SEO və əlçatanlıq).",
+                "Şəkil ölçüləri width və height ilə təyin edilə bilər.",
+                "Şəkil fayl formatı: .jpg, .png, .gif, .svg, .webp."
+            ],
+            "examples": [
+                "<img src='foto.jpg' alt='Təbiət mənzərəsi'>",
+                "<img src='logo.png' alt='Logo' width='200' height='100'>"
+            ],
+            "commonMistakes": [
+                "Alt atributunu yazmamaq.",
+                "Src-də səhv fayl yolu göstərmək.",
+                "Böyük ölçülü şəkilləri ölçüləndirmədən istifadə etmək."
+            ],
+            "practice": [
+                {
+                    "type": "code",
+                    "question": "Şəkli əlavə edin və alternativ mətn yazın:",
+                    "initialCode": "<______ src='resim.jpg' ______='Açıqlama'>",
+                    "correctAnswers": {
+                        "tag": "img",
+                        "alt": "alt"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "id": 7,
+        "title": "HTML Favikonu",
+        "category": "Əlavələr",
+        "level": "Başlanğıc",
+        "duration": "10 dəqiqə",
+        "points": 35,
+        "icon": "LuStar",
+        "content": {
+            "description": "Favikon brauzer tabında görünən kiçik ikonadır. Bu dərsdə veb səhifənizə favikon əlavə etməyi öyrənəcəksiniz.",
+            "formula": "<link rel='icon' type='image/x-icon' href='favicon.ico'>",
+            "theory": "Favikon veb saytın identifikasiyası üçün vacibdir. Ən çox istifadə olunan format .ico olsa da, .png, .svg və .gif də istifadə edilə bilər. Favikon link teqi ilə head bölməsində əlavə edilir.",
+            "rules": [
+                "Favikon head bölməsində yerləşdirilməlidir.",
+                "Rel='icon' atributu mütləqdir.",
+                "Favikon fayl ölçüsü kiçik olmalıdır (16x16, 32x32, 48x48).",
+                "Çoxlu cihaz üçün fərqli favikon ölçüləri təyin edilə bilər."
+            ],
+            "examples": [
+                "<link rel='icon' type='image/png' href='favicon.png'>",
+                "<link rel='apple-touch-icon' href='apple-icon.png'>"
+            ],
+            "commonMistakes": [
+                "Favikonu head xaricində yerləşdirmək.",
+                "Səhv fayl yolunu göstərmək.",
+                "Favikon formatını düzgün təyin etməmək."
+            ],
+            "practice": [
+                {
+                    "type": "code",
+                    "question": "Favikonu əlavə edin:",
+                    "initialCode": "<______ rel='icon' href='icon.png'>",
+                    "correctAnswers": {
+                        "tag": "link"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "id": 8,
+        "title": "HTML Səhifə Başlığı",
+        "category": "SEO",
+        "level": "Başlanğıc",
+        "duration": "12 dəqiqə",
+        "points": 45,
+        "icon": "LuFileText",
+        "content": {
+            "description": "Səhifə başlığı brauzer tabında və axtarış nəticələrində göstərilir. Bu dərsdə title teqinin istifadəsini və SEO əhəmiyyətini öyrənəcəksiniz.",
+            "formula": "<title>Səhifə başlığı</title>",
+            "theory": "Title teqi head bölməsində yerləşir və səhifənin adını təyin edir. Axtarış motorları səhifənin mövzusunu anlamaq üçün title-dən istifadə edir. Hər səhifənin unikal və təsviredici başlığı olmalıdır.",
+            "rules": [
+                "Title head bölməsində olmalıdır.",
+                "Hər səhifənin başlığı unikal olmalıdır.",
+                "Başlıq 50-60 simvol arasında olmalıdır.",
+                "Başlıq səhifənin məzmununu dəqiq təsvir etməlidir."
+            ],
+            "examples": [
+                "<title>HTML Dərsləri - Başlanğıc Bələdçisi</title>",
+                "<title>Ana Səhifə | Mənim Saytım</title>"
+            ],
+            "commonMistakes": [
+                "Title teqini body daxilində yazmaq.",
+                "Başlığı çox uzun və ya çox qısa yazmaq.",
+                "Bütün səhifələrdə eyni başlığı istifadə etmək."
+            ],
+            "practice": [
+                {
+                    "type": "code",
+                    "question": "Səhifə başlığını əlavə edin:",
+                    "initialCode": "<head>\n  <______>HTML Dərsləri</______>\n</head>",
+                    "correctAnswers": {
+                        "title": "title"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "id": 9,
+        "title": "HTML Cədvəlləri",
+        "category": "Məzmun",
+        "level": "Orta",
+        "duration": "25 dəqiqə",
+        "points": 70,
+        "icon": "LuTable",
+        "content": {
+            "description": "HTML cədvəlləri məlumatları sətir və sütunlarla təşkil etmək üçün istifadə olunur. Bu dərsdə table, tr, td, th teqlərini və cədvəl birləşmələrini öyrənəcəksiniz.",
+            "formula": "<table><tr><td>məlumat</td></tr></table>",
+            "theory": "Cədvəllər <table> teqi ilə başlayır. Hər sətir <tr> (table row), hər xana <td> (table data) ilə yaradılır. Başlıq xanaları üçün <th> istifadə olunur. Colspan və rowspan atributları xanaları birləşdirmək üçündür.",
+            "rules": [
+                "Cədvəllər yalnız məlumat göstərmək üçün istifadə edilməlidir (dizayn üçün deyil).",
+                "Hər sətirdə eyni sayda xana olması tövsiyə olunur.",
+                "Cədvəl başlığı üçün <caption> istifadə edilə bilər.",
+                "Cədvəlin strukturu üçün <thead>, <tbody>, <tfoot> istifadə edilə bilər."
+            ],
+            "examples": [
+                "<table border='1'><tr><th>Ad</th><th>Yaş</th></tr><tr><td>Ali</td><td>25</td></tr></table>",
+                "<td colspan='2'>Birləşdirilmiş xana</td>"
+            ],
+            "commonMistakes": [
+                "Dizayn üçün cədvəl istifadə etmək (CSS Grid/Flex istifadə edin).",
+                "Cədvəldə sətir və xana sayını qarışdırmaq.",
+                "Border atributunu unutmaq (əgər görünən cədvəl istənirsə)."
+            ],
+            "practice": [
+                {
+                    "type": "code",
+                    "question": "2 sətir və 2 sütunlu cədvəl yaradın:",
+                    "initialCode": "<______>\n  <tr><td>A1</td><td>B1</td></tr>\n  <tr><td>A2</td><td>B2</td></tr>\n</table>",
+                    "correctAnswers": {
+                        "table": "table"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "id": 10,
+        "title": "HTML Siyahıları",
+        "category": "Məzmun",
+        "level": "Başlanğıc",
+        "duration": "15 dəqiqə",
+        "points": 45,
+        "icon": "LuList",
+        "content": {
+            "description": "HTML-də üç növ siyahı var: sıralı, sırasız və təsvir siyahıları. Bu dərsdə ul, ol, li teqlərini öyrənəcəksiniz.",
+            "formula": "<ul><li>siyahı elementi</li></ul>",
+            "theory": "Sırasız siyahılar (<ul>) ümumiyyətlə nöqtə işarələri ilə, sıralı siyahılar (<ol>) isə nömrələrlə göstərilir. Hər siyahı elementi <li> teqi ilə yaradılır. Təsvir siyahıları (<dl>) termin və təsvirlər üçün istifadə olunur.",
+            "rules": [
+                "Siyahı elementləri yalnız <li> içərisində olmalıdır.",
+                "Siyahılar iç-içə yerləşdirilə bilər.",
+                "Ol teqində type atributu ilə nömrələmə növü dəyişdirilə bilər.",
+                "Siyahı işarələri CSS ilə dəyişdirilə bilər."
+            ],
+            "examples": [
+                "<ul><li>Çay</li><li>Qəhvə</li></ul>",
+                "<ol type='A'><li>Birinci</li><li>İkinci</li></ol>",
+                "<dl><dt>HTML</dt><dd>Veb dili</dd></dl>"
+            ],
+            "commonMistakes": [
+                "Li teqini ul və ya ol xaricində istifadə etmək.",
+                "Siyahıları düzgün iç-içə yerləşdirməmək.",
+                "Təsvir siyahılarında dt və dd nizamını qarışdırmaq."
+            ],
+            "practice": [
+                {
+                    "type": "code",
+                    "question": "3 elementli sırasız siyahı yaradın:",
+                    "initialCode": "<______>\n  <li>Alma</li>\n  <li>Armud</li>\n  <li>Banan</li>\n</ul>",
+                    "correctAnswers": {
+                        "ul": "ul"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "id": 11,
+        "title": "HTML Div",
+        "category": "Düzen",
+        "level": "Başlanğıc",
+        "duration": "18 dəqiqə",
+        "points": 55,
+        "icon": "LuLayout",
+        "content": {
+            "description": "Div HTML-də əsas qrup konteyneridir. Bu dərsdə div elementinin CSS ilə birlikdə necə istifadə edildiyini və səhifə düzeni yaratmağı öyrənəcəksiniz.",
+            "formula": "<div>qruplaşdırılmış məzmun</div>",
+            "theory": "Div (division) blok səviyyəli elementdir və digər elementləri qruplaşdırmaq üçün istifadə olunur. Tək başına heç bir vizual təsiri yoxdur, lakin CSS ilə birlikdə səhifənin düzenini qurmaq üçün əsas elementdir.",
+            "rules": [
+                "Div blok səviyyəli elementdir, yeni sətirdə başlayır.",
+                "Div-lər CSS ilə stilləndirilə bilər.",
+                "Div-lər iç-içə yerləşdirilə bilər.",
+                "Semantik elementlər (header, main, section) mümkün olduqda div-ə üstünlük təşkil edir."
+            ],
+            "examples": [
+                "<div class='container'><p>Mətn</p></div>",
+                "<div style='background-color:red;'>Rəngli div</div>"
+            ],
+            "commonMistakes": [
+                "Hər şey üçün div istifadə etmək (semantik elementləri nəzərdən qaçırmaq).",
+                "Div-ləri düzgün qapamamq.",
+                "Div-lərin CSS xüsusiyyətlərini bilmədən istifadə etmək."
+            ],
+            "practice": [
+                {
+                    "type": "code",
+                    "question": "Div konteyneri yaradın:",
+                    "initialCode": "<______>\n  <h1>Başlıq</h1>\n  <p>Paraqraf</p>\n</div>",
+                    "correctAnswers": {
+                        "div": "div"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "id": 12,
+        "title": "HTML Dərsləri",
+        "category": "Semantik",
+        "level": "Orta",
+        "duration": "20 dəqiqə",
+        "points": 60,
+        "icon": "LuBookOpen",
+        "content": {
+            "description": "HTML5 ilə birlikdə semantik elementlər təqdim edildi. Bu dərsdə article, section, aside, header, footer, main kimi semantik elementləri öyrənəcəksiniz.",
+            "formula": "<article><header><h1>Başlıq</h1></header><p>Məzmun</p></article>",
+            "theory": "Semantik elementlər məzmunun mənasını təsvir edir. Axtarış motorları və ekran oxuyucuları semantik elementləri daha yaxşı başa düşür. Bu elementlər səhifənin strukturunu daha anlaşıqlı edir.",
+            "rules": [
+                "Header ümumiyyətlə giriş və naviqasiya üçündür.",
+                "Nav əsas naviqasiya linkləri üçündür.",
+                "Main səhifənin əsas məzmunu üçündür (bir dəfə istifadə olunur).",
+                "Article müstəqil məzmun blokları üçündür.",
+                "Section mövzuya görə qruplaşdırılmış məzmun üçündür.",
+                "Aside yan məzmun (reklam, sidebar) üçündür.",
+                "Footer səhifənin alt hissəsi üçündür."
+            ],
+            "examples": [
+                "<header><h1>Sayt Başlığı</h1><nav>...</nav></header>",
+                "<main><article><h2>Məqalə</h2><p>Mətn...</p></article></main>",
+                "<footer>© 2024 Mənim Saytım</footer>"
+            ],
+            "commonMistakes": [
+                "Div-ləri semantik elementlər əvəzinə istifadə etmək.",
+                "Bir səhifədə birdən çox main istifadə etmək.",
+                "Header və footer-i səhv yerdə yerləşdirmək."
+            ],
+            "practice": [
+                {
+                    "type": "dragDrop",
+                    "question": "Semantik elementləri düzgün sıralayın (yuxarıdan aşağıya):",
+                    "steps": [
+                        "header",
+                        "nav",
+                        "main",
+                        "article",
+                        "footer"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "id": 13,
+        "title": "HTML ID-si",
+        "category": "Seçicilər",
+        "level": "Başlanğıc",
+        "duration": "12 dəqiqə",
+        "points": 40,
+        "icon": "LuHash",
+        "content": {
+            "description": "ID atributu elementə unikal identifikator verir. Bu dərsdə ID-nin necə təyin olunduğunu və CSS/JavaScript ilə necə istifadə edildiyini öyrənəcəksiniz.",
+            "formula": "<tagname id='unikal_ad'>məzmun</tagname>",
+            "theory": "ID səhifədə yalnız bir elementə aid ola bilər. CSS-də # işarəsi ilə, JavaScript-də getElementById() ilə seçilir. ID-lər fragment identifikatorları (linklərdə # ilə) kimi də istifadə edilə bilər.",
+            "rules": [
+                "ID səhifədə unikal olmalıdır.",
+                "ID boşluq ehtiva edə bilməz.",
+                "ID rəqəmlə başlaya bilər, amma tövsiyə edilmir.",
+                "ID böyük-kiçik hərf həssasdır.",
+                "Bir elementin yalnız bir ID-si ola bilər."
+            ],
+            "examples": [
+                "<p id='birinciParaqraf'>Mətn</p>",
+                "<div id='container'>...</div>",
+                "<a href='#bolum1'>Bölüm 1</a>"
+            ],
+            "commonMistakes": [
+                "Eyni ID-ni birdən çox elementdə istifadə etmək.",
+                "ID-də boşluq istifadə etmək.",
+                "ID-ni yalnız CSS üçün istifadə edib JavaScript-i unutmaq."
+            ],
+            "practice": [
+                {
+                    "type": "code",
+                    "question": "Div elementinə 'main' ID-si verin:",
+                    "initialCode": "<div ______='main'>Məzmun</div>",
+                    "correctAnswers": {
+                        "id": "id"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "id": 14,
+        "title": "HTML Düymələri",
+        "category": "Formalar",
+        "level": "Başlanğıc",
+        "duration": "15 dəqiqə",
+        "points": 50,
+        "icon": "LuMousePointer2",
+        "content": {
+            "description": "HTML düymələri istifadəçi ilə interaktivlik yaradır. Bu dərsdə button teqini və düymə növlərini öyrənəcəksiniz.",
+            "formula": "<button type='button'>Kliklə</button>",
+            "theory": "Düymələr forma göndərmək və ya JavaScript funksiyalarını işə salmaq üçün istifadə olunur. Button teqinin type atributu (submit, button, reset) düymənin davranışını təyin edir. Input teqi ilə də düymə yaradıla bilər.",
+            "rules": [
+                "Forma daxilində button type='submit' olmalıdır.",
+                "Button teqinin içərisində HTML elementləri (şəkil, mətn) ola bilər.",
+                "Disabled atributu düyməni deaktiv edir.",
+                "Düymələrə CSS ilə stil verilə bilər."
+            ],
+            "examples": [
+                "<button onclick='alert('Salam')'>Kliklə</button>",
+                "<button type='submit'>Göndər</button>",
+                "<button disabled>Deaktiv</button>"
+            ],
+            "commonMistakes": [
+                "Forma daxilində button type-ni təyin etməmək (default submit-dir).",
+                "Button teqini bağlamağı unutmaq.",
+                "Input button ilə button teqini qarışdırmaq."
+            ],
+            "practice": [
+                {
+                    "type": "code",
+                    "question": "Forma göndərmək üçün düymə yaradın:",
+                    "initialCode": "<button ______='submit'>Göndər</button>",
+                    "correctAnswers": {
+                        "type": "type"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "id": 15,
+        "title": "HTML Iframe-ləri",
+        "category": "Media",
+        "level": "Orta",
+        "duration": "15 dəqiqə",
+        "points": 55,
+        "icon": "LuWindow",
+        "content": {
+            "description": "Iframe ilə səhifəniz daxilində başqa bir səhifəni göstərə bilərsiniz. Bu dərsdə iframe teqini, src, width, height atributlarını öyrənəcəksiniz.",
+            "formula": "<iframe src='url' title='açıqlama'></iframe>",
+            "theory": "Iframe (inline frame) səhifə daxilində başqa bir HTML səhifəsini göstərmək üçün istifadə olunur. YouTube videoları, Google Maps və digər xarici məzmunlar üçün geniş istifadə edilir. Təhlükəsizlik səbəbi ilə bəzi saytlar iframe-də göstərilməyə bilər.",
+            "rules": [
+                "Src atributu mütləqdir (göstəriləcək səhifənin URL-i).",
+                "Title atributu əlçatanlıq üçün vacibdir.",
+                "Width və height ölçüləri təyin edilə bilər.",
+                "Sandbox atributu təhlükəsizlik məhdudiyyətləri qoyur."
+            ],
+            "examples": [
+                "<iframe src='https://example.com' title='Nümunə'></iframe>",
+                "<iframe width='560' height='315' src='https://youtube.com/embed/...'></iframe>"
+            ],
+            "commonMistakes": [
+                "Title atributunu unutmaq.",
+                "Iframe ölçülərini təyin etməmək.",
+                "Sandbox atributunu təhlükəsizlik üçün istifadə etməmək."
+            ],
+            "practice": [
+                {
+                    "type": "code",
+                    "question": "YouTube videosu üçün iframe əlavə edin:",
+                    "initialCode": "<______ src='https://youtube.com/embed/dQw4w9WgXcQ'></iframe>",
+                    "correctAnswers": {
+                        "iframe": "iframe"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "id": 16,
+        "title": "HTML JavaScript",
+        "category": "İnteraktivlik",
+        "level": "Orta",
+        "duration": "20 dəqiqə",
+        "points": 65,
+        "icon": "LuBraces",
+        "content": {
+            "description": "HTML-də JavaScript ilə dinamik məzmun yarada bilərsiniz. Bu dərsdə script teqini, xarici JS fayllarını əlavə etməyi və eventləri öyrənəcəksiniz.",
+            "formula": "<script>JavaScript kodu</script>",
+            "theory": "JavaScript veb səhifələrə interaktivlik əlavə edir. Script teqi head və ya body bölməsində yerləşdirilə bilər. Xarici JS faylları src atributu ilə əlavə edilir. JavaScript DOM-u dəyişdirə, eventləri idarə edə və serverlə əlaqə qura bilər.",
+            "rules": [
+                "Script teqləri head və ya body-də yerləşə bilər.",
+                "Xarici fayllar üçün <script src='fayl.js'></script> istifadə olunur.",
+                "JavaScript kodları HTML-dən sonra yüklənməsi üçün body-nin sonunda yerləşdirilə bilər.",
+                "Defer və async atributları yükləmə davranışını idarə edir."
+            ],
+            "examples": [
+                "<script>console.log('Salam');</script>",
+                "<script src='app.js' defer></script>",
+                "<button onclick='myFunction()'>Kliklə</button>"
+            ],
+            "commonMistakes": [
+                "Script teqini bağlamağı unutmaq.",
+                "Xarici JS faylını düzgün yol ilə əlavə etməmək.",
+                "DOM elementləri yüklənməmişdən əvvəl onlara müdaxilə etmək."
+            ],
+            "practice": [
+                {
+                    "type": "code",
+                    "question": "Xarici JavaScript faylını əlavə edin:",
+                    "initialCode": "<script ______='script.js'></script>",
+                    "correctAnswers": {
+                        "src": "src"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "id": 17,
+        "title": "HTML Fayl Yolları",
+        "category": "Əsaslar",
+        "level": "Başlanğıc",
+        "duration": "12 dəqiqə",
+        "points": 40,
+        "icon": "LuFolderTree",
+        "content": {
+            "description": "Fayl yolları HTML-də şəkillər, linklər və digər resursları göstərmək üçün istifadə olunur. Bu dərsdə mütləq və nisbi yolları öyrənəcəksiniz.",
+            "formula": "nisbi yol: 'images/sekil.jpg', mütləq yol: 'https://example.com/sekil.jpg'",
+            "theory": "Fayl yolları resursların yerini təyin edir. Nisbi yollar cari fayla nisbətən, mütləq yollar isə tam URL ilə göstərilir. Nisbi yollar: eyni qovluq (fayl.jpg), alt qovluq (qovluq/fayl.jpg), yuxarı qovluq (../fayl.jpg).",
+            "rules": [
+                "Nisbi yollar layihə daxilində daha portativdir.",
+                "Mütləq yollar xarici resurslar üçün istifadə olunur.",
+                "Yol ayırıcı olaraq Windows-da \\, Linux/Mac-də / istifadə olunur, lakin HTML-də / işləyir.",
+                "Qovluq adlarında boşluq olmamalıdır (və ya %20 ilə əvəz edilməlidir)."
+            ],
+            "examples": [
+                "<img src='sekil.jpg'> (eyni qovluq)",
+                "<img src='images/sekil.jpg'> (alt qovluq)",
+                "<img src='../sekil.jpg'> (bir üst qovluq)",
+                "<a href='/'>Ana səhifə</a> (kök qovluq)"
+            ],
+            "commonMistakes": [
+                "Nisbi yolda səhv sayda ../ istifadə etmək.",
+                "Qovluq adlarında böyük-kiçik hərf fərqinə diqqət etməmək.",
+                "Mütləq yolda http:// və ya https:// yazmamaq."
+            ],
+            "practice": [
+                {
+                    "type": "code",
+                    "question": "images qovluğunda olan logo.png faylını göstərin:",
+                    "initialCode": "<img src='______/logo.png'>",
+                    "correctAnswers": {
+                        "folder": "images"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "id": 18,
+        "title": "HTML Başlığı",
+        "category": "SEO",
+        "level": "Başlanğıc",
+        "duration": "15 dəqiqə",
+        "points": 45,
+        "icon": "LuHeading",
+        "content": {
+            "description": "HTML head bölməsi səhifə haqqında metadata məlumatları ehtiva edir. Bu dərsdə meta teqlərini, charset, viewport, description və digər vacib head elementlərini öyrənəcəksiniz.",
+            "formula": "<head><meta charset='UTF-8'><meta name='description' content='...'><title>...</title></head>",
+            "theory": "Head bölməsi brauzerdə görünməyən, lakin səhifə haqqında vacib məlumatları ehtiva edən hissədir. Meta teqləri axtarış motorlarına, brauzerlərə və sosial şəbəkələrə məlumat verir. Viewport meta teqi mobil cihazlarda düzgün göstərilmə üçün vacibdir.",
+            "rules": [
+                "Charset meta teqi UTF-8 olmalıdır.",
+                "Viewport meta teqi mobil uyğunluq üçün vacibdir.",
+                "Description meta teqi axtarış nəticələrində göstərilir.",
+                "Head bölməsi body-dən əvvəl gəlməlidir.",
+                "Title teqi head daxilində olmalıdır."
+            ],
+            "examples": [
+                "<meta charset='UTF-8'>",
+                "<meta name='viewport' content='width=device-width, initial-scale=1.0'>",
+                "<meta name='description' content='HTML dərsləri ilə veb inkişafına başlayın.'>",
+                "<meta name='keywords' content='HTML, dərslər, veb'>"
+            ],
+            "commonMistakes": [
+                "Charset meta teqini yazmamaq.",
+                "Viewport meta teqini unutmaq (mobil cihazlar üçün).",
+                "Description meta teqini çox uzun yazmaq.",
+                "Title teqini head xaricində yerləşdirmək."
+            ],
+            "practice": [
+                {
+                    "type": "code",
+                    "question": "Viewport meta teqini əlavə edin:",
+                    "initialCode": "<meta name='viewport' content='______=device-width, initial-scale=1.0'>",
+                    "correctAnswers": {
+                        "width": "width"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "id": 19,
+        "title": "HTML Düzeni",
+        "category": "Düzen",
+        "level": "Orta",
+        "duration": "25 dəqiqə",
+        "points": 75,
+        "icon": "LuLayoutTemplate",
+        "content": {
+            "description": "HTML düzeni səhifənin strukturunu təşkil edir. Bu dərsdə CSS Flexbox və Grid ilə birlikdə müasir düzen texnikalarını öyrənəcəksiniz.",
+            "formula": "CSS Flexbox: display: flex; CSS Grid: display: grid;",
+            "theory": "Müasir veb düzeni üçün CSS Flexbox və Grid ən çox istifadə edilən üsullardır. Flexbox birölçülü düzen (sətir və ya sütun) üçün, Grid isə ikiölçülü düzen üçün idealdır. HTML strukturu semantik elementlərlə qurulmalı, düzen CSS ilə təyin edilməlidir.",
+            "rules": [
+                "Düzen üçün div-lər və semantik elementlər birlikdə istifadə edilməlidir.",
+                "Flexbox əsas ox və çarpaz ox prinsipi ilə işləyir.",
+                "Grid sətir və sütunlarla düzen yaradır.",
+                "Düzen responsive olmalıdır (media queries).",
+                "HTML strukturu CSS-dən asılı olmamalıdır (content first)."
+            ],
+            "examples": [
+                "<div class='flex-container'><div>1</div><div>2</div></div>",
+                ".flex-container { display: flex; justify-content: center; }",
+                ".grid-container { display: grid; grid-template-columns: 1fr 2fr; }"
+            ],
+            "commonMistakes": [
+                "Düzen üçün HTML-də style atributundan istifadə etmək.",
+                "Flexbox və Grid-i lazımsız yerdə birlikdə istifadə etmək.",
+                "Responsive düzeni nəzərdən qaçırmaq.",
+                "Position absolute ilə hər şeyi yerləşdirməyə çalışmaq."
+            ],
+            "practice": [
+                {
+                    "type": "code",
+                    "question": "Flexbox ilə elementləri üfüqi olaraq ortala:",
+                    "initialCode": ".container {\n  display: ______;\n  justify-content: ______;\n}",
+                    "correctAnswers": {
+                        "display": "flex",
+                        "justify": "center"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "id": 20,
+        "title": "HTML Responsiv",
+        "category": "Düzen",
+        "level": "Orta",
+        "duration": "20 dəqiqə",
+        "points": 70,
+        "icon": "LuMonitorSmartphone",
+        "content": {
+            "description": "Responsiv veb dizayn səhifənin bütün cihazlarda (mobil, planşet, masaüstü) düzgün görünməsini təmin edir. Bu dərsdə media queries, viewport və responsive şəkilləri öyrənəcəksiniz.",
+            "formula": "@media (max-width: 768px) { /* mobil üçün CSS */ }",
+            "theory": "Responsiv dizayn üçün viewport meta teqi vacibdir. Media queries müxtəlif ekran ölçüləri üçün fərqli CSS tətbiq etməyə imkan verir. Flexbox, Grid və relative vahidlər (%, em, rem, vw, vh) responsive düzen üçün əsasdır. Şəkillər max-width: 100% ilə responsive edilir.",
+            "rules": [
+                "Viewport meta teqi responsive dizayn üçün vacibdir.",
+                "Media queries mobile-first yanaşması ilə yazılmalıdır.",
+                "Şəkillər max-width: 100% ilə konteynerə uyğunlaşmalıdır.",
+                "Font ölçüləri üçün rem və em istifadə edilməlidir.",
+                "Touch elementləri (düymələr) mobil üçün kifayət qədər böyük olmalıdır."
+            ],
+            "examples": [
+                "<meta name='viewport' content='width=device-width, initial-scale=1'>",
+                "@media (max-width: 600px) { body { font-size: 14px; } }",
+                "<img src='img.jpg' style='max-width:100%; height:auto;'>",
+                ".container { width: 100%; max-width: 1200px; margin: auto; }"
+            ],
+            "commonMistakes": [
+                "Viewport meta teqini yazmamaq.",
+                "Media queries-də breakpoint-ləri səhv seçmək.",
+                "Şəkillərin responsive olmaması (sabit width).",
+                "Mobil cihazlarda toxunma elementlərinin çox kiçik olması.",
+                "Desktop üçün yazılmış layout-u mobilə uyğunlaşdırmamaq."
+            ],
+            "practice": [
+                {
+                    "type": "code",
+                    "question": "Mobil cihazlar üçün (max-width: 768px) arxaplan rəngini mavi edin:",
+                    "initialCode": "@media (______: 768px) {\n  body { background-color: blue; }\n}",
+                    "correctAnswers": {
+                        "condition": "max-width"
+                    }
+                }
+            ]
+        }
+    }
+]

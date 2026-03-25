@@ -20,7 +20,7 @@ function LangLearn() {
           <span className="text-[#378079] font-mono text-xs tracking-[0.3em] uppercase">Learning_Modules</span>
           <span className="h-px w-12 bg-[#378079]"></span>
         </div>
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-black flex items-center justify-center gap-4 mb-4">
+        <h2 className="text-2xl md:text-5xl lg:text-6xl font-black flex items-center justify-center gap-4 mb-4">
           İNGİLİS <span className="text-transparent" style={{ WebkitTextStroke: '1px #f0ebe2' }}>QRAMMATİKASI</span>
         </h2>
       </div>

@@ -27,7 +27,7 @@ function DailyChallenges() {
                                 Daily_Protocol
                             </span>
                         </div>
-                        <h3 className="text-3xl md:text-5xl font-black text-[#f0ebe2] uppercase tracking-tighter">
+                        <h3 className="text-4xl md:text-5xl lg:text-6xl font-black text-[#f0ebe2] uppercase tracking-tighter">
                             GÜNDƏLİK <span className="text-transparent" style={{ WebkitTextStroke: '1px #f0ebe2' }}>MÜCADİLƏ</span>
                         </h3>
                     </div>

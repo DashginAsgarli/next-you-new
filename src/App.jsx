@@ -2,13 +2,18 @@ import React from 'react'
 import { Routes, Route, Link, NavLink, Outlet } from "react-router-dom";
 import HomePage from './pages/HomePage';
 import './index.css'
-import Header from './components/auth/Header';
-import Sidebar from './components/auth/Sidebar';
+import Header from './layout/Header';
+import Sidebar from './layout/Sidebar';
 import MusicPage from './pages/MusicPage';
 import LibraryPage from './pages/LibraryPage';
 import LanguagePage from './pages/LanguagePage';
 import CodePage from './pages/CodePage';
 import { useState, useCallback } from "react";
+import Login from './components/auth/Login';
+import ContactPage from './pages/ContactPage';
+import PlannerPage from './pages/PlannerPage';
+
+import CourseDetail from "./components/code/CourseDetail"
 
 function App() {
 
@@ -34,7 +39,10 @@ function App() {
             <Route path="/library" element={<LibraryPage />} />
             <Route path="/language" element={<LanguagePage />} />
             <Route path="/code" element={<CodePage />} />
-
+            <Route path="/login" element={<Login />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/planner" element={<PlannerPage />} />
+            <Route path="/code/:courseId" element={<CourseDetail />} />
 
           </Routes>
         </section>

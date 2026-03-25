@@ -6,6 +6,7 @@ import LangLearn from '../components/language/LangLearn'
 import DailyChallenges from '../components/language/DailyChallenges'
 import LangDictionary from '../components/language/LangDictionary'
 import QuickTranslate from '../components/language/QuickTranslate'
+import AudioPractice from '../components/language/AudioPractice'
 
 
 function LanguagePage() {
@@ -16,6 +17,7 @@ function LanguagePage() {
             <OtherLanguagesList />
             <LangDictionary />
             <QuickTranslate />
+            <AudioPractice />
             <LangLearn />
             <DailyChallenges />
 

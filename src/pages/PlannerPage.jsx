@@ -4,7 +4,11 @@ import Planner from '../components/planner/Planner'
 function PlannerPage() {
     return (
         <>
-            <Planner />
+            <section className=" w-full overflow-hidden relative">
+                <div className='background-tor'></div>
+                <div className='background-shadow'></div>
+                <Planner />
+            </section>
         </>
     )
 }

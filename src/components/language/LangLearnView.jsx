@@ -38,7 +38,7 @@ function LangLearnView({ lesson, onBack, onComplete, isCompleted }) {
   return (
     <div className="min-h-screen  text-[#f0ebe2] w-full px-6 md:px-10 lg:px-16 py-8">
 
-      <button onClick={onBack} className="group mb-8 flex items-center gap-2 px-5 py-2.5 bg-white/5 hover:bg-[#378079]/20 text-[#378079] border border-[#378079]/30 rounded-xl transition-all font-bold text-xs uppercase tracking-widest">
+      <button onClick={onBack} className="group mb-8 flex items-center gap-2 px-5 py-2.5 bg-[#0d1117]  text-white border border-[#378079]/30 rounded-xl transition-all font-bold text-xs uppercase tracking-widest">
         <ArrowLeft size={16} /> DƏRSLƏRƏ QAYIT
       </button>
 
@@ -160,7 +160,7 @@ function LangLearnView({ lesson, onBack, onComplete, isCompleted }) {
                   </button>
                 ) : (
                   <button onClick={checkFinalScore} disabled={!answers[currentQuestionIndex]} className="flex-2 py-3.5 bg-white text-black rounded-xl font-black text-[10px] tracking-widest disabled:opacity-40 uppercase">
-                    BİTİR_
+                    BİTİR
                   </button>
                 )}
               </div>
@@ -188,7 +188,7 @@ function LangLearnView({ lesson, onBack, onComplete, isCompleted }) {
                   <RotateCcw size={14} /> YENİDƏN BAŞLA
                 </button>
                 <button onClick={onBack} className="flex-2 py-4 bg-[#378079] text-[#06090f] rounded-xl font-black text-[10px] tracking-widest uppercase">
-                  MODULU TAMAMLA
+                  DƏRSİ TAMAMLA
                 </button>
               </div>
             </div>

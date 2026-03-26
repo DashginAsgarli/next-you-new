@@ -53,7 +53,7 @@ function QuickTranslate() {
           </h1>
         </div>
 
-        <div className="bg-[#0d1117] border border-white/5 rounded-2xl p-6 md:p-8 shadow-2xl relative">
+        <div className=" bg-[#0d1117] border border-white/5 rounded-2xl p-6 md:p-8 relative">
           <div className="flex items-center justify-between mb-8 border-b border-white/5 pb-6">
             <div className="flex items-center gap-4">
               <div className="flex flex-col">

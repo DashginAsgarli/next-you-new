@@ -1,5 +1,4 @@
 import React from 'react'
-import DevHeader from '../components/code/DevHeader'
 import FutureEarnings from '../components/code/FutureEarnings'
 import CertificateBadge from '../components/code/CertificateBadge'
 import DevStack from '../components/code/DevStack'
@@ -10,13 +9,16 @@ import Html from '../components/code/Html'
 function CodePage() {
     return (
         <>
-            <DevHeader />
-            <CodeMap />
-            <Html/>
-            <CodeEditor />
-            <DevStack />
-            <FutureEarnings />
-            <CertificateBadge />
+            <section className=" w-full overflow-hidden relative">
+                <div className='background-tor'></div>
+                <div className='background-shadow'></div>
+                <CodeMap />
+                <DevStack />
+                <Html />
+                <CodeEditor />
+                <FutureEarnings />
+                <CertificateBadge />
+            </section>
         </>
     )
 }

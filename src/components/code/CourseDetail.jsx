@@ -523,62 +523,37 @@ function CourseDetail() {
         window.scrollTo(0, 0);
     }, []);
 
-    const handleMouseMove = (e) => {
-        const { currentTarget, clientX, clientY } = e;
-        const { left, top } = currentTarget.getBoundingClientRect();
-        const x = clientX - left;
-        const y = clientY - top;
-        currentTarget.style.setProperty("--mouse-x", `${x}px`);
-        currentTarget.style.setProperty("--mouse-y", `${y}px`);
-    };
-
     if (!course) return (
         <div className="min-h-screen bg-[#06090f] flex items-center justify-center text-[#378079] font-mono tracking-widest animate-pulse">
-            // ERROR_404: DATA_NOT_FOUND
+            // ERROR_404: Məlumat Yoxdur
         </div>
     );
 
     return (
-        <div className="min-h-screen bg-[#06090f] text-[#f0ebe2] relative overflow-hidden font-sans">
-            
-            <div className="absolute inset-0 z-0 pointer-events-none" 
-                 style={{ 
-                     backgroundImage: `linear-gradient(rgba(255,255,255,0.022) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.022) 1px, transparent 1px)`, 
-                     backgroundSize: '60px 60px' 
-                 }} />
+        <div className="min-h-screen  relative overflow-hidden font-sans">
 
-            <div className="relative z-10 max-w-[1400px] mx-auto px-6 md:px-12 py-12">
-                
+
+            <div className="relative z-10 px-8 md:px-16 py-10 md:py-22  lg:py-23">
+                <div className='background-tor'></div>
+                <div className='background-shadow'></div>
                 <header className="mb-16 animate-[fadeUp_0.7s_ease_both]">
-                    <Link to="/" className="inline-flex items-center gap-2 mb-8 group text-[#378079]">
+                    <Link to="/code" className="inline-flex items-center gap-2 mb-8 group text-[#378079]">
                         <HiArrowLeft size={14} className="group-hover:-translate-x-1 transition-transform" />
-                        <span className="text-[9px] tracking-[0.4em] uppercase font-black">Sistemə Qayıt</span>
+                        <span className="text-[9px] tracking-[0.4em] uppercase font-black">GERİ DÖN</span>
                     </Link>
-                    <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-none mb-4 italic text-transparent"
-                        style={{ WebkitTextStroke: '1px #f0ebe2' }}>
+                    <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-none mb-2 mdImb-4 italic text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">
                         {courseId}
                     </h1>
                 </header>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.3s]">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.3s]">
                     {course.map((mod, index) => (
-                        <div key={index} 
-                             onMouseMove={handleMouseMove}
-                             className="group/card relative bg-[#06090f] border border-white/10 flex flex-col h-[420px] transition-all duration-300 overflow-hidden"
-                             style={{ 
-                                 clipPath: 'polygon(0 0, calc(100% - 25px) 0, 100% 25px, 100% 100%, 25px 100%, 0 calc(100% - 25px))' 
-                             }}
-                        >
-                            <div className="pointer-events-none absolute -inset-px opacity-0 group-hover/card:opacity-100 transition duration-300 z-0"
-                                style={{
-                                    background: `radial-gradient(300px circle at var(--mouse-x) var(--mouse-y), rgba(55,128,121,0.15), transparent 40%)`
-                                }}
-                            />
+                        <div key={index}  className="beveled-box group/card relative bg-[#06090f] border border-white flex flex-col h-105 transition-all duration-300 overflow-hidden">
 
                             <div className="p-8 pb-4 shrink-0 relative z-10">
                                 <div className="flex items-center gap-2 mb-3">
-                                    <div className="w-4 h-px bg-[#378079]" />
-                                    <span className="text-[9px] font-mono text-[#378079] tracking-[0.3em] font-bold uppercase italic">
+                                    <div className="w-4 h-px bg-white" />
+                                    <span className="text-[9px] font-mono  tracking-[0.3em] font-bold uppercase italic">
                                         Modul {index + 1}
                                     </span>
                                 </div>
@@ -592,7 +567,7 @@ function CourseDetail() {
                                     {mod.lessons.map((lesson, idx) => (
                                         <li key={idx} className="flex items-start gap-4 group/item">
                                             <div className="mt-1.5 w-1 h-1 bg-[#378079]/30 group-hover/item:bg-[#378079] transition-all shrink-0" />
-                                            <span className="text-[10px] text-white/30 group-hover/item:text-white transition-colors uppercase tracking-[0.1em] leading-relaxed">
+                                            <span className="text-[10px] text-white/30 group-hover/item:text-white transition-colors uppercase tracking-widest leading-relaxed">
                                                 {lesson}
                                             </span>
                                         </li>
@@ -600,7 +575,7 @@ function CourseDetail() {
                                 </ul>
                             </div>
 
-                            <div className="absolute top-4 right-6 font-['Bebas_Neue'] text-3xl text-white/[0.03] select-none group-hover/card:text-[#378079]/10 transition-colors">
+                            <div className="absolute top-4 right-6 font-['Bebas_Neue'] text-3xl text-white">
                                 {(index + 1).toString().padStart(2, '0')}
                             </div>
                         </div>

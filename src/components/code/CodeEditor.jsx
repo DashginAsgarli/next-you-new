@@ -51,9 +51,8 @@ function CodeEditor() {
   return (
     <section className="bg-[#06090f] min-h-screen p-4 md:p-12 relative overflow-hidden text-[#f0ebe2]">
       
-      <div className="absolute inset-0 z-0 pointer-events-none" style={{ backgroundImage: `linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px)`, backgroundSize: '50px 50px' }} />
 
-      <div className="relative z-10 max-w-[1600px] mx-auto">
+      <div className="relative z-10 max-w-400 mx-auto">
         
         <div className="flex flex-row items-center justify-between mb-8 gap-4 animate-[fadeUp_0.7s_ease_both]">
           <div>
@@ -75,9 +74,9 @@ function CodeEditor() {
           </button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-[rgba(55,128,121,0.25)] border border-[rgba(55,128,121,0.2)] shadow-2xl overflow-hidden min-h-[600px] md:h-[700px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-[rgba(55,128,121,0.25)] border border-[rgba(55,128,121,0.2)] shadow-2xl overflow-hidden min-h-150 md:h-175">
           
-          <div className="bg-[#0b0f17] flex flex-col h-[350px] md:h-full transition-all duration-500">
+          <div className="bg-[#0b0f17] flex flex-col h-87.5 md:h-full transition-all duration-500">
             <div className="flex bg-[#06090f] border-b border-[rgba(55,128,121,0.1)] overflow-x-auto">
               {[
                 { id: "html", name: "index.html" },
@@ -114,7 +113,7 @@ function CodeEditor() {
             </div>
           </div>
 
-          <div className="flex flex-col h-[600px] md:h-full bg-[#0b0f17]">
+          <div className="flex flex-col h-150 md:h-full bg-[#0b0f17]">
             <div className="flex-[1.5] bg-[#06090f] m-3 md:m-5 rounded-sm border border-[rgba(240,235,226,0.04)] overflow-hidden relative shadow-inner">
               <iframe title="preview" srcDoc={srcDoc} className="w-full h-full" sandbox="allow-scripts" />
             </div>

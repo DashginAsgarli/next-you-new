@@ -525,7 +525,7 @@ function CourseDetail() {
 
     if (!course) return (
         <div className="min-h-screen bg-[#06090f] flex items-center justify-center text-[#378079] font-mono tracking-widest animate-pulse">
-            // ERROR_404: Məlumat Yoxdur
+            ERROR_404: Məlumat Yoxdur
         </div>
     );
 

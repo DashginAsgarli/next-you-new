@@ -15,6 +15,7 @@ import PlannerPage from './pages/PlannerPage';
 
 import CourseDetail from "./components/code/CourseDetail"
 import Register from './components/auth/Register';
+import Html from './components/code/Html';
 
 function App() {
 
@@ -45,7 +46,7 @@ function App() {
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/planner" element={<PlannerPage />} />
             <Route path="/code/:courseId" element={<CourseDetail />} />
-
+            <Route path="/code/html" element={<Html />} />
           </Routes>
         </section>
       </main>

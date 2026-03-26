@@ -3,56 +3,44 @@ import { HiCheckBadge, HiArrowSmallRight } from "react-icons/hi2";
 
 function CertificateBadge() {
   return (
-    <section className="relative px-6 md:px-16 py-24 overflow-hidden">
-      
-      <div className="max-w-6xl mx-auto relative z-10">
-        
-        <div className="group relative bg-[#06090f]/50 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-sm transition-all duration-500 hover:border-[#378079]/40">
-          
-          <div className="absolute left-0 top-0 w-0.5 h-full bg-[#378079]/40 group-hover:bg-[#378079] transition-colors" />
+    <section className="relative px-4 sm:px-8 md:px-16 py-10 overflow-hidden">
+      <div className="relative z-10 max-w-7xl mx-auto">
 
-          <div className="relative p-8 md:p-14 flex flex-col lg:flex-row items-center justify-between gap-12">
-            
-            <div className="flex flex-col md:flex-row items-center gap-10">
+        <div className="group relative bg-[#06090f]/50 border border-white/10 rounded-2xl md:rounded-3xl overflow-hidden backdrop-blur-sm transition-all duration-500 hover:border-[#378079]/40">
+
+          <div className="absolute left-0 top-0 w-1 md:w-1.5 h-full bg-[#378079]/40 group-hover:bg-[#378079] transition-colors" />
+
+          <div className="relative p-6 sm:p-8 md:p-12 flex flex-col lg:flex-row items-center justify-between gap-8">
+
+            <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8 text-center md:text-left">
+
               <div className="relative shrink-0">
-                <div className="w-20 h-20 border border-[#378079]/30 flex items-center justify-center text-white bg-[#378079]/5  rounded-[50%] transition-all group-hover:border-[#378079]">
-                   <HiCheckBadge size={36} className="-rotate-45" />
+                <div className="w-16 h-16 md:w-20 md:h-20 border border-white/20 flex items-center justify-center text-white bg-[#378079]/10 rounded-full transition-all group-hover:scale-110">
+                  <HiCheckBadge size={35} className="-rotate-12 group-hover:rotate-0 transition-transform duration-500" />
                 </div>
               </div>
 
-              <div className="text-center md:text-left">
-              
-                <h3 className="text-[#f0ebe2] font-black text-3xl md:text-5xl tracking-tighter uppercase italic leading-[0.9]">
-                  PROFESSİONAL <br />
-                  <span className="text-transparent" style={{ WebkitTextStroke: '1.2px #f0ebe2' }}>SERTİFİKAT</span>
+              <div className="flex flex-col gap-3 md:gap-4 max-w-md">
+                <h3 className="text-[#f0ebe2] font-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-tighter uppercase leading-[1.1]">
+                  PROFESSİONAL{" "}
+                  <span className="block sm:inline text-transparent [-webkit-text-stroke:1px_#f0ebe2] md:[-webkit-text-stroke:1.5px_#f0ebe2]">
+                    SERTİFİKAT
+                  </span>
                 </h3>
+                <p className="text-[10px] sm:text-xs tracking-[0.15em] text-[#f0ebe2]/50 leading-relaxed uppercase">
+                  NextYou platformasında qazandığın uğurları rəqəmsal dünyaya sübut et. Hər modul sonu rəsmi təsdiq.
+                </p>
               </div>
             </div>
 
-            <div className="flex flex-col items-center lg:items-end gap-8">
-               <p className="max-w-[320px] lg:text-right text-[10px] tracking-[0.2em] text-[#f0ebe2]/30 uppercase font-bold italic leading-relaxed">
-                 NextYou platformasında qazandığın uğurları rəqəmsal dünyaya sübut et. Hər modul sonu rəsmi təsdiq.
-               </p>
-               
-               <button className="flex items-center gap-4 px-10 py-4 bg-[#378079] text-[#06090f] text-[10px] font-black tracking-[3px] uppercase italic rounded-full transition-all hover:bg-white hover:scale-105 active:scale-95">
-                  Sertifikat al <HiArrowSmallRight size={18} />
-               </button>
-            </div>
+            <button className="whitespace-nowrap flex items-center gap-3 px-8 py-4 bg-[#378079] text-[#06090f] text-[10px] sm:text-xs font-bold tracking-[2px] uppercase rounded-full transition-all hover:bg-white hover:scale-105 active:scale-95">
+              SERTİFİKAT AL <HiArrowSmallRight size={20} />
+            </button>
 
           </div>
-
         </div>
 
- 
-
       </div>
-
-      <style>{`
-        @keyframes fadeUp {
-          from { opacity: 0; transform: translateY(20px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-      `}</style>
     </section>
   );
 }

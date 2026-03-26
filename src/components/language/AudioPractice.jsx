@@ -47,28 +47,31 @@ function AudioPractice() {
   }
 
   return (
-    <div className="w-full  py-12 px-4 relative overflow-hidden">
-    
+    <div className="w-full px-8 md:px-16 py-30 md:py-22  lg:py-16 border-b border-b-white relative overflow-hidden">
 
-      <div className="max-w-6xl mx-auto relative z-10">
-        
+
+      <div className="relative z-10">
+
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
           <div>
             <div className="flex items-center gap-2 mb-2">
               <Zap size={14} className="text-[#378079]" />
-              <span className="text-[10px] font-mono font-black uppercase tracking-[0.4em] text-[#378079]">Audio_Processor_v1</span>
+              <span className="text-[10px] font-mono font-black uppercase tracking-[0.4em] text-[#378079]">Audio Processor </span>
             </div>
-            <h2 className="text-3xl md:text-5xl font-black text-[#f0ebe2] uppercase tracking-tighter">
-              READING <span className="text-transparent" style={{ WebkitTextStroke: '1px #f0ebe2' }}>TERMINAL</span>
-            </h2>
+            <h1 className="text-[#f0ebe2] font-black text-[2rem] md:text-[2.5rem] lg:text-[3.5rem] leading-[1.07] tracking-[-0.01em] mb-9 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.15s]">
+              READING{" "}
+              <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">
+                TERMINAL
+              </span>
+            </h1>
           </div>
           <div className="h-px flex-1 bg-white/5 mx-4 hidden md:block mb-4"></div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-          
+
           <div className="lg:col-span-8 bg-[#0d1117] border border-white/10 rounded-2xl p-6 md:p-8 shadow-2xl">
-            
+
             <div className="flex items-center justify-between mb-8 bg-[#06090f] p-4 rounded-xl border border-white/5">
               <div className="flex items-center gap-4">
                 <div className={`w-10 h-10 rounded-lg flex items-center justify-center transition-all ${activeWordIndex !== -1 ? 'bg-[#378079] text-[#06090f]' : 'bg-white/5 text-slate-600'}`}>
@@ -80,23 +83,22 @@ function AudioPractice() {
                   </p>
                   <div className="flex items-center gap-2 mt-1">
                     <span className="text-xs font-bold text-[#f0ebe2]/60">AI Assistant: Alex</span>
-                    {activeWordIndex !== -1 && <span className="flex gap-0.5"><span className="w-1 h-3 bg-[#378079] animate-[bounce_1s_infinite]"></span><span className="w-1 h-3 bg-[#378079] animate-[bounce_1.2s_infinite]"></span></span>}
+                    {activeWordIndex !== -1 && <span className="flex gap-0.5"><span className="w-1 h-3 bg-[#378079] animate-bounce"></span><span className="w-1 h-3 bg-[#378079] animate-[bounce_1.2s_infinite]"></span></span>}
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="min-h-[180px] mb-8">
+            <div className="min-h-45 mb-8">
               <div className="flex flex-wrap gap-x-2 gap-y-3">
                 {words.map((word, i) => (
                   <span
                     key={i}
                     onClick={() => fetchWordDefinition(word)}
-                    className={`text-lg md:text-xl font-medium cursor-pointer px-2 py-1 rounded-md transition-all duration-200 border ${
-                      activeWordIndex === i
+                    className={`text-lg md:text-xl font-medium cursor-pointer px-2 py-1 rounded-md transition-all duration-200 border ${activeWordIndex === i
                         ? "text-[#06090f] bg-[#378079] border-[#378079] shadow-[0_0_15px_rgba(55,128,121,0.4)] scale-110 z-10"
                         : "text-[#f0ebe2]/80 border-transparent hover:border-white/10 hover:bg-white/5"
-                    }`}
+                      }`}
                   >
                     {word}
                   </span>
@@ -157,16 +159,16 @@ function AudioPractice() {
                           </div>
                           <p className="text-slate-500 font-mono text-sm tracking-tighter">{wordData.phonetic}</p>
                         </div>
-                        
+
                         <div className="space-y-2">
-                            <span className="text-[9px] font-black text-[#378079] uppercase tracking-widest bg-[#378079]/10 px-2 py-0.5 rounded border border-[#378079]/20">
-                                {wordData.partOfSpeech}
-                            </span>
-                            <div className="p-4 bg-[#06090f] rounded-xl border border-white/5">
-                                <p className="text-[#f0ebe2]/80 text-sm leading-relaxed italic">
-                                    "{wordData.definition}"
-                                </p>
-                            </div>
+                          <span className="text-[9px] font-black text-[#378079] uppercase tracking-widest bg-[#378079]/10 px-2 py-0.5 rounded border border-[#378079]/20">
+                            {wordData.partOfSpeech}
+                          </span>
+                          <div className="p-4 bg-[#06090f] rounded-xl border border-white/5">
+                            <p className="text-[#f0ebe2]/80 text-sm leading-relaxed italic">
+                              "{wordData.definition}"
+                            </p>
+                          </div>
                         </div>
                       </div>
                     )}
@@ -174,19 +176,19 @@ function AudioPractice() {
                 ) : (
                   <div className="flex flex-col items-center justify-center h-full text-center group">
                     <div className="w-16 h-16 rounded-full border border-dashed border-white/10 flex items-center justify-center mb-4 group-hover:border-[#378079]/30 transition-colors">
-                        <BookText size={24} className="text-slate-800 group-hover:text-[#378079]/50 transition-colors" />
+                      <BookText size={24} className="text-slate-800 group-hover:text-[#378079]/50 transition-colors" />
                     </div>
                     <p className="text-[10px] font-bold text-slate-600 uppercase tracking-widest leading-relaxed">
-                      Analiz üçün<br/>mətndən söz seçin
+                      Analiz üçün<br />mətndən söz seçin
                     </p>
                   </div>
                 )}
               </div>
             </div>
-            
+
             <div className="bg-[#378079]/5 border border-[#378079]/20 rounded-2xl p-4 flex items-center justify-between">
-                <span className="text-[10px] font-black text-[#378079] uppercase tracking-widest">Söz Sayı</span>
-                <span className="text-[#f0ebe2] font-mono font-bold">{words.length}</span>
+              <span className="text-[10px] font-black text-[#378079] uppercase tracking-widest">Söz Sayı</span>
+              <span className="text-[#f0ebe2] font-mono font-bold">{words.length}</span>
             </div>
           </div>
         </div>

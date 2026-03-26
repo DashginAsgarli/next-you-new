@@ -5,15 +5,16 @@ import { RiBarChartGroupedFill } from 'react-icons/ri';
 
 function LangTerminal() {
     return (
-        <div className="language-terminal relative flex min-h-[calc(100vh-80px)] items-center justify-center overflow-hidden  p-8">
+        <div className="relative flex items-center justify-center overflow-hidden  px-8 md:px-16 py-30 md:py-20  lg:py-20 border-b border-b-white">
 
             <section className="lang-section relative z-2 text-center">
                 <div className="lang-header mb-20">
                     <div className="tag mb-4 flex items-center justify-center gap-2.5">
                         <div className="line h-px w-8 bg-[#378079]"></div>
                         <span className="text-[10px] font-black uppercase tracking-[4px] text-[#378079]">
-                            Protocol: Language_Learning
+                            Yeni Dİllər kəşf edin
                         </span>
+                        <div className="line h-px w-8 bg-[#378079]"></div>
                     </div>
 
                     <h1 className="text-[clamp(2.4rem,6vw,5rem)] font-black leading-[1.1] tracking-[-1px] text-[#f0ebe2]">

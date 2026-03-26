@@ -32,20 +32,17 @@ function LangDictionary() {
     };
 
     return (
-        <div className="w-full  py-12 md:py-20 px-4 relative overflow-hidden">
-
+        <div className="w-full  px-8 md:px-16 py-16 md:py-20  lg:py-24 border-b border-b-white relative overflow-hidden">
 
             <div className="relative z-10">
 
                 <div className="text-center mb-12">
-                    <div className="flex items-center justify-center gap-3 mb-4 text-[#378079] opacity-80">
-                        <div className="w-10 h-px bg-current" />
-                        <span className="text-[10px] tracking-[0.5em] font-mono font-black uppercase">Lexicon_System</span>
-                        <div className="w-10 h-px bg-current" />
-                    </div>
-                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-[#f0ebe2] uppercase tracking-tighter leading-none">
-                        SMART <span className="text-transparent" style={{ WebkitTextStroke: '1.5px #f0ebe2' }}>DICTIONARY</span>
-                    </h2>
+                    <h1 className="text-[#f0ebe2] font-black text-[2rem] md:text-[2.5rem] lg:text-[3.5rem] leading-[1.07] tracking-[-0.01em] mb-9 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.15s]">
+                        SMART{" "}
+                        <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">
+                            DİCTİONARY
+                        </span>
+                    </h1>
                 </div>
 
                 <form onSubmit={handleSubmit} className="mb-16 md:max-w-xl lg:max-w-4xl mx-auto">
@@ -64,8 +61,8 @@ function LangDictionary() {
                 )}
 
                 {wordData && (
-                    <div className="px-4 md:px-10 lg:px-16 animate-in fade-in slide-in-from-bottom-6 duration-700">
-                        <div className="border-b border-white/10 pb-6 mb-6">
+                    <div className=" animate-in fade-in slide-in-from-bottom-6 duration-700">
+                        <div className="border-b border-white pb-6 mb-6">
                             <div className="flex items-baseline gap-4">
                                 <h3 className="text-3xl md:text-5xl font-black text-[#f0ebe2] lowercase tracking-tighter">
                                     {wordData.word}
@@ -76,7 +73,7 @@ function LangDictionary() {
                             </div>
                         </div>
 
-                        <div className="space-y-4">
+                        <div className="space-y-6">
                             {wordData.meanings.map((meaning, i) => (
                                 <div key={i} className="bg-[#06090f] border border-white/5 p-3 md:p-6 rounded-2xl border-l-4 border-l-[#378079]">
                                     <div className="mb-6">

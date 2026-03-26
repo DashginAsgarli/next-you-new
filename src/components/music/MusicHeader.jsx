@@ -41,12 +41,12 @@ const MusicHeader = ({ searchTerm, setSearchTerm, onSearch, activeTab, setActive
           {tabs.map((tab, i) => {
             const isActive = activeTab === tab.id;
             return (
-              <div key={tab.id} onClick={() => setActiveTab(tab.id)} className={`relative cursor-pointer transition-all duration-500 flex flex-col items-center shrink-0 min-w-20 px-4 md:px-10 group ${i !== 0 ? 'md:before:absolute md:before:left-0 md:before:top-1/2 md:before:-translate-y-1/2 md:before:h-6 md:before:w-px md:before:bg-[#378079]/15' : ''}`}>
+              <div key={tab.id} onClick={() => setActiveTab(tab.id)} className={`relative cursor-pointer transition-all duration-500 flex flex-col items-center shrink-0 min-w-20 px-4 md:px-6 group ${i !== 0 ? 'md:before:absolute md:before:left-0 md:before:top-1/2 md:before:-translate-y-1/2 md:before:h-6 md:before:w-px md:before:bg-[#378079]/15' : ''}`}>
                 <span className={`font-black text-[0.8rem] md:text-[1rem] leading-none tracking-[0.12em] transition-all uppercase ${isActive ? 'text-[#378079] scale-110' : 'text-white/20 group-hover:text-white/40'}`}>
                   {tab.display}
                 </span>
 
-                <span className={`text-[8px] md:text-[9px] tracking-[0.2em] md:tracking-[0.4em] uppercase mt-2 transition-colors whitespace-nowrap ${isActive ? 'text-[#f0ebe2]/80 font-bold' : 'text-[#f0ebe2]/20 group-hover:text-[#f0ebe2]/40'}`}>
+                <span className={`text-[8px] md:text-[8px] tracking-[0.2em] md:tracking-[0.4em] uppercase mt-2 transition-colors whitespace-nowrap ${isActive ? 'text-[#f0ebe2]/80 font-bold' : 'text-[#f0ebe2]/20 group-hover:text-[#f0ebe2]/40'}`}>
                   {tab.label}
                 </span>
 

@@ -27,7 +27,7 @@ function Register() {
                                         {item.icon}
                                     </div>
                                     <div className="text-white">
-                                        <p className="text-[10px] md:text-sm lg:text-lg font-black tracking-tighter leading-tight">{item.desc}</p>
+                                        <p className="text-[10px] md:text-sm lg:text-lg font-bold tracking-tighter leading-tight">{item.desc}</p>
                                         {item.sub && <p className="text-[8px] lg:text-xs opacity-70 tracking-[0.2em] mt-1 font-bold">{item.sub}</p>}
                                     </div>
                                 </div>

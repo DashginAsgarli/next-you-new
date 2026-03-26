@@ -38,12 +38,17 @@ function LangLearnView({ lesson, onBack, onComplete, isCompleted }) {
   return (
     <div className="min-h-screen  text-[#f0ebe2] w-full px-6 md:px-10 lg:px-16 py-8">
 
-      <button onClick={onBack} className="group mb-8 flex items-center gap-2 px-5 py-2.5 bg-[#0d1117]  text-white border border-[#378079]/30 rounded-xl transition-all font-bold text-xs uppercase tracking-widest">
-        <ArrowLeft size={16} /> DƏRSLƏRƏ QAYIT
-      </button>
+      <div onClick={onBack} className="mb-10 animate-[fadeUp_0.7s_ease_both]">
+        <div className="inline-flex items-center gap-2 mb-8 group text-[#378079]">
+          <ArrowLeft size={14} className="group-hover:-translate-x-1 transition-transform" />
+          <span className="text-[9px] tracking-[0.4em] uppercase font-black">GERİ QAYIT</span>
+        </div>
+      </div>
 
       <div className="space-y-6 w-full">
-        <div className="bg-[#0d1117] border border-white/5 rounded-3xl overflow-hidden w-full">
+
+        
+        <div className="bg-[#0d1117] border border-white/5 rounded-xl md:rounded-2xl overflow-hidden w-full">
           <div className="h-1.5 bg-[#378079]" />
           <div className="p-6 sm:p-10">
             <div className="flex flex-wrap gap-3 mb-6">
@@ -51,7 +56,7 @@ function LangLearnView({ lesson, onBack, onComplete, isCompleted }) {
               <span className="px-3 py-1 bg-white/5 text-[#378079] border border-[#378079]/30 rounded-lg text-[10px] font-black uppercase tracking-widest">{lesson.level}</span>
             </div>
             <h1 className="text-3xl sm:text-6xl font-black text-white mb-6 uppercase tracking-tighter leading-tight">{lesson.title}</h1>
-            <div className="flex items-start gap-3 p-5 bg-white/2 rounded-2xl border border-white/5">
+            <div className="flex items-start gap-3 p-5 bg-white/2 rounded-xl md:rounded-2xl  border border-white/5">
               <Info size={18} className="text-[#378079] shrink-0 mt-1" />
               <p className="text-base leading-relaxed text-slate-400 italic font-medium">{lesson.content.description}</p>
             </div>
@@ -60,24 +65,24 @@ function LangLearnView({ lesson, onBack, onComplete, isCompleted }) {
 
         {!showResult && (
           <>
-            <div className="p-6 rounded-3xl bg-[#0d1117] border-l-8 border-[#378079] shadow-lg w-full">
+            <div className="p-5 md:p-10 rounded-xl md:rounded-2xl bg-[#0d1117] border-l-8 border-[#378079]  w-full">
               <h3 className="flex items-center gap-2 text-xs font-black mb-3 text-[#378079] uppercase tracking-widest opacity-80">
                 <Lightbulb size={18} /> Formula
               </h3>
-              <div className="p-4 bg-white/3 rounded-2xl border border-white/5">
+              <div className="p-4 bg-white/3 rounded-xl md:rounded-2xl  border border-white/5">
                 <code className="text-lg sm:text-xl font-mono text-white font-black wrap-break-word tracking-tight">
                   {"> "} {lesson.content.formula}
                 </code>
               </div>
             </div>
 
-            <div className="p-8 bg-[#0d1117] border border-white/5 rounded-3xl w-full">
+            <div className="p-5 md:p-10 bg-[#0d1117] border border-white/5 rounded-xl md:rounded-2xl w-full">
               <h3 className="flex items-center gap-2 text-lg font-black mb-6 text-white uppercase tracking-tight">
                 <ListChecks size={22} className="text-[#378079]" /> Əsas Qaydalar
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {lesson.content.rules?.map((rule, idx) => (
-                  <div key={idx} className="flex items-start gap-4 p-4 bg-white/2 rounded-2xl border border-white/5 text-slate-300 text-sm">
+                  <div key={idx} className="flex items-start gap-4 p-4 bg-white/2 rounded-xl md:rounded-2xl  border border-white/5 text-slate-300 text-sm">
                     <div className="h-2 w-2 rounded-full bg-[#378079] shrink-0 mt-2 shadow-[0_0_8px_#378079]" />
                     <span className="font-medium leading-relaxed">{rule}</span>
                   </div>
@@ -85,13 +90,13 @@ function LangLearnView({ lesson, onBack, onComplete, isCompleted }) {
               </div>
             </div>
 
-            <div className="p-8 bg-[#0d1117] border border-white/5 rounded-3xl w-full">
+            <div className="p-5 md:p-10 bg-[#0d1117] border border-white/5 rounded-xl md:rounded-2xl w-full">
               <h3 className="flex items-center gap-2 text-lg font-black mb-6 text-white uppercase tracking-tight">
                 <BookOpen size={22} className="text-[#378079]" /> Praktik Nümunələr
               </h3>
               <div className="space-y-3">
                 {lesson.content.examples.map((ex, idx) => (
-                  <div key={idx} className="flex items-start gap-4 p-4 bg-white/2 rounded-2xl border border-white/5 text-slate-400 italic text-base transition-colors hover:text-white group">
+                  <div key={idx} className="flex items-start gap-4 p-4 bg-white/2 rounded-xl md:rounded-2xl  border border-white/5 text-slate-400 italic text-base transition-colors hover:text-white group">
                     <CheckCircle2 size={18} className="text-[#378079] mt-0.5 shrink-0" />
                     <span className="font-medium">{ex}</span>
                   </div>
@@ -99,13 +104,13 @@ function LangLearnView({ lesson, onBack, onComplete, isCompleted }) {
               </div>
             </div>
 
-            <div className="p-8 bg-rose-950/20 border border-rose-900/30 rounded-3xl w-full">
+            <div className="p-5 md:p-10 bg-rose-950/20 border border-rose-900/30 rounded-xl md:rounded-2xl w-full">
               <h3 className="flex items-center gap-2 text-lg font-black mb-6 text-rose-500 uppercase tracking-tight">
                 <AlertTriangle size={22} /> Diqqət yetirin
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {lesson.content.commonMistakes.map((m, idx) => (
-                  <div key={idx} className="flex items-start gap-4 p-4 bg-[#06090f] rounded-2xl border border-rose-900/20 text-slate-300 text-sm">
+                  <div key={idx} className="flex items-start gap-4 p-4 bg-[#06090f] rounded-xl md:rounded-2xl border border-rose-900/20 text-slate-300 text-sm">
                     <XCircle size={18} className="text-rose-500 shrink-0 mt-0.5" />
                     <span className="font-medium italic leading-relaxed">{m}</span>
                   </div>
@@ -115,7 +120,7 @@ function LangLearnView({ lesson, onBack, onComplete, isCompleted }) {
           </>
         )}
 
-        <div className="p-6 sm:p-8 bg-[#0d1117] border-2 border-[#378079]/20 rounded-3xl shadow-2xl w-full">
+        <div className="p-5 md:p-10 bg-[#0d1117] border-2 border-[#378079]/20 rounded-xl md:rounded-2xl w-full">
           {!showResult ? (
             <>
               <div className="flex items-center justify-between mb-6 border-b border-white/5 pb-4">

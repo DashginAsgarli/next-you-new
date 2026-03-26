@@ -112,7 +112,7 @@ function Music() {
                 <MusicHeader searchTerm={searchTerm} setSearchTerm={setSearchTerm} onSearch={fetchSongs} activeTab={activeTab} setActiveTab={setActiveTab} isLoading={isLoading} />
 
                 <div className="px-8 md:px-16 mt-4 pb-10">
-                    <div className="flex flex-col md:flex-row gap-6 lg:gap-12 items-start justify-center">
+                    <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-start md:items-center lg:items-start justify-center">
 
                         <div className="w-full md:w-87.5 lg:w-105 md:h-145 lg:h-155 shrink-0">
                             <div className="relative bg-[#0a0e14] p-6 lg:p-8 rounded-[40px] border border-white/5 h-full flex flex-col items-center justify-between shadow-2xl overflow-hidden group">

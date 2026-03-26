@@ -13,36 +13,24 @@ function PopularLanguages() {
     ];
 
     return (
-        <section className=" py-24 px-6 md:px-10 lg:px-16 text-[#f0ebe2]  font-sans selection:bg-[#378079]/30 overflow-x-hidden">
+        <section className="px-8 md:px-16 pt-16 md:py-20   font-sans selection:bg-[#378079]/30 overflow-x-hidden ">
 
-            <div className="text-center mb-20">
-                <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-[-3px] m-0 uppercase leading-[0.9]">
-                    POPULYAR <span className="text-transparent [-webkit-text-stroke:1px_rgba(240,235,226,0.8)]">DİLLƏR</span>
-                </h2>
+            <div className="text-center mb-10 md:mb-18 lg:mb-20">
+                <h1 className="text-[#f0ebe2] font-black text-[2rem] md:text-[2.5rem] lg:text-[3.5rem] leading-[1.07] tracking-[-0.01em] mb-9 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.15s]">
+                    POPULYAR{" "}
+                    <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">
+                        DİLLƏR
+                    </span>
+                </h1>
             </div>
 
+
             <div className="max-w-325 mx-auto">
-                <Swiper
-                    modules={[Autoplay]}
-                    spaceBetween={16}
-                    slidesPerView={1.2} 
-                    centeredSlides={false}
-                    autoplay={{ delay: 5000, disableOnInteraction: false }}
-                    breakpoints={{
-                        640: { slidesPerView: 2.5, spaceBetween: 20 },
-                        1024: { slidesPerView: 3.2, spaceBetween: 24 },
-                        1280: { 
-                            slidesPerView: 4, 
-                            spaceBetween: 24,
-                            allowTouchMove: false,
-                            autoplay: false 
-                        }
-                    }}
-                    className="overflow-visible! cursor-grab active:cursor-grabbing">
+                <Swiper modules={[Autoplay]} spaceBetween={16} slidesPerView={1.2} centeredSlides={false} autoplay={{ delay: 5000, disableOnInteraction: false }} breakpoints={{ 640: { slidesPerView: 2.5, spaceBetween: 20 }, 1024: { slidesPerView: 3.2, spaceBetween: 24 }, 1280: { slidesPerView: 4, spaceBetween: 24, allowTouchMove: false, autoplay: false } }} className="overflow-visible! cursor-grab active:cursor-grabbing">
                     {topLang.map((lang) => (
-                        <SwiperSlide key={lang.id} className="h-auto py-4">
-                            <div className="group relative bg-[#ffffff03] border border-white/5 p-8 transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] F                hover:bg-[#378079]/8 hover:border-[#378079]/50 hover:-translate-y-3 h-full flex flex-col F                [clip-path:polygon(0_0,100%_0,100%_calc(100%-30px),calc(100%-20px)_100%,0_100%)]">
-                                
+                        <SwiperSlide key={lang.id} className="h-auto pt-4">
+                            <div className="beveled-box group relative bg-[#06090f] border border-white p-8 transition-all duration-700  ease-[cubic-bezier(0.23,1,0.32,1)] hover:transform-[perspective(500px)_rotateY(10deg)_rotateX(5deg)_translateY(-10px)] h-full flex flex-col ">
+
                                 <div className="flex items-center gap-4 mb-10 relative z-10">
                                     <span className="text-[14px] font-black text-[#378079] font-mono leading-none">
                                         // {lang.rank}
@@ -58,7 +46,7 @@ function PopularLanguages() {
                                     <span className="text-[10px] tracking-[3px] text-[#f0ebe2]/30 block mb-2 font-bold uppercase">
                                         AKTİV TƏLƏBƏLƏR
                                     </span>
-                                    <div className="text-2xl md:text-3xl font-black text-[#f0ebe2] tabular-nums group-hover:text-[#378079] transition-colors duration-500">
+                                    <div className="text-2xl md:text-3xl font-black text-[#f0ebe2] tabular-nums">
                                         {lang.students}
                                     </div>
                                 </div>

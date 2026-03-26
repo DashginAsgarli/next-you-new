@@ -37,7 +37,7 @@ function FAQ() {
                 <div className="space-y-4 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.3s]">
                     {faqData.map((item, index) => (
                         <div key={index} onMouseMove={handleMouseMove} className=" beveled-box group/card relative bg-[#06090f] border border-white/10 overflow-hidden transition-all duration-300">
-                            <div className="pointer-events-none absolute -inset-px opacity-0 group-hover/card:opacity-100 transition duration-300 z-0" style={{ background: `radial-gradient(400px circle at var(--mouse-x) var(--mouse-y), rgba(255,255,255,0.06), transparent 40%)` }} />
+                            <div className="pointer-events-none absolute -inset-px opacity-0 group-hover/card:opacity-100 transition duration-300 z-0             bg-[radial-gradient(400px_circle_at_var(--mouse-x)_var(--mouse-y),rgba(255,255,255,0.08),transparent_40%)]" />
 
                             <button onClick={() => setActiveIndex(activeIndex === index ? null : index)} className="w-full relative z-10 flex items-center justify-between p-6 md:p-8 text-left">
                                 <div className="flex items-center gap-5">

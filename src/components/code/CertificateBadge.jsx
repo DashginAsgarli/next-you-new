@@ -3,32 +3,18 @@ import { HiCheckBadge, HiArrowSmallRight } from "react-icons/hi2";
 
 function CertificateBadge() {
   return (
-    <section className="relative px-6 md:px-16 py-24 bg-[#06090f] overflow-hidden">
+    <section className="relative px-6 md:px-16 py-24 overflow-hidden">
       
-      <div 
-        className="absolute inset-0 z-0 pointer-events-none" 
-        style={{ 
-          backgroundImage: `linear-gradient(rgba(255,255,255,0.022) 1px, transparent 1px),
-                           linear-gradient(90deg, rgba(255,255,255,0.022) 1px, transparent 1px)`, 
-          backgroundSize: '60px 60px' 
-        }} 
-      />
-
-      <div 
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-80 pointer-events-none opacity-20 z-0" 
-        style={{ background: 'radial-gradient(circle, rgba(55,128,121,0.2) 0%, transparent 70%)' }} 
-      />
-
       <div className="max-w-6xl mx-auto relative z-10">
         
         <div className="group relative bg-[#06090f]/50 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-sm transition-all duration-500 hover:border-[#378079]/40">
           
-          <div className="absolute left-0 top-0 w-[2px] h-full bg-[#378079]/40 group-hover:bg-[#378079] transition-colors" />
+          <div className="absolute left-0 top-0 w-0.5 h-full bg-[#378079]/40 group-hover:bg-[#378079] transition-colors" />
 
           <div className="relative p-8 md:p-14 flex flex-col lg:flex-row items-center justify-between gap-12">
             
             <div className="flex flex-col md:flex-row items-center gap-10">
-              <div className="relative flex-shrink-0">
+              <div className="relative shrink-0">
                 <div className="w-20 h-20 border border-[#378079]/30 flex items-center justify-center text-white bg-[#378079]/5  rounded-[50%] transition-all group-hover:border-[#378079]">
                    <HiCheckBadge size={36} className="-rotate-45" />
                 </div>

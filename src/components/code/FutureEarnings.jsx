@@ -26,10 +26,7 @@ function FutureEarnings() {
   }, [field, hours, english]);
 
   return (
-    <section className="bg-[#06090f] w-full py-20 px-4 md:px-16 relative overflow-hidden">
-      <div className="absolute inset-0 z-0 pointer-events-none opacity-20" 
-           style={{ backgroundImage: `linear-gradient(rgba(55,128,121,0.2) 1px, transparent 1px), linear-gradient(90deg, rgba(55,128,121,0.2) 1px, transparent 1px)`, backgroundSize: '50px 50px' }} />
-      
+    <section className="w-full py-20 px-4 md:px-16 relative overflow-hidden">
       <div className="relative z-10 max-w-6xl mx-auto">
         
         <div className="flex flex-col items-center text-center mb-16 animate-[fadeUp_0.7s_ease_both]">
@@ -43,7 +40,7 @@ function FutureEarnings() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-stretch bg-white/[0.02] border border-white/5 p-5 md:p-10 lg:p-12 rounded-[2.5rem] backdrop-blur-xl relative">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-stretch bg-white/2 border border-white/5 p-5 md:p-10 lg:p-12 rounded-[2.5rem] backdrop-blur-xl relative">
           
           <div className="space-y-10 relative z-10">
             <div className="space-y-4">
@@ -75,7 +72,7 @@ function FutureEarnings() {
                 <select 
                   value={english} 
                   onChange={(e) => setEnglish(e.target.value)}
-                  className="w-full bg-white/[0.03] border border-white/10 rounded-xl py-4 px-4 text-white text-[10px] md:text-[11px] font-bold tracking-widest focus:outline-none focus:border-[#378079]/50 transition-all appearance-none cursor-pointer uppercase italic"
+                  className="w-full bg-white/3 border border-white/10 rounded-xl py-4 px-4 text-white text-[10px] md:text-[11px] font-bold tracking-widest focus:outline-none focus:border-[#378079]/50 transition-all appearance-none cursor-pointer uppercase italic"
                 >
                   <option className="bg-[#06090f]" value="A1-A2">A1 - A2</option>
                   <option className="bg-[#06090f]" value="B1-B2">B1 - B2</option>
@@ -104,7 +101,7 @@ function FutureEarnings() {
           <div className="relative group flex items-center justify-center mt-6 md:mt-0">
             <div className="absolute inset-0 bg-[#378079]/5 blur-[60px] rounded-full" />
             
-            <div className="relative w-full h-full flex flex-col items-center justify-center text-center p-6 md:p-8 bg-gradient-to-br from-white/[0.03] to-transparent border border-white/5 rounded-[2rem]">
+            <div className="relative w-full h-full flex flex-col items-center justify-center text-center p-6 md:p-8 bg-linear-to-br from-white/3 to-transparent border border-white/5 rounded-4xl">
               <span className="text-[9px] tracking-[0.4em] text-[#378079] font-black uppercase mb-4 flex items-center gap-2">
                 <HiSparkles /> Təxmini Gəlir
               </span>
@@ -113,11 +110,11 @@ function FutureEarnings() {
                 <h3 className="text-[#f0ebe2] text-[1.8rem] sm:text-[2.2rem] md:text-[2.5rem] lg:text-[3.5rem] font-black leading-none tracking-tighter italic">
                   {prediction.min}₼ <span className="text-[18px] align-middle opacity-20">/</span> {prediction.max}₼
                 </h3>
-                <div className="w-full h-px bg-gradient-to-r from-transparent via-[#378079]/30 to-transparent mx-auto" />
+                <div className="w-full h-px bg-linear-to-r from-transparent via-[#378079]/30 to-transparent mx-auto" />
               </div>
 
               <div className="py-2 px-4 bg-[#378079]/10 border border-[#378079]/20 rounded-full">
-                <p className="text-[8px] md:text-[10px] text-[#378079] font-black tracking-[0.1em] uppercase italic">
+                <p className="text-[8px] md:text-[10px] text-[#378079] font-black tracking-widest uppercase italic">
                   {english === 'C1-C2' ? "🌍 Global Remote" : "📍 Yerli Bazar"}
                 </p>
               </div>

@@ -28,12 +28,12 @@ function Hero() {
           </h1>
 
           <div className="flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-8 mb-10  md:mb-14 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.3s]">
-            <button className="flex items-center justify-center gap-2.5 px-9 h-12 bg-[#378079] text-white text-[10px] font-bold tracking-[0.18em] uppercase transition-all duration-200 cursor-pointer hover:bg-[#45a098] active:scale-[0.97] w-fit relative overflow-hidden" style={{ clipPath: 'polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 14px 100%, 0 calc(100% - 14px))' }}>
+            <button className="beveled-box flex items-center justify-center gap-2.5 px-9 h-14 border border-white text-white text-[10px] font-bold tracking-[0.18em] uppercase transition-all duration-200 cursor-pointer hover:translate-x-2   w-fit relative overflow-hidden">
               <HiSparkles size={16} />Kəşfetməyə başla
             </button>
 
-            <p className="text-[10px] md:text-[11px] font-light text-[rgba(240,235,226,0.35)] tracking-[0.18em] uppercase leading-loose border-l border-[rgba(55,128,121,0.3)] pl-5">
-              Kitab &nbsp;·&nbsp; Musiqi &nbsp;·&nbsp; Kod &nbsp;·&nbsp; Dil<br />
+            <p className="text-[10px] md:text-[11px] font-light tracking-[0.18em] uppercase leading-loose border-l border-[rgba(55,128,121,0.3)] pl-5">
+              KİTAB • MUSİQİ • KOD • DİL<br />
               Hər sahədə özünü kəşf et
             </p>
           </div>

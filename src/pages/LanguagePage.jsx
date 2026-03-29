@@ -9,6 +9,8 @@ import DailyChallenges from '../components/language/DailyChallenges'
 // import AudioPractice from '../components/language/AudioPractice'
 import WordOfTheDay from '../components/language/WordOfTheDay'
 import SentenceBuilder from '../components/language/SentenceBuilder'
+import IdiomLearn from '../components/language/IdiomLearn'
+import VerbTensesTable from '../components/language/VerbTensesTable'
 
 
 function LanguagePage() {
@@ -27,6 +29,8 @@ function LanguagePage() {
                 <LangLearn />
                 <DailyChallenges />
                 <SentenceBuilder />
+                <IdiomLearn />
+                <VerbTensesTable />
             </section>
         </>
     )

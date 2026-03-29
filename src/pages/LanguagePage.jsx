@@ -11,6 +11,7 @@ import WordOfTheDay from '../components/language/WordOfTheDay'
 import SentenceBuilder from '../components/language/SentenceBuilder'
 import IdiomLearn from '../components/language/IdiomLearn'
 import VerbTensesTable from '../components/language/VerbTensesTable'
+import LanguageFamilyTree from '../components/language/LanguageFamilyTree'
 
 
 function LanguagePage() {
@@ -31,6 +32,7 @@ function LanguagePage() {
                 <SentenceBuilder />
                 <IdiomLearn />
                 <VerbTensesTable />
+                <LanguageFamilyTree />
             </section>
         </>
     )

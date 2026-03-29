@@ -14,9 +14,9 @@ function CodeMap() {
         <section className="px-8 md:px-16 py-20 md:py-22  lg:py-24 font-sans">
             <div>
                 <h1 className="text-[#f0ebe2] uppercase text-center font-black text-[2.4rem] md:text-[3.5rem] lg:text-[5rem] leading-[1.07] tracking-[-0.01em] mb-14 md:mb-20 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.15s]">
-                    Sahənİ{" "}
+                    KURS{" "}
                     <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">
-                        Seç
+                        ROADMAP
                     </span>
                 </h1>
 

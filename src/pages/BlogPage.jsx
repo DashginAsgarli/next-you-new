@@ -1,16 +1,17 @@
 import React from 'react'
-import Planner from '../components/planner/Planner'
+import Blog from '../components/blog/Blog'
 
-function PlannerPage() {
+function BlogPage() {
     return (
         <>
             <section className=" w-full overflow-hidden relative">
                 <div className='background-tor'></div>
                 <div className='background-shadow'></div>
-                <Planner />
+                <Blog />
             </section>
+
         </>
     )
 }
 
-export default PlannerPage
+export default BlogPage

@@ -8,30 +8,43 @@ function QuickTranslate() {
   const [isEnToAz, setIsEnToAz] = useState(true);
   const [copied, setCopied] = useState(false);
 
-  function handleTranslate() {
+  const handleTranslate = () => {
     if (!text.trim()) return;
+
     setLoading(true);
     const langPair = isEnToAz ? "en|az" : "az|en";
+
     fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=${langPair}`)
       .then(res => res.json())
       .then(data => {
-        if (data.responseData) setResult(data.responseData.translatedText);
+        if (data.responseData) {
+          setResult(data.responseData.translatedText);
+        } else {
+          setResult("Tərcümə tapılmadı.");
+        }
       })
-      .catch(() => setResult("Xəta baş verdi!"))
+      .catch(err => {
+        console.error("Tərcümə xətası:", err);
+        setResult("Xəta baş verdi!");
+      })
       .finally(() => setLoading(false));
-  }
+  };
 
-  function toggleDirection() {
-    setIsEnToAz(!isEnToAz);
+  const toggleDirection = () => {
+    setIsEnToAz(prev => !prev);
     setText("");
     setResult("");
-  }
+  };
 
   function handleCopy() {
-    navigator.clipboard.writeText(result);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 1500);
-  }
+    if (!result) return;
+
+    navigator.clipboard.writeText(result)
+      .then(() => {
+        setCopied(true);
+        setTimeout(() => setCopied(false), 1500);
+      });
+  };
 
   return (
     <section className="w-full px-8 md:px-16 py-16 md:py-22  lg:pt-23  relative overflow-hidden">

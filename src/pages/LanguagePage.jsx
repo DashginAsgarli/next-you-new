@@ -8,6 +8,7 @@ import DailyChallenges from '../components/language/DailyChallenges'
 // import QuickTranslate from '../components/language/QuickTranslate'
 // import AudioPractice from '../components/language/AudioPractice'
 import WordOfTheDay from '../components/language/WordOfTheDay'
+import SentenceBuilder from '../components/language/SentenceBuilder'
 
 
 function LanguagePage() {
@@ -25,6 +26,7 @@ function LanguagePage() {
                 {/* <AudioPractice /> */}
                 <LangLearn />
                 <DailyChallenges />
+                <SentenceBuilder />
             </section>
         </>
     )

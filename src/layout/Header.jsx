@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import { HiMenuAlt3, HiOutlineHome, HiOutlineMusicNote, HiOutlineBookOpen, HiOutlineTranslate, HiOutlineCode } from "react-icons/hi";
+import { HiMenuAlt3, HiOutlineHome, HiOutlineMusicNote, HiOutlineBookOpen, HiOutlineTranslate, HiOutlineCode, HiOutlineViewGrid } from "react-icons/hi";
 
 const Header = ({ onProfileClick }) => {
     const navLinks = [
@@ -32,12 +32,17 @@ const Header = ({ onProfileClick }) => {
                 ))}
             </nav>
 
-            <button onClick={onProfileClick} className="relative group p-2.5 rounded-xl bg-[#12151B] border border-[#1E2126] transition-transform duration-300 hover:-translate-x-2 ">
-                <div className="flex items-center gap-2 relative z-10">
-                    <span className="hidden lg:block text-[9px] text-white font-bold tracking-[2px] uppercase opacity-70">Menyu</span>
-                    <HiMenuAlt3 size={26} className="text-white " />
-                </div>
-            </button>
+            <div className="flex items-center gap-3">
+                <Link to="/dashboard" className="hidden md:flex items-center gap-2 px-4 py-2 bg-[#378079]/10 border border-[#378079]/30 text-[#378079] rounded-full text-[9px] font-black uppercase tracking-widest hover:bg-[#378079] hover:text-[#06090f] transition-all">
+                    Dashboard
+                </Link>
+                <button onClick={onProfileClick} className="relative group p-2.5 rounded-xl bg-[#12151B] border border-[#1E2126] transition-transform duration-300 hover:-translate-x-2 ">
+                    <div className="flex items-center gap-2 relative z-10">
+                        <span className="hidden lg:block text-[9px] text-white font-bold tracking-[2px] uppercase opacity-70">Menyu</span>
+                        <HiMenuAlt3 size={26} className="text-white " />
+                    </div>
+                </button>
+            </div>
         </header>
     );
 };

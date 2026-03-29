@@ -1,16 +1,17 @@
 import React from 'react'
-import Planner from '../components/planner/Planner'
+import Events from '../components/events/Events'
 
-function PlannerPage() {
+function EventsPage() {
     return (
         <>
-            <section className=" w-full overflow-hidden relative">
+            <section className="w-full overflow-hidden relative">
                 <div className='background-tor'></div>
                 <div className='background-shadow'></div>
-                <Planner />
+                <Events />
             </section>
+
         </>
     )
 }
 
-export default PlannerPage
+export default EventsPage

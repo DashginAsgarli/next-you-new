@@ -26,9 +26,9 @@ function Features() {
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4">
-                {features.map(function (feat, i) {
+                {features.map((feat, index) => {
                     return (
-                        <div key={i} className=" beveled-box group p-5 md:py-5 md:px-4 lg:p-8 border border-white bg-[#06090f] transition-all duration-500 hover:transform-[perspective(500px)_rotateY(10deg)_rotateX(5deg)_translateY(-10px)] relative overflow-hidden">
+                        <div key={index} className=" beveled-box group p-5 md:py-5 md:px-4 lg:p-8 border border-white bg-[#06090f] transition-all duration-500 hover:transform-[perspective(500px)_rotateY(10deg)_rotateX(5deg)_translateY(-10px)] relative overflow-hidden">
                             <div className="text-white mb-4 ">{feat.icon}</div>
                             <h3 className=" font-black text-md md:text-lg uppercase tracking-tight mb-3">{feat.title}</h3>
                             <p className="text-[10px] md:text-[13px] lg:text-[15px] text-[#f0ebe2]/40 leading-relaxed">{feat.desc}</p>

@@ -10,7 +10,7 @@ const socialLinks = [
 ];
 
 function Contact() {
-    const handleMouseMove = (e) => {
+    function handleMouseMove(e) {
         const { currentTarget, clientX, clientY } = e;
         const { left, top } = currentTarget.getBoundingClientRect();
         const x = clientX - left;
@@ -30,8 +30,8 @@ function Contact() {
                 <h1 className="font-black text-[2.4rem] md:text-[3.5rem] lg:text-[5rem] leading-none mb-6 md:mb-10 lg:mb-12 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.15s] uppercase text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">ƏLAQƏ</h1>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.3s]">
-                    {socialLinks.map((social, i) => (
-                        <a key={i} href={social.url} onMouseMove={handleMouseMove} target="_blank" rel="noopener noreferrer" className="beveled-box group/card relative z-10 bg-[#06090f] border border-white/20 p-5 md:p-10 flex items-center justify-between transition-all duration-300 overflow-hidden active:scale-[0.98]" >
+                    {socialLinks.map((social, index) => (
+                        <a key={index} href={social.url} onMouseMove={handleMouseMove} target="_blank" rel="noopener noreferrer" className="beveled-box group/card relative z-10 bg-[#06090f] border border-white/20 p-5 md:p-10 flex items-center justify-between transition-all duration-300 overflow-hidden active:scale-[0.98]" >
                             <div className="pointer-events-none absolute -inset-px opacity-0 group-hover/card:opacity-100 transition duration-300 z-0             bg-[radial-gradient(400px_circle_at_var(--mouse-x)_var(--mouse-y),rgba(255,255,255,0.08),transparent_40%)]" />
                             <div className="flex items-center gap-4 md:gap-6 relative z-10 overflow-hidden">
                                 <div className="w-10 h-10 md:w-14 md:h-14 lg:w-16 lg:h-16 shrink-0 rounded-xl md:rounded-2xl border border-white/10 flex items-center justify-center text-white/40 group-hover/card:border-white group-hover/card:text-white transition-all duration-500 bg-[#06090f]">

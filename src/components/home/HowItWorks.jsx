@@ -23,9 +23,9 @@ function HowItWorks() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
                 <div className="flex flex-col gap-3">
-                    {steps.map((step, i) => {
+                    {steps.map((step, index) => {
                         return (
-                            <button key={i} onClick={() => setActiveStep(i)} className={`text-left p-4 md:p-6 border transition-all duration-300 z-10 ${activeStep === i ? 'border-[#378079] bg-[#378079]' : 'border-white bg-[#06090f] hover:border-white/30'}`}>
+                            <button key={index} onClick={() => setActiveStep(index)} className={`text-left p-4 md:p-6 border transition-all duration-300 z-10 ${activeStep === index ? 'border-[#378079] bg-[#378079]' : 'border-white bg-[#06090f] hover:border-white/30'}`}>
                                 <div className="flex items-center gap-4 mb-2">
                                     <span className="font-bebas text-[1.5rem]">{step.num}</span>
                                     <h3 className="font-black text-lg  uppercase tracking-tight">{step.title}</h3>
@@ -41,9 +41,9 @@ function HowItWorks() {
                     <h3 className="font-black text-3xl md:text-4xl text-[#f0ebe2] uppercase tracking-tighter mb-6">{steps[activeStep].title}</h3>
                     <p className="text-[15px] text-[#f0ebe2]/60 leading-relaxed">{steps[activeStep].detail}</p>
                     <div className="flex items-center gap-2 mt-8">
-                        {steps.map((_, i) => {
+                        {steps.map((_, index) => {
                             return (
-                                <button key={i} onClick={() => setActiveStep(i)} className={`h-1 transition-all duration-300 ${activeStep === i ? 'w-8 bg-[#378079]' : 'w-2 bg-white/10'}`} />
+                                <button key={index} onClick={() => setActiveStep(index)} className={`h-1 transition-all duration-300 ${activeStep === index ? 'w-8 bg-[#378079]' : 'w-2 bg-white/10'}`} />
                             )
                         })}
                     </div>

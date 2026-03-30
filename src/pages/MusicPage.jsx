@@ -11,11 +11,11 @@ function MusicPage() {
             <section className=" w-full overflow-hidden relative">
                 <div className='background-tor'></div>
                 <div className='background-shadow'></div>
-                <Music />
+                {/* <Music /> */}
                 <GenreVisual />
-                <MusicTheory/>
-                <MusicHistory/>
-                <MusicGlossary/>
+                <MusicTheory />
+                <MusicHistory />
+                <MusicGlossary />
             </section>
         </>
     )

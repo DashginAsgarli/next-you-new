@@ -70,7 +70,6 @@ function App() {
             <Route path="/leaderboard" element={<LeaderboardPage />} />
             <Route path="/news" element={<NewsPage />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
-
           </Routes>
         </section>
         <Footer />

@@ -33,8 +33,8 @@ function DailyChallenges() {
                     </div>
 
                     <div className="grid grid-cols-1 gap-3 mb-12">
-                        {challenges.map((item, idx) => (
-                            <div key={idx} className={`group flex items-center justify-between p-4 md:p-5 rounded-xl border transition-all duration-300 ${item.completed ? "bg-[#378079]/5 border-[#378079]/20 opacity-60" : "bg-[#06090f] border-white/5 "}`}>
+                        {challenges.map((item, index) => (
+                            <div key={index} className={`group flex items-center justify-between p-4 md:p-5 rounded-xl border transition-all duration-300 ${item.completed ? "bg-[#378079]/5 border-[#378079]/20 opacity-60" : "bg-[#06090f] border-white/5 "}`}>
                                 <div className="flex items-center gap-5">
                                     <div className={item.completed ? "text-[#378079]" : "text-slate-700"}>
                                         {item.completed ? <HiCheckCircle size={26} /> : <div className="w-5 h-5 border border-current rounded-full" />}

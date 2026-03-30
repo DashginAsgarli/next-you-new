@@ -7,7 +7,7 @@ import DailyChallenges from '../components/language/DailyChallenges'
 // import LangDictionary from '../components/language/LangDictionary'
 // import QuickTranslate from '../components/language/QuickTranslate'
 // import AudioPractice from '../components/language/AudioPractice'
-import WordOfTheDay from '../components/language/WordOfTheDay'
+// import WordOfTheDay from '../components/language/WordOfTheDay'
 import SentenceBuilder from '../components/language/SentenceBuilder'
 import IdiomLearn from '../components/language/IdiomLearn'
 import LanguageFamilyTree from '../components/language/LanguageFamilyTree'
@@ -24,7 +24,7 @@ function LanguagePage() {
                 <LangTerminal />
                 <PopularLanguages />
                 <OtherLanguagesList />
-                <WordOfTheDay />
+                {/* <WordOfTheDay /> */}
                 {/* <LangDictionary /> */}
                 {/* <QuickTranslate /> */}
                 {/* <AudioPractice /> */}

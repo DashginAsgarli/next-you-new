@@ -31,8 +31,8 @@ function AchievementBadges() {
       </div>
 
       <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-3">
-        {badges.map((badge, i) => (
-          <div key={i} className={`group flex flex-col items-center gap-3 p-4 border rounded-lg transition-all duration-300 cursor-help ${badge.earned ? 'border-[#378079]/40 bg-[#378079]/5 text-white hover:bg-[#378079]/10' : 'border-white/5 bg-white/2 text-white/10 opacity-30 grayscale'}`} title={`${badge.name}: ${badge.desc}`}>
+        {badges.map((badge, item) => (
+          <div key={item} className={`group flex flex-col items-center gap-3 p-4 border rounded-lg transition-all duration-300 cursor-help ${badge.earned ? 'border-[#378079]/40 bg-[#378079]/5 text-white hover:bg-[#378079]/10' : 'border-white/5 bg-white/2 text-white/10 opacity-30 grayscale'}`} title={`${badge.name}: ${badge.desc}`}>
             <div className="text-xl transition-transform group-hover:scale-110">
               {badge.icon}
             </div>

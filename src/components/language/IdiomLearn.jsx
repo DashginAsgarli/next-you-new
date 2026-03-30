@@ -34,7 +34,7 @@ function IdiomLearn() {
             <span className="text-[10px] font-mono text-white/20 uppercase tracking-[0.3em]">
               {(currentIdx + 1).toString().padStart(2, '0')} / {IDIOMS.length.toString().padStart(2, '0')}
             </span>
-            <div className="w-12 h-[1px] bg-[#378079]/30" />
+            <div className="w-12 h-px bg-[#378079]/30" />
           </div>
 
           <div className="mb-10">
@@ -57,7 +57,7 @@ function IdiomLearn() {
               </p>
             </div>
 
-            <div className="p-4 bg-white/[0.02] border border-white/5 rounded-xl">
+            <div className="p-4 bg-white/2 border border-white/5 rounded-xl">
               <p className="text-[9px] text-white/20 uppercase tracking-[0.2em] mb-1">Kontekstual İzahat</p>
               <p className="text-[11px] text-[#f0ebe2]/40 leading-relaxed uppercase tracking-wider">
                 {idiom.az}

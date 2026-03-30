@@ -39,8 +39,8 @@ function Hero() {
           </div>
 
           <div className="flex items-stretch gap-0 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.45s]">
-            {stats.map((stat, i) => (
-              <div key={i} className={`relative ${i !== 0 ? 'pl-7 ml-7 before:absolute before:left-0 before:top-1 before:bottom-1 before:w-px before:bg-[rgba(55,128,121,0.2)]' : ''}`}>
+            {stats.map((stat, index) => (
+              <div key={index} className={`relative ${index !== 0 ? 'pl-7 ml-7 before:absolute before:left-0 before:top-1 before:bottom-1 before:w-px before:bg-[rgba(55,128,121,0.2)]' : ''}`}>
                 <span className="font-['Bebas_Neue'] text-[1.7rem] md:text-[2.2rem] text-[#378079] leading-none block tracking-wide">
                   {stat.value}
                 </span>

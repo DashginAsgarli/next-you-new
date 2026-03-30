@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export function WorldAlphabets() {
+function WorldAlphabets() {
     const alphabetsData = [
         {
             name: 'Latin',

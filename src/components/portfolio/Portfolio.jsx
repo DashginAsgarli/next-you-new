@@ -47,29 +47,20 @@ function Portfolio() {
                 </div>
 
                 <div className="flex gap-3 mb-10 border-b border-white/5 pb-6">
-                    <button
-                        onClick={function () { handleTabChange('projects') }}
-                        className={`px-5 py-2 text-[9px] font-black uppercase tracking-widest border transition-all ${activeTab === 'projects' ? 'bg-[#378079]/20 border-[#378079]/50 text-[#378079]' : 'border-white/10 text-[#f0ebe2]/30'}`}
-                    >
+                    <button onClick={() => handleTabChange('projects')} className={`px-5 py-2 text-[9px] font-black uppercase tracking-widest border transition-all ${activeTab === 'projects' ? 'bg-[#378079]/20 border-[#378079]/50 text-[#378079]' : 'border-white/10 text-[#f0ebe2]/30'}`}>
                         Layihələr
                     </button>
-                    <button
-                        onClick={function () { handleTabChange('skills') }}
-                        className={`px-5 py-2 text-[9px] font-black uppercase tracking-widest border transition-all ${activeTab === 'skills' ? 'bg-[#378079]/20 border-[#378079]/50 text-[#378079]' : 'border-white/10 text-[#f0ebe2]/30'}`}
-                    >
+                    <button onClick={() => handleTabChange('skills')} className={`px-5 py-2 text-[9px] font-black uppercase tracking-widest border transition-all ${activeTab === 'skills' ? 'bg-[#378079]/20 border-[#378079]/50 text-[#378079]' : 'border-white/10 text-[#f0ebe2]/30'}`}>
                         Bacarıqlar
                     </button>
-                    <button
-                        onClick={function () { handleTabChange('certs') }}
-                        className={`px-5 py-2 text-[9px] font-black uppercase tracking-widest border transition-all ${activeTab === 'certs' ? 'bg-[#378079]/20 border-[#378079]/50 text-[#378079]' : 'border-white/10 text-[#f0ebe2]/30'}`}
-                    >
+                    <button onClick={() => handleTabChange('certs')} className={`px-5 py-2 text-[9px] font-black uppercase tracking-widest border transition-all ${activeTab === 'certs' ? 'bg-[#378079]/20 border-[#378079]/50 text-[#378079]' : 'border-white/10 text-[#f0ebe2]/30'}`}>
                         Sertifikatlar
                     </button>
                 </div>
 
                 {activeTab === 'projects' && (
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                        {projects.map(function (proj, index) {
+                        {projects.map((proj, index) => {
                             return (
                                 <div key={index} className="bg-[#06090f] border border-white/10 hover:border-[#378079]/30 p-8 transition-all group">
                                     <div className="flex items-start justify-between mb-4">
@@ -81,7 +72,7 @@ function Portfolio() {
                                     <h3 className="text-[#f0ebe2] font-black text-xl uppercase tracking-tight mb-2 group-hover:text-[#378079] transition-colors">{proj.name}</h3>
                                     <p className="text-[12px] text-[#f0ebe2]/40 mb-4">{proj.desc}</p>
                                     <div className="flex flex-wrap gap-2">
-                                        {proj.tech.map(function (t) {
+                                        {proj.tech.map((t) => {
                                             return <span key={t} className="text-[8px] font-mono bg-white/5 px-2 py-1 text-[#f0ebe2]/50 border border-white/5">{t}</span>
                                         })}
                                     </div>
@@ -93,7 +84,7 @@ function Portfolio() {
 
                 {activeTab === 'skills' && (
                     <div className="max-w-xl space-y-5">
-                        {skills.map(function (skill, index) {
+                        {skills.map((skill, index) => {
                             return (
                                 <div key={index}>
                                     <div className="flex justify-between mb-2">
@@ -111,7 +102,7 @@ function Portfolio() {
 
                 {activeTab === 'certs' && (
                     <div className="space-y-4">
-                        {certs.map(function (cert, index) {
+                        {certs.map((cert, index) => {
                             return (
                                 <div key={index} className="flex items-center justify-between bg-[#06090f] border border-white/10 p-6">
                                     <div>

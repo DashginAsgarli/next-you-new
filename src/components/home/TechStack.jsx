@@ -31,10 +31,10 @@ function TechStack() {
             </h2>
 
             <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-                {techs.map((tech, i) => {
+                {techs.map((tech, index) => {
                     const IconComp = Si[tech.icon] || Fa[tech.icon];
                     return (
-                        <div key={i} className="group flex flex-col items-center gap-3 p-5 border border-white hover:border-white/30 bg-[#06090f] z-10 transition-all duration-300  hover:-translate-y-1">
+                        <div key={index} className="group flex flex-col items-center gap-3 p-5 border border-white hover:border-white/30 bg-[#06090f] z-10 transition-all duration-300  hover:-translate-y-1">
                             {IconComp && (
                                 <span style={{ color: tech.color }} className="text-3xl group-hover:scale-110 transition-transform">
                                     <IconComp />

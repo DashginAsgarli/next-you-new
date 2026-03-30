@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import { Volume2, Mic, RefreshCw, BookText, Play, Loader2, Search, UserRound, Zap } from 'lucide-react';
-
-const LONG_TEXT = "Language is the roadmap of a culture. It tells you where its people come from and where they are going. While AI accelerates your pace, your persistence defines your reach. Each word you master is a seed planted for a forest of opportunities.";
+import { Volume2, Mic, BookText, Play, Loader2, UserRound, Zap } from 'lucide-react';
 
 function AudioPractice() {
+
+  const longText = "Language is the roadmap of a culture. It tells you where its people come from and where they are going. While AI accelerates your pace, your persistence defines your reach. Each word you master is a seed planted for a forest of opportunities.";
   const [wordData, setWordData] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [activeWordIndex, setActiveWordIndex] = useState(-1);
 
-  const words = LONG_TEXT.split(" ");
+  const words = longText.split(" ");
 
   function fetchWordDefinition(word) {
     const cleanWord = word.replace(/[.,:;]/g, "");
@@ -33,12 +33,11 @@ function AudioPractice() {
 
   function handleSpeakText() {
     window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(LONG_TEXT);
+    const utterance = new SpeechSynthesisUtterance(longText);
     utterance.lang = 'en-US';
     utterance.rate = 0.85;
     utterance.onboundary = (e) => {
       if (e.name === 'word') {
-        const textUpToChar = LONG_TEXT.substring(0, e.charIndex).trim();
         setActiveWordIndex(textUpToChar ? textUpToChar.split(/\s+/).length : 0);
       }
     };
@@ -88,8 +87,8 @@ function AudioPractice() {
 
             <div className="bg-[#06090f] p-4 border border-white/5 rounded-xl min-h-45 mb-8">
               <div className="flex flex-wrap">
-                {words.map((word, i) => (
-                  <span key={i} onClick={() => fetchWordDefinition(word)} className={`text-lg md:text-xl font-medium cursor-pointer px-2 py-1 rounded-md transition-all duration-200 border ${activeWordIndex === i ? "text-[#06090f] bg-[#378079] border-[#378079] scale-110 z-10" : "text-[#f0ebe2]/80 border-transparent hover:border-white/10 hover:bg-white/5"}`}>
+                {words.map((word, index) => (
+                  <span key={index} onClick={() => fetchWordDefinition(word)} className={`text-lg md:text-xl font-medium cursor-pointer px-2 py-1 rounded-md transition-all duration-200 border ${activeWordIndex === index ? "text-[#06090f] bg-[#378079] border-[#378079] scale-110 z-10" : "text-[#f0ebe2]/80 border-transparent hover:border-white/10 hover:bg-white/5"}`}>
                     {word}
                   </span>
                 ))}
@@ -160,7 +159,7 @@ function AudioPractice() {
               </div>
             </div>
 
-        
+
           </div>
         </div>
       </div>

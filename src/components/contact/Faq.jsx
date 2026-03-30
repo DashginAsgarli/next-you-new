@@ -4,7 +4,7 @@ import { HiOutlineChevronDown, HiOutlineQuestionMarkCircle } from "react-icons/h
 function FAQ() {
     const [activeIndex, setActiveIndex] = useState(null);
 
-    const handleMouseMove = (e) => {
+    function handleMouseMove(e) {
         const { currentTarget, clientX, clientY } = e;
         const { left, top } = currentTarget.getBoundingClientRect();
         const x = clientX - left;

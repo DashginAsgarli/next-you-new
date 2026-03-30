@@ -5,7 +5,7 @@ import {
     HiX, HiOutlineHome, HiOutlineMusicNote, HiOutlineBookOpen,
     HiOutlineAcademicCap, HiOutlineCode,
     HiOutlineNewspaper, HiOutlineLightBulb, HiOutlineTrendingUp,
-    HiOutlineGlobe, 
+    HiOutlineGlobe,
     HiOutlineBriefcase, HiOutlineChartBar
 } from "react-icons/hi"
 

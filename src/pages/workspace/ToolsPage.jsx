@@ -1,7 +1,7 @@
 import React from 'react'
-import ToolsHeader from '../components/tools/ToolsHeader'
-import ColorPickerTool from '../components/tools/ColorPickerTool'
-import PasswordGenerator from '../components/tools/PasswordGenerator'
+import ToolsHeader from '../../components/tools/ToolsHeader'
+import ColorPickerTool from '../../components/tools/ColorPickerTool'
+import PasswordGenerator from '../../components/tools/PasswordGenerator'
 
 function ToolsPage() {
     return (

@@ -1,17 +1,16 @@
 import React from 'react'
-import Blog from '../components/blog/Blog'
+import Leaderboard from '../../components/leaderboard/Leaderboard'
 
-function BlogPage() {
+function LeaderboardPage() {
     return (
         <>
             <section className=" w-full overflow-hidden relative">
                 <div className='background-tor'></div>
                 <div className='background-shadow'></div>
-                <Blog />
+                <Leaderboard />
             </section>
-
         </>
     )
 }
 
-export default BlogPage
+export default LeaderboardPage

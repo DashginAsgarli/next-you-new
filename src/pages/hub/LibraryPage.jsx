@@ -1,9 +1,9 @@
 import React from 'react'
-// import Library from '../components/library/Library'
-// import BookOfTheDay from '../components/library/BookOfTheDay'
-import ReadingChallengeBanner from '../components/library/ReadingChallengeBanner'
-import GenreMap from '../components/library/GenreMap'
-// import AuthorBio from '../components/library/AuthorBio'
+// import Library from '../../components/library/Library'
+// import BookOfTheDay from '../../components/library/BookOfTheDay'
+import ReadingChallengeBanner from '../../components/library/ReadingChallengeBanner'
+import GenreMap from '../../components/library/GenreMap'
+// import AuthorBio from '../../components/library/AuthorBio'
 
 function LibraryPage() {
     return (

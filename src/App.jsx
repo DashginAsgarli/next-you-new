@@ -1,17 +1,17 @@
 import React from 'react'
 import { Routes, Route, Link, NavLink, Outlet } from "react-router-dom";
 import { useState } from "react";
-import HomePage from './pages/HomePage';
+import HomePage from './pages/home/HomePage';
 import './index.css'
 import Header from './layout/Header';
 import Sidebar from './layout/Sidebar';
-import MusicPage from './pages/MusicPage';
-import LibraryPage from './pages/LibraryPage';
-import LanguagePage from './pages/LanguagePage';
-import CodePage from './pages/CodePage';
+import MusicPage from './pages/hub/MusicPage';
+import LibraryPage from './pages/hub/LibraryPage';
+import LanguagePage from './pages/hub/LanguagePage';
+import CodePage from './pages/hub/CodePage';
 import Login from './components/auth/Login';
-import ContactPage from './pages/ContactPage';
-import PlannerPage from './pages/PlannerPage';
+import ContactPage from './pages/contact/ContactPage';
+import PlannerPage from './pages/workspace/PlannerPage';
 
 import CourseDetail from "./components/code/CourseDetail"
 import Register from './components/auth/Register';
@@ -19,14 +19,14 @@ import Html from './components/code/Html';
 
 
 import Footer from './layout/Footer'
-import DashboardPage from './pages/DashboardPage'
-import BlogPage from './pages/BlogPage'
-import EventsPage from './pages/EventsPage'
-import ToolsPage from './pages/ToolsPage'
-import LeaderboardPage from './pages/LeaderboardPage'
-import NewsPage from './pages/NewsPage'
-import PortfolioPage from './pages/PortfolioPage'
-import GrowthPage from './pages/GrowthPage';
+import DashboardPage from './pages/analysis/DashboardPage'
+import BlogPage from './pages/content/BlogPage'
+import EventsPage from './pages/content/EventsPage'
+import ToolsPage from './pages/workspace/ToolsPage'
+import LeaderboardPage from './pages/analysis/LeaderboardPage'
+import NewsPage from './pages/content/NewsPage'
+import PortfolioPage from './pages/analysis/PortfolioPage'
+import GrowthPage from './pages/analysis/GrowthPage';
 
 function App() {
 

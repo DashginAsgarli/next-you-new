@@ -1,10 +1,10 @@
 import React from 'react'
-import XPProgress from '../components/dashboard/XPProgress'
-import StreakTracker from '../components/dashboard/StreakTracker'
-import RecentActivity from '../components/dashboard/RecentActivity'
-import CourseProgress from '../components/dashboard/CourseProgress'
-import AchievementBadges from '../components/dashboard/AchievementBadges'
-import SkillRadar from '../components/dashboard/SkillRadar'
+import XPProgress from '../../components/dashboard/XPProgress'
+import StreakTracker from '../../components/dashboard/StreakTracker'
+import RecentActivity from '../../components/dashboard/RecentActivity'
+import CourseProgress from '../../components/dashboard/CourseProgress'
+import AchievementBadges from '../../components/dashboard/AchievementBadges'
+import SkillRadar from '../../components/dashboard/SkillRadar'
 
 function DashboardPage() {
     return (

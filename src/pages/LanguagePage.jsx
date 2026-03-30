@@ -10,9 +10,9 @@ import DailyChallenges from '../components/language/DailyChallenges'
 import WordOfTheDay from '../components/language/WordOfTheDay'
 import SentenceBuilder from '../components/language/SentenceBuilder'
 import IdiomLearn from '../components/language/IdiomLearn'
-import VerbTensesTable from '../components/language/VerbTensesTable'
 import LanguageFamilyTree from '../components/language/LanguageFamilyTree'
 import WorldAlphabets from '../components/language/WorldAlphabets'
+import MultiLangTable from '../components/language/MultiLangTable'
 
 
 function LanguagePage() {
@@ -32,9 +32,9 @@ function LanguagePage() {
                 <DailyChallenges />
                 <SentenceBuilder />
                 <IdiomLearn />
-                <VerbTensesTable />
                 <LanguageFamilyTree />
                 <WorldAlphabets />
+                <MultiLangTable />
             </section>
         </>
     )

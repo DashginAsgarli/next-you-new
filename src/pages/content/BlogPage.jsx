@@ -1,16 +1,17 @@
 import React from 'react'
-import Portfolio from '../components/portfolio/Portfolio'
+import Blog from '../../components/blog/Blog'
 
-function PortfolioPage() {
+function BlogPage() {
     return (
         <>
             <section className=" w-full overflow-hidden relative">
                 <div className='background-tor'></div>
                 <div className='background-shadow'></div>
-                <Portfolio />
+                <Blog />
             </section>
+
         </>
     )
 }
 
-export default PortfolioPage
+export default BlogPage

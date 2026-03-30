@@ -1,16 +1,16 @@
 import React from 'react'
-import Planner from '../components/planner/Planner'
+import Portfolio from '../../components/portfolio/Portfolio'
 
-function PlannerPage() {
+function PortfolioPage() {
     return (
         <>
             <section className=" w-full overflow-hidden relative">
                 <div className='background-tor'></div>
                 <div className='background-shadow'></div>
-                <Planner />
+                <Portfolio />
             </section>
         </>
     )
 }
 
-export default PlannerPage
+export default PortfolioPage

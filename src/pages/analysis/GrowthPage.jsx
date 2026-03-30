@@ -1,8 +1,8 @@
 import React from 'react'
-import GrowthHeader from '../components/growth/GrowthHeader'
-import LifeGoalMap from '../components/growth/LifeGoalMap'
-import GrowthChart from '../components/growth/GrowthChart'
-import HabitsMatrix from '../components/growth/HabitsMatrix'
+import GrowthHeader from '../../components/growth/GrowthHeader'
+import LifeGoalMap from '../../components/growth/LifeGoalMap'
+import GrowthChart from '../../components/growth/GrowthChart'
+import HabitsMatrix from '../../components/growth/HabitsMatrix'
 
 function GrowthPage() {
     return (

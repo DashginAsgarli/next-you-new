@@ -1,16 +1,16 @@
 import React from 'react'
-import Leaderboard from '../components/leaderboard/Leaderboard'
+import Planner from '../../components/planner/Planner'
 
-function LeaderboardPage() {
+function PlannerPage() {
     return (
         <>
             <section className=" w-full overflow-hidden relative">
                 <div className='background-tor'></div>
                 <div className='background-shadow'></div>
-                <Leaderboard />
+                <Planner />
             </section>
         </>
     )
 }
 
-export default LeaderboardPage
+export default PlannerPage

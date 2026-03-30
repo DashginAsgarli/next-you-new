@@ -1,13 +1,6 @@
 import { NavLink, Link } from "react-router-dom"
 import { useEffect, useRef } from "react"
-import {
-    HiOutlineStar, HiOutlineCalendar, HiOutlineLink, HiOutlineLogout,
-    HiX, HiOutlineHome, HiOutlineMusicNote, HiOutlineBookOpen,
-    HiOutlineAcademicCap, HiOutlineCode,
-    HiOutlineNewspaper, HiOutlineLightBulb, HiOutlineTrendingUp,
-    HiOutlineGlobe,
-    HiOutlineBriefcase, HiOutlineChartBar
-} from "react-icons/hi"
+import { HiOutlineStar, HiOutlineCalendar, HiOutlineLink, HiOutlineLogout, HiX, HiOutlineHome, HiOutlineMusicNote, HiOutlineBookOpen, HiOutlineAcademicCap, HiOutlineCode, HiOutlineNewspaper, HiOutlineLightBulb, HiOutlineTrendingUp, HiOutlineGlobe, HiOutlineBriefcase, HiOutlineChartBar } from "react-icons/hi"
 
 const Sidebar = function ({ isOpen, onClose }) {
     const sidebarRef = useRef(null)
@@ -26,6 +19,7 @@ const Sidebar = function ({ isOpen, onClose }) {
         { to: "/leaderboard", label: "Liderboard", icon: <HiOutlineTrendingUp size={18} /> },
         { to: "/tools", label: "Alətlər", icon: <HiOutlineLightBulb size={18} /> },
         { to: "/portfolio", label: "Portfolio", icon: <HiOutlineBriefcase size={18} /> },
+        { to: "/growth", label: "Böyümə", icon: <HiOutlineTrendingUp size={18} /> }
     ]
 
     const infoLinks = [

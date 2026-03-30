@@ -26,6 +26,7 @@ import ToolsPage from './pages/ToolsPage'
 import LeaderboardPage from './pages/LeaderboardPage'
 import NewsPage from './pages/NewsPage'
 import PortfolioPage from './pages/PortfolioPage'
+import GrowthPage from './pages/GrowthPage';
 
 function App() {
 
@@ -70,6 +71,7 @@ function App() {
             <Route path="/leaderboard" element={<LeaderboardPage />} />
             <Route path="/news" element={<NewsPage />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
+            <Route path="/growth" element={<GrowthPage />} />
           </Routes>
         </section>
         <Footer />

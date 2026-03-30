@@ -4,6 +4,7 @@ import GenreVisual from '../components/music/GenreVisual'
 import MusicTheory from '../components/music/MusicTheory'
 import MusicHistory from '../components/music/MusicHistory'
 import MusicGlossary from '../components/music/MusicGlossary'
+import ListeningJournal from '../components/music/ListeningJournal'
 
 function MusicPage() {
     return (
@@ -16,6 +17,7 @@ function MusicPage() {
                 <MusicTheory />
                 <MusicHistory />
                 <MusicGlossary />
+                <ListeningJournal />
             </section>
         </>
     )

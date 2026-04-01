@@ -8,6 +8,8 @@ import CodingStats from '../../components/code/CodingStats'
 import CodeHero from '../../components/code/CodeHero'
 import CssPlayground from '../../components/code/CssPlayground'
 import GitCommands from '../../components/code/GitCommands'
+import AlgorithmRace from '../../components/code/AlgorithmRace'
+import MockInterview from '../../components/code/MockInterview'
 
 function CodePage() {
     return (
@@ -20,10 +22,12 @@ function CodePage() {
                 <DevStack />
                 {/* <GithubTrending /> */}
                 <CodeChallenge />
-                <CodingStats/>
+                <CodingStats />
                 <CertificateBadge />
                 <CssPlayground />
                 <GitCommands />
+                <AlgorithmRace />
+                <MockInterview />
 
             </section>
         </>

@@ -130,7 +130,7 @@ function MockInterview() {
     const diffColor = { Easy: '#6ae890', Medium: '#e8c46a', Hard: '#e87a6a' };
 
     return (
-        <section className="px-8 md:px-16 py-10 border-t border-white/5 bg-[#030508] min-h-screen">
+        <section className="px-8 md:px-16 py-10   min-h-screen">
             <div className="flex items-center gap-2 mb-2">
                 <div className="w-6 h-px bg-[#378079]" />
                 <span className="text-[9px] tracking-[0.3em] text-[#378079] uppercase font-bold">C-08 · Mock Interview</span>

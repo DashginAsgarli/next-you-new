@@ -10,6 +10,7 @@ import CssPlayground from '../../components/code/CssPlayground'
 import GitCommands from '../../components/code/GitCommands'
 import AlgorithmRace from '../../components/code/AlgorithmRace'
 import MockInterview from '../../components/code/MockInterview'
+import FlexGridLab from '../../components/code/FlexGridLab'
 
 function CodePage() {
     return (
@@ -28,6 +29,7 @@ function CodePage() {
                 <GitCommands />
                 <AlgorithmRace />
                 <MockInterview />
+                <FlexGridLab />
 
             </section>
         </>

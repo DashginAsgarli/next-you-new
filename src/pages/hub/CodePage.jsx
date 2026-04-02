@@ -11,6 +11,8 @@ import GitCommands from '../../components/code/GitCommands'
 import AlgorithmRace from '../../components/code/AlgorithmRace'
 import MockInterview from '../../components/code/MockInterview'
 import FlexGridLab from '../../components/code/FlexGridLab'
+import HTMLValidator from '../../components/code/HTMLValidator'
+import HTTPStatusReference from '../../components/code/HTTPStatusReference'
 
 function CodePage() {
     return (
@@ -30,6 +32,8 @@ function CodePage() {
                 <AlgorithmRace />
                 <MockInterview />
                 <FlexGridLab />
+                <HTMLValidator />
+                <HTTPStatusReference />
 
             </section>
         </>

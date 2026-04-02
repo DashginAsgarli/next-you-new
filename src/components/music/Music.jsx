@@ -115,7 +115,7 @@ function Music() {
                     <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-start md:items-center lg:items-start justify-center">
 
                         <div className="w-full md:w-87.5 lg:w-105 md:h-145 lg:h-155 shrink-0">
-                            <div className="relative bg-[#0a0e14] p-6 lg:p-8 rounded-[40px] border border-white/5 h-full flex flex-col items-center justify-between shadow-2xl overflow-hidden group">
+                            <div className="relative bg-[#0a0e14] p-6 lg:p-8 rounded-2xl border border-white/5 h-full flex flex-col items-center justify-between overflow-hidden group">
                                 <img src={currentSong.imageUrl} className="absolute inset-0 w-full h-full object-cover opacity-10 blur-3xl scale-150 transition-all duration-1000" alt="" />
 
                                 <div className="relative z-10 w-full flex flex-col items-center">

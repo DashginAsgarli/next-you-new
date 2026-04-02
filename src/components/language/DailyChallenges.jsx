@@ -16,7 +16,7 @@ function DailyChallenges() {
             <div className="relative z-10  ">
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-12">
                     <div>
-                        <h3 className="text-4xl md:text-5xl lg:text-6xl font-black text-[#f0ebe2] uppercase tracking-tighter">
+                        <h3 className="text-[2rem] md:text-[2.5rem] lg:text-[3.5rem] font-black text-[#f0ebe2] uppercase tracking-tighter">
                             GÜNDƏLİK <span className="text-transparent" style={{ WebkitTextStroke: '1px #f0ebe2' }}>MÜCADİLƏ</span>
                         </h3>
                     </div>

@@ -109,10 +109,7 @@ function MockInterview() {
         }, 1000);
     };
 
-    const stopTimer = () => {
-        setTimerRunning(false);
-        clearInterval(timerRef.current);
-    };
+    const stopTimer = () => { setTimerRunning(false); clearInterval(timerRef.current); };
 
     function resetProblem(idx) {
         stopTimer();
@@ -130,12 +127,12 @@ function MockInterview() {
     const diffColor = { Easy: '#6ae890', Medium: '#e8c46a', Hard: '#e87a6a' };
 
     return (
-        <section className="px-8 md:px-16 py-10   min-h-screen">
+        <section className="px-8 md:px-16 py-10 md:p-16">
             <div className="flex items-center gap-2 mb-2">
                 <div className="w-6 h-px bg-[#378079]" />
                 <span className="text-[9px] tracking-[0.3em] text-[#378079] uppercase font-bold">C-08 · Mock Interview</span>
             </div>
-            <h2 className="text-[#f0ebe2] font-black text-[1.8rem] md:text-[2.2rem] leading-tight tracking-tighter uppercase mb-6">
+            <h2 className="text-[#f0ebe2] font-black text-[2rem] md:text-[3rem] lg:text-[4rem] leading-tight tracking-tighter uppercase mb-6">
                 MÜSAHIBƏ <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">SİMULYATOR</span>
             </h2>
 

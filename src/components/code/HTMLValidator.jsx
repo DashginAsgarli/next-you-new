@@ -12,40 +12,24 @@ function HTMLValidator() {
         for (let i = 0; i < lines.length; i++) {
             const line = lines[i].trim();
 
-            if (line.includes('<') && !line.includes('>')) {
-                foundIssues.push({ type: 'error', msg: `Sətir ${i + 1}: Tag düzgün bağlanmayıb ( '>' çatışmır)` });
-            }
-
-            if (line.includes('<img') && !line.includes('alt=')) {
-                foundIssues.push({ type: 'warning', msg: `Sətir ${i + 1}: <img> tagında 'alt' atributu yoxdur` });
-            }
-
-            if (line.includes('<button') && !line.includes('type=')) {
-                foundIssues.push({ type: 'warning', msg: `Sətir ${i + 1}: <button> üçün 'type' təyin edilməyib` });
-            }
+            if (line.includes('<') && !line.includes('>')) { foundIssues.push({ type: 'error', msg: `Sətir ${i + 1}: Tag düzgün bağlanmayıb ( '>' çatışmır)` }); }
+            if (line.includes('<img') && !line.includes('alt=')) { foundIssues.push({ type: 'warning', msg: `Sətir ${i + 1}: <img> tagında 'alt' atributu yoxdur` }); }
+            if (line.includes('<button') && !line.includes('type=')) { foundIssues.push({ type: 'warning', msg: `Sətir ${i + 1}: <button> üçün 'type' təyin edilməyib` }); }
         }
 
         const deprecatedTags = ['<font', '<center', '<marquee', '<blink'];
         for (const tag of deprecatedTags) {
-            if (htmlContent.toLowerCase().includes(tag)) {
-                foundIssues.push({ type: 'warning', msg: `${tag}> köhnəlmiş tagdır, CSS istifadə edin` });
-            }
+            if (htmlContent.toLowerCase().includes(tag)) { foundIssues.push({ type: 'warning', msg: `${tag}> köhnəlmiş tagdır, CSS istifadə edin` }); }
         }
-        if (htmlContent.includes('href=""') || htmlContent.includes("href=''")) {
-            foundIssues.push({ type: 'warning', msg: 'Boş href atributu tövsiyə edilmir' });
-        }
+        if (htmlContent.includes('href=""') || htmlContent.includes("href=''")) { foundIssues.push({ type: 'warning', msg: 'Boş href atributu tövsiyə edilmir' }); }
 
         const openDivs = htmlContent.split('<div').length - 1;
         const closeDivs = htmlContent.split('</div>').length - 1;
-        if (openDivs !== closeDivs) {
-            foundIssues.push({ type: 'error', msg: `<div> və </div> sayı bərabər deyil` });
-        }
+        if (openDivs !== closeDivs) { foundIssues.push({ type: 'error', msg: `<div> və </div> sayı bərabər deyil` }); }
 
         const openPars = htmlContent.split('<p').length - 1;
         const closePars = htmlContent.split('</p>').length - 1;
-        if (openPars !== closePars) {
-            foundIssues.push({ type: 'error', msg: `<p> və </p> sayı bərabər deyil` });
-        }
+        if (openPars !== closePars) { foundIssues.push({ type: 'error', msg: `<p> və </p> sayı bərabər deyil` }); }
         setValidationIssues(foundIssues);
         setIsValidated(true);
     };
@@ -54,13 +38,13 @@ function HTMLValidator() {
     const warningList = validationIssues.filter((item) => item.type === 'warning');
 
     return (
-        <section className="px-4 md:px-16 py-10">
+        <section className="px-4 md:px-16 py-10 md:py-16">
             <div className="flex items-center gap-2 mb-2">
                 <div className="w-6 h-px bg-[#378079]" />
                 <span className="text-[9px] tracking-[0.3em] text-[#378079] uppercase font-bold">NextYOU · VALIDATOR</span>
             </div>
 
-            <h2 className="text-[#f0ebe2] font-black text-[1.8rem] md:text-[2.2rem] leading-tight tracking-tighter uppercase mb-6">
+            <h2 className="text-[#f0ebe2] font-black text-[2rem] md:text-[3rem] lg:text-[4rem] leading-tight tracking-tighter uppercase mb-6">
                 HTML <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">VALIDATOR</span>
             </h2>
 

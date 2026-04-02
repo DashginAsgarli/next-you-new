@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import { LuAudioLines } from "react-icons/lu";
 function MusicGlossary() {
 
     const terms = [
@@ -35,38 +35,23 @@ function MusicGlossary() {
     });
 
     return (
-        <section className="px-8 md:px-16 py-10 border-t border-white/5">
+        <section className="px-8 md:px-16 py-10">
             <div className="flex items-center gap-2 mb-4">
-                <div className="w-6 h-px bg-[#378079]" />
+                <LuAudioLines className='text-[#378079]' />
                 <span className="text-[9px] tracking-[0.3em] text-[#378079] uppercase font-bold">Lüğət</span>
             </div>
-            <h2 className="text-[#f0ebe2] font-black text-[2rem] md:text-[2.5rem] leading-tight tracking-tighter uppercase mb-8">
+            <h2 className="text-[#f0ebe2] font-black text-[2rem] md:text-[3rem] lg:text-[4rem] leading-tight tracking-tighter uppercase mb-8">
                 MUSİQİ <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">LÜĞƏTİ</span>
             </h2>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-6">
-                <input
-                    type="text"
-                    value={search}
-                    onChange={(e) => setSearch(e.target.value)}
-                    placeholder="AXTAR..."
-                    className="custom-input flex-1"
-                />
+                <input type="text" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="AXTAR..." className="custom-input flex-1" />
             </div>
 
             <div className="flex flex-wrap gap-2 mb-8">
                 {categories.map((c) => {
                     return (
-                        <button
-                            key={c}
-                            onClick={() => setFilter(c)}
-                            className={
-                                'px-4 py-2 text-[10px] font-bold tracking-[0.2em] uppercase border transition-all ' +
-                                (filter === c
-                                    ? 'border-[#378079] text-[#378079] bg-[#378079]/10'
-                                    : 'border-white/10 text-white/30 hover:border-white/20 hover:text-white/50')
-                            }
-                        >
+                        <button key={c} onClick={() => setFilter(c)} className={'px-4 py-2 text-[10px] font-bold tracking-[0.2em] uppercase border transition-all ' + (filter === c ? 'border-[#378079] text-[#378079] bg-[#378079]/10' : 'border-white/10 text-white/30 hover:border-white/20 hover:text-white/50')}>
                             {c}
                         </button>
                     );
@@ -75,13 +60,9 @@ function MusicGlossary() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {filtered.map((t) => {
-                    var isOpen = expanded === t.word;
+                    const isOpen = expanded === t.word;
                     return (
-                        <div
-                            key={t.word}
-                            onClick={() => setExpanded(isOpen ? null : t.word)}
-                            className="bg-[#0b0f17] border border-white/5 rounded-xl p-5 cursor-pointer hover:border-[#378079]/30 transition-all"
-                        >
+                        <div key={t.word} onClick={() => setExpanded(isOpen ? null : t.word)} className="bg-[#0b0f17] border border-white/5 rounded-xl p-5 cursor-pointer hover:border-[#378079]/30 transition-all">
                             <div className="flex items-center justify-between">
                                 <div>
                                     <div className="flex items-center gap-3">

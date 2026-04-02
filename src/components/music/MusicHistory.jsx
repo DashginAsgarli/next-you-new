@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import { LuScrollText } from "react-icons/lu";
 function MusicHistory() {
     const eras = [
         {
@@ -99,28 +99,19 @@ function MusicHistory() {
     const era = eras[active];
 
     return (
-        <section className="px-8 md:px-16 py-10 border-t border-white/5">
+        <section className="px-8 md:px-16 py-10 md:py-16">
             <div className="flex items-center gap-2 mb-4">
-                <div className="w-6 h-px bg-[#378079]" />
+                <LuScrollText className='text-[#378079]' />
                 <span className="text-[9px] tracking-[0.3em] text-[#378079] uppercase font-bold">Tarix</span>
             </div>
-            <h2 className="text-[#f0ebe2] font-black text-[2rem] md:text-[2.5rem] leading-tight tracking-tighter uppercase mb-10">
+            <h2 className="text-[#f0ebe2] font-black text-[2rem] md:text-[3rem] lg:text-[4rem] leading-tight tracking-tighter uppercase mb-10">
                 MUSİQİ <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">TARİXİ</span>
             </h2>
 
             <div className="flex gap-2 overflow-x-auto pb-4 mb-8 scrollbar-none">
-                {eras.map((e, i) => (
-                    <button key={i} onClick={() => { setActive(i); setSelectedTrack(null); }}
-                        className="shrink-0 px-4 py-3 border transition-all text-left"
-                        style={{
-                            borderColor: active === i ? e.color : 'rgba(255,255,255,0.08)',
-                            background: active === i ? e.color + '18' : 'transparent',
-                        }}
-                    >
-                        <div
-                            className="text-[10px] font-black tracking-[0.2em] uppercase mb-1"
-                            style={{ color: active === i ? e.color : 'rgba(240,235,226,0.3)' }}
-                        >
+                {eras.map((e, index) => (
+                    <button key={index} onClick={() => { setActive(index); setSelectedTrack(null); }} className="shrink-0 px-4 py-3 border transition-all text-left" style={{ borderColor: active === index ? e.color : 'rgba(255,255,255,0.08)', background: active === index ? e.color + '18' : 'transparent', }}>
+                        <div className="text-[10px] font-black tracking-[0.2em] uppercase mb-1" style={{ color: active === index ? e.color : 'rgba(240,235,226,0.3)' }}>
                             {e.period}
                         </div>
                     </button>
@@ -128,14 +119,8 @@ function MusicHistory() {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <div
-                    className="bg-[#0b0f17] rounded-2xl p-8 border transition-all"
-                    style={{ borderColor: era.color + '40' }}
-                >
-                    <div
-                        className="text-[10px] font-bold tracking-[0.3em] uppercase mb-2"
-                        style={{ color: era.color }}
-                    >
+                <div className="bg-[#0b0f17] rounded-2xl p-8 border transition-all" style={{ borderColor: era.color + '40' }}>
+                    <div className="text-[10px] font-bold tracking-[0.3em] uppercase mb-2" style={{ color: era.color }}>
                         {era.period}
                     </div>
                     <h3 className="text-[#f0ebe2] font-black text-xl md:text-2xl uppercase tracking-tight mb-4">{era.name}</h3>
@@ -144,12 +129,8 @@ function MusicHistory() {
                     <div className="mt-8 border-t border-white/5 pt-6">
                         <p className="text-[9px] font-bold tracking-[0.3em] uppercase text-white/20 mb-4">Önə Çıxan Playlist</p>
                         <div className="space-y-2">
-                            {era.playlist.map((track, idx) => (
-                                <button
-                                    key={idx}
-                                    onClick={() => setSelectedTrack(track)}
-                                    className="w-full text-left p-3 rounded-lg bg-white/5 hover:bg-white/10 transition-all flex justify-between items-center group"
-                                >
+                            {era.playlist.map((track, index) => (
+                                <button key={index} onClick={() => setSelectedTrack(track)} className="w-full text-left p-3 rounded-lg bg-white/5 hover:bg-white/10 transition-all flex justify-between items-center group">
                                     <div>
                                         <p className="text-[12px] font-bold text-[#f0ebe2]">{track.title}</p>
                                         <p className="text-[10px] text-white/40">{track.artist}</p>
@@ -178,39 +159,15 @@ function MusicHistory() {
                     <div>
                         <p className="text-[9px] font-bold tracking-[0.3em] uppercase text-white/20 mb-4">Janrlar</p>
                         <div className="space-y-3">
-                            {era.genres.map((g) => (
-                                <div
-                                    key={g}
-                                    className="flex items-center gap-4 p-4 bg-[#0b0f17] border border-white/5 rounded-xl"
-                                >
+                            {era.genres.map((item) => (
+                                <div key={item.key} className="flex items-center gap-4 p-4 bg-[#0b0f17] border border-white/5 rounded-xl">
                                     <div className="w-2 h-2 rounded-full shrink-0" style={{ background: era.color }} />
-                                    <span className="text-[13px] font-bold uppercase tracking-[0.2em] text-[#f0ebe2]/70">{g}</span>
+                                    <span className="text-[13px] font-bold uppercase tracking-[0.2em] text-[#f0ebe2]/70">{item.name}</span>
                                 </div>
                             ))}
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div className="flex items-center gap-0 mt-8 overflow-x-auto">
-                {eras.map((e, i) => (
-                    <div key={i} className="flex items-center">
-                        <button
-                            onClick={() => {
-                                setActive(i);
-                                setSelectedTrack(null);
-                            }}
-                            className="w-3 h-3 rounded-full transition-all shrink-0"
-                            style={{
-                                background: active === i ? e.color : 'rgba(255,255,255,0.1)',
-                                transform: active === i ? 'scale(1.5)' : 'scale(1)',
-                            }}
-                        />
-                        {i < eras.length - 1 && (
-                            <div className="w-12 h-px" style={{ background: 'rgba(255,255,255,0.05)' }} />
-                        )}
-                    </div>
-                ))}
             </div>
         </section>
     );

@@ -1,6 +1,6 @@
 import React from 'react'
 import { HiOutlineLightningBolt, HiOutlineShieldCheck, HiOutlineAcademicCap, HiOutlineGlobeAlt } from 'react-icons/hi'
-
+import { LuLayers } from "react-icons/lu";
 function Features() {
     const features = [
         { icon: <HiOutlineLightningBolt size={24} />, title: 'Sürətli Öyrənmə', desc: 'Ağıllı alqoritm sənin öyrənmə sürətinə uyğunlaşır, heç bir vaxtı boşa vermirsən.', },
@@ -12,8 +12,8 @@ function Features() {
     return (
         <section className="px-8 md:px-16 py-10 md:py-18 lg:py-20">
             <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-px bg-[#378079]" />
-                <span className="text-[10px] tracking-[0.3em] text-[#378079] uppercase font-bold">Xüsusiyyətlər</span>
+                <LuLayers className='text-[#378079]' />
+                <span className="text-[10px] tracking-[0.3em] text-[#378079] uppercase font-bold">Xüsusİyyətlər</span>
             </div>
             <h2 className="text-[#f0ebe2] font-black text-[2rem] md:text-[3rem] lg:text-[4rem] leading-[1.07] tracking-[-0.01em] uppercase">
                 NİYƏ{' '}<span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">NEXTYOU</span>

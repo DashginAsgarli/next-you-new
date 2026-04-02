@@ -26,16 +26,12 @@ const Header = ({ onProfileClick }) => {
             <nav className="hidden lg:flex items-center gap-1 bg-white/5 p-1.5 rounded-full border border-white/5">
                 {navLinks.map((link) => (
                     <NavLink key={link.to} to={link.to} className={({ isActive }) => `flex items-center gap-2 px-4 py-2 text-[10px] uppercase tracking-[1.5px] transition-all duration-400 rounded-full ${isActive ? "text-white bg-[#378079]/10 shadow-[inset_0_0_10px_rgba(55,128,121,0.2)] font-bold" : "text-[#f0ebe2]/40 hover:text-[#f0ebe2] hover:bg-white/5"}    `}>
-                        <span className="opacity-80">{link.icon}</span>
-                        {link.label}
+                        <span className="opacity-80">{link.icon}</span> {link.label}
                     </NavLink>
                 ))}
             </nav>
 
-            <div className="flex items-center gap-3">
-                <Link to="/dashboard" className="hidden md:flex items-center gap-2 px-4 py-2 bg-[#378079]/10 border border-[#378079]/30 text-[#378079] rounded-full text-[9px] font-black uppercase tracking-widest hover:bg-[#378079] hover:text-[#06090f] transition-all">
-                    Dashboard
-                </Link>
+            <div>
                 <button onClick={onProfileClick} className="relative group p-2.5 rounded-xl bg-[#12151B] border border-[#1E2126] transition-transform duration-300 hover:-translate-x-2 ">
                     <div className="flex items-center gap-2 relative z-10">
                         <span className="hidden lg:block text-[9px] text-white font-bold tracking-[2px] uppercase opacity-70">Menyu</span>

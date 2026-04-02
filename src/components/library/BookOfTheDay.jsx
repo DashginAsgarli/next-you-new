@@ -22,7 +22,7 @@ function BookOfTheDay() {
     if (!book) return null;
 
     return (
-        <div className="px-8 md:px-16 py-12 border-b border-white/5">
+        <div className="px-8 md:px-16 py-10 md:py-16">
             <div className="flex items-center gap-2 mb-6">
                 <HiOutlineSparkles size={16} className="text-[#378079]" />
                 <span className="text-[9px] font-black uppercase tracking-[3px] text-[#378079]">Günün Kitabı</span>
@@ -30,11 +30,7 @@ function BookOfTheDay() {
 
             <div className="flex flex-col md:flex-row items-start gap-8 max-w-3xl">
                 <div className="relative shrink-0">
-                    <img
-                        src={book.cover}
-                        alt={book.title}
-                        className="w-32 md:w-40 shadow-2xl aspect-[2/3] object-cover border border-white/10"
-                    />
+                    <img src={book.cover} alt={book.title} className="w-32 md:w-40 aspect-2/3 object-cover border border-white/10" />
                     <div className="absolute -bottom-3 -right-3 bg-[#378079] text-[#06090f] text-[8px] font-black px-2 py-1 uppercase tracking-wider">
                         Bugün
                     </div>

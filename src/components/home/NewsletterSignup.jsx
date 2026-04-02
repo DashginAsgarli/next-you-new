@@ -1,21 +1,19 @@
 import React, { useState } from 'react';
 import { HiCheckCircle } from 'react-icons/hi';
-
+import { MdMarkEmailRead } from "react-icons/md";
 function NewsletterSignup() {
     const [email, setEmail] = useState('');
     const [submitted, setSubmitted] = useState(false);
 
     function handleSubmit() {
-        if (email.trim()) {
-            setSubmitted(true);
-        }
+        if (email.trim()) { setSubmitted(true); }
     };
 
     return (
         <section className="px-8 md:px-16 py-10 md:py-12 lg:py-16 ">
             <div >
                 <div className="flex items-center gap-2 mb-6">
-                    <div className="w-8 h-px bg-[#378079]" />
+                    <MdMarkEmailRead className='text-[#378079]' />
                     <span className="text-[10px] tracking-[0.3em] text-[#378079] uppercase font-bold">Xəbərdarlıq</span>
                 </div>
 

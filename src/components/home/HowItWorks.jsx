@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import { LuListChecks } from "react-icons/lu";
 function HowItWorks() {
     const [activeStep, setActiveStep] = useState(0)
 
@@ -13,8 +13,8 @@ function HowItWorks() {
     return (
         <section className="px-8 md:px-16 py-10 md:py-12 lg:py-16 ">
             <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-px bg-[#378079]" />
-                <span className="text-[10px] tracking-[0.3em] text-[#378079] uppercase font-bold">Necə İşləyir</span>
+                <LuListChecks className='text-[#378079]' />
+                <span className="text-[10px] tracking-[0.3em] text-[#378079] uppercase font-bold">NECƏ İŞLƏYİR</span>
             </div>
             <h2 className="text-[#f0ebe2] font-black text-[2rem] md:text-[3rem] lg:text-[4rem] leading-[1.07] tracking-[-0.01em] mb-10 lg::mb-16 uppercase">
                 4 ADDIMDA{' '}

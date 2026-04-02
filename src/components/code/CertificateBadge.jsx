@@ -3,10 +3,10 @@ import { HiCheckBadge, HiArrowSmallRight } from "react-icons/hi2";
 
 function CertificateBadge() {
   return (
-    <section className="relative px-4 sm:px-8 md:px-16 py-10 overflow-hidden">
-      <div className="relative z-10 max-w-7xl mx-auto">
+    <section className="relative px-8 md:px-16 py-10 md:py-16 overflow-hidden">
+      <div className="relative z-10">
 
-        <div className="group relative bg-[#06090f]/50 border border-white/10 rounded-2xl md:rounded-3xl overflow-hidden backdrop-blur-sm transition-all duration-500 hover:border-[#378079]/40">
+        <div className="group relative bg-[#06090f]/50 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-sm transition-all duration-500 hover:border-[#378079]/40">
 
           <div className="absolute left-0 top-0 w-1 md:w-1.5 h-full bg-[#378079]/40 group-hover:bg-[#378079] transition-colors" />
 
@@ -27,13 +27,13 @@ function CertificateBadge() {
                     SERTİFİKAT
                   </span>
                 </h3>
-                <p className="text-[10px] sm:text-xs tracking-[0.15em] text-[#f0ebe2]/50 leading-relaxed uppercase">
+                <p className="text-[10px] md:text-[14px] text-[#f0ebe2]/50 ">
                   NextYou platformasında qazandığın uğurları rəqəmsal dünyaya sübut et. Hər modul sonu rəsmi təsdiq.
                 </p>
               </div>
             </div>
 
-            <button className="whitespace-nowrap flex items-center gap-3 px-8 py-4 bg-[#378079] text-[#06090f] text-[10px] sm:text-xs font-bold tracking-[2px] uppercase rounded-full transition-all hover:bg-white hover:scale-105 active:scale-95">
+            <button className="whitespace-nowrap flex items-center gap-3 px-5 py-2 lg:px-8 lg:py-4 bg-[#378079] text-[#06090f] text-[10px] sm:text-xs font-bold tracking-[2px] uppercase rounded-full transition-all hover:bg-white hover:scale-105 active:scale-95">
               SERTİFİKAT AL <HiArrowSmallRight size={20} />
             </button>
 

@@ -5,6 +5,7 @@ function HtmlLessonView({ lesson, onBack, onStartPractice }) {
 
   return (
     <section className=" w-full overflow-hidden relative">
+      <div className='background-tor'></div>
       <div className='background-shadow'></div>
 
       <div className="font-sans  px-8 md:px-16 py-10">
@@ -33,7 +34,7 @@ function HtmlLessonView({ lesson, onBack, onStartPractice }) {
                 </span>
               </div>
 
-              <h1 className="text-3xl sm:text-6xl font-black text-white mb-6 uppercase tracking-tighter leading-tight italic">
+              <h1 className="text-3xl md:text-5xl font-black text-white mb-6 uppercase tracking-tighter leading-tight ">
                 {lesson.title}
               </h1>
 
@@ -125,8 +126,8 @@ function HtmlLessonView({ lesson, onBack, onStartPractice }) {
                 <span className="text-2xl">+{lesson.points || 50} XP</span>
               </div>
             </div>
-            <button onClick={() => onStartPractice(lesson)} className="group flex items-center justify-center gap-2 md:gap-3 px-6 py-3 md:px-12 md:py-5 bg-[#378079] text-[#06090f] rounded-xl font-bold text-[10px] md:text-sm tracking-[3px] transition-all  uppercase">
-              DƏRSİ TAMAMLA <ChevronRight size={20} />
+            <button onClick={() => onStartPractice(lesson)} className="group flex items-center justify-center gap-1 md:gap-3 px-4 py-2 md:px-12 md:py-5 bg-[#378079] text-[#06090f] rounded-xl font-bold text-[6px] md:text-sm tracking-[3px] transition-all  uppercase">
+              DƏRSİ TAMAMLA <ChevronRight size={15} />
             </button>
           </div>
 

@@ -23,7 +23,7 @@ function FAQ() {
     return (
         <section >
 
-            <div className="relative z-10 px-8 md:px-16 py-16">
+            <div className="relative z-10 px-8 md:px-16 py-10 md:py-16">
 
                 <div className="flex items-center gap-2.5 mb-8 animate-[fadeUp_0.7s_ease_both]">
                     <div className="w-8 h-px bg-[#378079]" />

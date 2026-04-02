@@ -40,27 +40,24 @@ function CodeEditor() {
 
   useEffect(() => {
     const handleMessage = (e) => {
-      if (e.data.type === "log" || e.data.type === "error") {
-        setLogs((prev) => [...prev, { type: e.data.type, text: e.data.message }]);
-      }
+      if (e.data.type === "log" || e.data.type === "error") { setLogs((prev) => [...prev, { type: e.data.type, text: e.data.message }]); }
     };
     window.addEventListener("message", handleMessage);
     return () => window.removeEventListener("message", handleMessage);
   }, []);
 
   return (
-    <section className="px-8 md:px-16 py-10 relative overflow-hidden">
-
+    <section className="px-8 md:px-16 py-10 md:py-16 relative overflow-hidden">
 
       <div className="relative z-10">
 
-        <div className="flex flex-row items-center justify-between mb-8 gap-4 animate-[fadeUp_0.7s_ease_both]">
+        <div className="flex flex-row items-center justify-between gap-4 animate-[fadeUp_0.7s_ease_both]">
           <div>
             <div className="flex items-center gap-2 mb-1 md:mb-3">
               <div className="w-6 md:w-8 h-px bg-[#378079]" />
               <span className="text-[8px] md:text-[10px] tracking-[0.25em] text-[#378079] uppercase font-bold">Laboratoriya</span>
             </div>
-            <h1 className="text-[#f0ebe2] font-black text-[2rem] md:text-[2.5rem] lg:text-[3.5rem] leading-[1.07] tracking-[-0.01em] mb-9 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.15s]">
+            <h1 className="text-[#f0ebe2] font-black text-[2rem] md:text-[3rem] lg:text-[4rem] leading-[1.07] tracking-[-0.01em] mb-9 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.15s]">
               KOD{" "}
               <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">
                 REDAKTORU
@@ -73,7 +70,7 @@ function CodeEditor() {
           </button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-[rgba(55,128,121,0.25)] border border-[rgba(55,128,121,0.2)] rounded-xl md:rounded-2xl overflow-hidden min-h-80 md:h-120">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-[rgba(55,128,121,0.25)] border border-[rgba(55,128,121,0.2)] rounded-xl overflow-hidden min-h-80 md:h-120">
 
           <div className="bg-[#0b0f17] flex flex-col h-87.5 md:h-full transition-all duration-500">
             <div className="flex bg-[#06090f] border-b border-[rgba(55,128,121,0.1)] overflow-x-auto">

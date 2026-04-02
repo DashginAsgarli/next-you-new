@@ -2,21 +2,22 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { HiCode, HiChartBar, HiDatabase, HiCog, HiLightningBolt, HiArrowRight, } from "react-icons/hi";
 
-const courses = [
-    { id: "fullstack", title: "Fullstack Proqramlaşdırma", skills: "HTML, CSS, JS, React, NextJS, NodeJS, MongoDB, XML, API, Git, Deployment", icon: <HiCode size={22} />, accent: "#F97316" },
-    { id: "digital-marketing", title: "Digital Marketing", skills: "Marketingə giriş, Rəqəmsal marketing, SMM, Kontent ilə işləmə, Google Ads və s.", icon: <HiChartBar size={22} />, accent: "#EAB308" },
-    { id: "data-science", title: "Data Science", skills: "Data Science-ə giriş, Python, SQL, Data analitika, Machine Learning, Süni intellekt", icon: <HiDatabase size={22} />, accent: "#A855F7" },
-    { id: "ai-engineering", title: "AI Engineering", skills: "Python, Machine Learning, Data, Pandas, NumPy, TensorFlow, Computer Vision, NLP, MLOps", icon: <HiLightningBolt size={22} />, accent: "#EC4899" }
-];
-
 function CodeMap() {
+
+    const courses = [
+        { id: "nextera", title: "Proqramlaşdırma", skills: "HTML, CSS, JS, React, NextJS, NodeJS, MongoDB, XML, API, Git, Deployment", icon: <HiCode size={22} />, accent: "#F97316" },
+        { id: "", title: "Digital Marketing", skills: "Marketingə giriş, Rəqəmsal marketing, SMM, Kontent ilə işləmə, Google Ads və s.", icon: <HiChartBar size={22} />, accent: "#EAB308" },
+        { id: "", title: "Data Science", skills: "Data Science-ə giriş, Python, SQL, Data analitika, Machine Learning, Süni intellekt", icon: <HiDatabase size={22} />, accent: "#A855F7" },
+        { id: "", title: "AI Engineering", skills: "Python, Machine Learning, Data, Pandas, NumPy, TensorFlow, Computer Vision, NLP, MLOps", icon: <HiLightningBolt size={22} />, accent: "#EC4899" }
+    ];
+
     return (
-        <section className="px-8 md:px-16 py-20 md:py-22  lg:py-24 font-sans">
+        <section className="px-8 md:px-16 py-10 md:py-16  font-sans">
             <div>
-                <h1 className="text-[#f0ebe2] uppercase text-center font-black text-[2.4rem] md:text-[3.5rem] lg:text-[5rem] leading-[1.07] tracking-[-0.01em] mb-14 md:mb-20 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.15s]">
-                    KURS{" "}
+                <h1 className="text-[#f0ebe2] uppercase font-black text-[2rem] md:text-[3rem] lg:text-[4rem] leading-[1.07] tracking-[-0.01em] mb-10 md:mb-16 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.15s]">
+                    Mövcud{" "}
                     <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">
-                        ROADMAP
+                        Kurslar
                     </span>
                 </h1>
 

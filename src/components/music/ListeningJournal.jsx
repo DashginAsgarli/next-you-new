@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Trash2 } from 'lucide-react';
-
+import { TbBookmarkEdit } from "react-icons/tb";
 function ListeningJournal() {
     const [song, setSong] = useState('');
     const [artist, setArtist] = useState('');
@@ -20,7 +20,6 @@ function ListeningJournal() {
         const updatedEntries = [newEntry, ...entries].slice(0, 20);
         setEntries(updatedEntries);
         localStorage.setItem('listening-journal', JSON.stringify(updatedEntries));
-
         setSong(''); setArtist(''); setFeeling('');
     };
 
@@ -31,13 +30,13 @@ function ListeningJournal() {
     };
 
     return (
-        <section className="px-8 md:px-16 py-10 border-t border-white/5">
+        <section className="px-8 md:px-16 py-10 md:py-16">
             <div className="flex items-center gap-2 mb-4">
-                <div className="w-6 h-px bg-[#378079]" />
+                <TbBookmarkEdit className='text-[#378079]' />
                 <span className="text-[9px] tracking-[0.3em] text-[#378079] uppercase font-bold">Jurnal</span>
             </div>
 
-            <h2 className="text-[#f0ebe2] font-black text-[2rem] md:text-[2.5rem] leading-tight tracking-tighter uppercase mb-8">
+            <h2 className="text-[#f0ebe2] font-black text-[2rem] md:text-[3rem] lg:text-[4rem] leading-tight tracking-tighter uppercase mb-8">
                 DİNLƏMƏ <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">JURNALI</span>
             </h2>
 

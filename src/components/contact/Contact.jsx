@@ -21,7 +21,7 @@ function Contact() {
 
     return (
         <section>
-            <div className="relative z-10 px-8 md:px-16 py-12 md:py-20  lg:py-21 border-b border-b-white">
+            <div className="relative z-10 px-8 md:px-16 py-10 md:py-16">
                 <div className="flex items-center gap-2.5 mb-8 animate-[fadeUp_0.7s_ease_both]">
                     <div className="w-8 h-px bg-[#378079]" />
                     <span className="text-[9px] md:text-[10px] tracking-[0.3em] text-[#378079] uppercase font-bold text-nowrap">Əlaqə Məlumatları</span>

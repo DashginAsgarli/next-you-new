@@ -4,7 +4,7 @@ import { HiOutlineLightBulb, HiOutlinePaperAirplane } from "react-icons/hi2";
 function Feedback() {
     return (
         <section>
-            <div className="relative z-10 w-full flex flex-col md:flex-row items-center gap-6 md:gap-12 lg:gap-20 px-8 md:px-16 pt-21 pb-19 md:pb-21 lg:pb-18 border-b border-b-white">
+            <div className="relative z-10 w-full flex flex-col md:flex-row items-center gap-6 md:gap-12 lg:gap-20 px-8 md:px-16 py-10 md:py-16">
 
                 <div className="flex-1 animate-[fadeUp_0.7s_ease_both]">
                     <div className="flex items-center gap-2 mb-4">

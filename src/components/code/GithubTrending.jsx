@@ -20,14 +20,14 @@ function GithubTrending() {
     }, []);
 
     return (
-        <div className="px-8 md:px-16 py-16 border-b border-white/10 bg-[#06090f]">
+        <div className="px-8 md:px-16 py-10 md:py-16">
             <div className="flex items-center gap-2 mb-4">
                 <HiOutlineGlobeAlt size={16} className="text-[#378079]" />
                 <span className="text-[9px] font-black uppercase tracking-[3px] text-[#378079]">Kommuniti Xəbərləri</span>
             </div>
 
-            <h2 className="text-[#f0ebe2] font-black text-[2rem] md:text-[3rem] leading-tight tracking-tighter mb-10 uppercase">
-                PROQRAMLAŞDIRMA <span className="text-transparent [-webkit-text-stroke:1px_#f0ebe2]">XƏBƏRLƏRİ</span>
+            <h2 className="text-[#f0ebe2] font-black text-[2rem] md:text-[3rem] lg:text-[4rem] leading-tight tracking-tighter mb-10 uppercase">
+                İT <span className="text-transparent [-webkit-text-stroke:1px_#f0ebe2]">XƏBƏRLƏRİ</span>
             </h2>
 
             {error ? (
@@ -54,7 +54,7 @@ function GithubTrending() {
                     ) : (
                         repos.map((repo) => (
                             <a key={repo.id} href={repo.url} target="_blank" rel="noopener noreferrer" className="group relative block bg-[#0d1117] border border-white/5 hover:border-[#378079]/40 p-5 transition-all duration-500 rounded-lg overflow-hidden">
-                                <div className="absolute -inset-1 bg-gradient-to-r from-[#378079]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity blur-2xl pointer-events-none" />
+                                <div className="absolute -inset-1 bg-linear-to-r from-[#378079]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity blur-2xl pointer-events-none" />
 
                                 <div className="relative z-10">
                                     <div className="flex flex-wrap gap-2 mb-4">
@@ -65,7 +65,7 @@ function GithubTrending() {
                                         ))}
                                     </div>
 
-                                    <h3 className="text-[#f0ebe2]/80 font-bold text-sm leading-snug mb-6 group-hover:text-white transition-colors line-clamp-2 h-[2.5rem]">
+                                    <h3 className="text-[#f0ebe2]/80 font-bold text-sm leading-snug mb-6 group-hover:text-white transition-colors line-clamp-2 h-10">
                                         {repo.title}
                                     </h3>
 

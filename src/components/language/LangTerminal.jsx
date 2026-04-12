@@ -5,7 +5,7 @@ import { RiBarChartGroupedFill } from 'react-icons/ri';
 
 function LangTerminal() {
     return (
-        <div className="relative flex items-center justify-center overflow-hidden  px-8 md:px-16 py-30 md:py-20  lg:py-20 border-b border-b-white">
+        <div className="relative flex items-center justify-center overflow-hidden  px-8 md:px-16 py-10 md:py-16">
 
             <section className="lang-section relative z-2 text-center">
                 <div className="lang-header mb-20">
@@ -17,7 +17,7 @@ function LangTerminal() {
                         <div className="line h-px w-8 bg-[#378079]"></div>
                     </div>
 
-                    <h1 className="text-[clamp(2.4rem,6vw,5rem)] font-black leading-[1.1] tracking-[-1px] text-[#f0ebe2]">
+                    <h1 className="text-3xl md:text-5xl lg:text-6xl font-black leading-[1.1] tracking-[-1px] text-[#f0ebe2]">
                         DİL ÖYRƏNMƏNİN <br />
                         <span className="outline-text text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">
                             EFEKTİV

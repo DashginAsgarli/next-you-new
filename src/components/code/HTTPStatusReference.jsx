@@ -24,13 +24,13 @@ function HTTPStatusReference() {
     };
 
     return (
-        <section className="px-8 md:px-16 py-10 border-t border-white/5">
+        <section className="px-8 md:px-16 py-10 md:py-16">
             <div className="flex items-center gap-2 mb-2">
                 <div className="w-6 h-px bg-[#378079]" />
                 <span className="text-[9px] tracking-[0.3em] text-[#378079] uppercase font-bold">C-12 · Encyclopedia</span>
             </div>
 
-            <h2 className="text-[#f0ebe2] font-black text-[1.8rem] md:text-[2.2rem] leading-tight tracking-tighter uppercase mb-8">
+            <h2 className="text-[#f0ebe2] font-black text-[2rem] md:text-[3rem] lg:text-[4rem] leading-tight tracking-tighter uppercase mb-8">
                 HTTP STATUS <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">KODLARI</span>
             </h2>
 
@@ -38,7 +38,7 @@ function HTTPStatusReference() {
 
                 <div className="grid grid-cols-2 gap-2 content-start">
                     {httpCodes.map((item) => (
-                        <button key={item.code} onClick={() => setSelectedCode(item)} className={`flex items-center gap-3 p-3 border transition-all rounded-xl text-left ${selectedCode.code === item.code ? 'border-[#378079] bg-[#378079]/5' : 'border-white/5 hover:border-white/10'}`}>
+                        <button key={item.code} onClick={() => setSelectedCode(item)} className={`flex items-center gap-3 p-3 border transition-all rounded-xl text-left ${selectedCode.code === item.code ? ' bg-[#378079]' : 'border-white/5 bg-[#0d1117] hover:border-white/10'}`}>
                             <span className="font-mono font-bold text-sm" style={{ color: getStatusColor(item.code) }}>
                                 {item.code}
                             </span>

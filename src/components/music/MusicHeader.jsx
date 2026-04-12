@@ -18,7 +18,7 @@ const MusicHeader = ({ searchTerm, setSearchTerm, onSearch, activeTab, setActive
         <div className="w-8 h-px bg-[#378079]/40" />
       </div>
 
-      <h1 className="text-[#f0ebe2] font-black text-[2.4rem] md:text-[3.5rem] lg:text-[5rem] leading-[1.07] tracking-[-0.01em] mb-9 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.15s]">
+      <h1 className="text-[#f0ebe2] font-black text-[2rem] md:text-[3rem] lg:text-[5rem] leading-[1.07] tracking-[-0.01em] mb-9 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.15s]">
         MUSİQİ{" "}
         <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">
           PLAYER

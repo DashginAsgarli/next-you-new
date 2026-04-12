@@ -103,7 +103,7 @@ function PlannerPage() {
           {showForm && (
             <div className="bg-[#06090f] border border-[#378079]/30 p-8 mb-8">
               <div className="grid grid-cols-1 gap-4 mb-4">
-                <input type="text" value={input} onChange={(e) => setInput(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && addTask()} placeholder="TASK MƏTNI..." className="custom-input w-full" />
+                <input type="text" value={input} onChange={(e) => setInput(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && addTask()} placeholder="Task daxil edin..." className="custom-input w-full" />
 
                 <div>
                   <label className="text-[8px] font-mono text-[#f0ebe2]/30 uppercase tracking-wider block mb-2">Prioritet</label>

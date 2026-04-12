@@ -1,19 +1,21 @@
 import React from 'react';
 import { HiSparkles } from "react-icons/hi2";
-
-const stats = [
-  { label: "Kateqoriya", value: "4+" },
-  { label: "Sənin tempinlə", value: "100%" },
-  { label: "İmkan", value: "∞" },
-];
+import { LuGraduationCap } from "react-icons/lu";
 
 function Hero() {
+
+  const stats = [
+    { label: "Kateqoriya", value: "4+" },
+    { label: "Sənin tempinlə", value: "100%" },
+    { label: "İmkan", value: "∞" },
+  ];
+
   return (
     <>
       <section >
         <div className="relative z-10 px-8 md:px-16 py-14 md:py-20">
           <div className="flex items-center gap-2.5 mb-8 md:mb-10 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.05s]">
-            <div className="w-7 md:w-9 h-px bg-[#378079]" />
+            <LuGraduationCap className='text-[#378079]' />
             <span className="text-[10px] md:text-[11px] tracking-[0.22em] text-[#378079] uppercase font-semibold">
               Öyrən. Yarat. İrələ.
             </span>
@@ -33,8 +35,7 @@ function Hero() {
             </button>
 
             <p className="text-[10px] md:text-[11px] font-light tracking-[0.18em] uppercase leading-loose border-l border-[rgba(55,128,121,0.3)] pl-5">
-              KİTAB • MUSİQİ • KOD • DİL<br />
-              Hər sahədə özünü kəşf et
+              KİTAB • MUSİQİ • KOD • DİL <br /> Hər sahədə özünü kəşf et
             </p>
           </div>
 

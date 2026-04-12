@@ -30,7 +30,7 @@ function CodeHero() {
     }, [fullText]);
 
     return (
-        <div className="px-8 md:px-16 py-24 border-b border-white/10 bg-[#06090f]">
+        <div className="px-8 md:px-16 py-10 md:py-16">
             <div className="flex flex-col md:flex-row items-center md:items-start gap-12 max-w-7xl mx-auto">
 
                 <div className="flex-1 w-full">
@@ -40,31 +40,30 @@ function CodeHero() {
                     </div>
                     <h1 className="text-[#f0ebe2] font-black text-[2.4rem] md:text-[3.5rem] lg:text-[5rem] leading-[1.07] tracking-[-0.01em] mb-6 uppercase">
                         KOD YAZ.<br />
-                        <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">DEV OL.</span>
+                        <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">DEV OL</span>
                     </h1>
                     <p className="text-[14px] text-[#f0ebe2]/50 leading-relaxed mb-10 max-w-md">
                         Sıfırdan fullstack developera. Strukturlaşdırılmış kurslar, canlı kod redaktoru, real layihələr.
                     </p>
-                    <div className="flex flex-wrap gap-3">
-                        <Link to="/code/fullstack" className="flex items-center gap-2 px-8 py-4 bg-[#378079] text-[#06090f] font-black text-[11px] uppercase tracking-widest hover:bg-white transition-all active:scale-95">
+                    <div className="flex  gap-3">
+                        <Link to="/code/fullstack" className="flex items-center gap-2 px-4 py-3 lg:px-6 lg:py-4 bg-[#378079] text-[#06090f] font-bold  text-[11px] lg:text-[16px]   hover:bg-white transition-all active:scale-95">
                             <HiOutlineRocketLaunch size={16} /> Kursları Kəşfet
                         </Link>
-                        <Link to="/code/html" className="flex items-center gap-2 px-8 py-4 border border-white/20 text-[#f0ebe2]/60 font-black text-[11px] uppercase tracking-widest hover:border-white hover:text-white transition-all active:scale-95">
+                        <Link to="/code/html" className="flex items-center gap-2 px-4 py-3 lg:px-6 lg:py-4 border border-white/20 bg-[#06090f]  font-bold text-[11px] lg:text-[16px] hover:border-white hover:text-white transition-all active:scale-95">
                             <HiOutlinePlay size={16} /> HTML-dən Başla
                         </Link>
                     </div>
                 </div>
 
-                <div className="w-full md:w-1/2 lg:w-[500px] shrink-0">
-                    <div className="bg-[#0d1117] border border-white/10 rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
-                        {/* Pəncərə Kontrolları */}
+                <div className="w-full md:w-1/2 lg:w-125 shrink-0">
+                    <div className="bg-[#0d1117] border border-white/10 rounded-2xl overflow-hidden">
                         <div className="flex items-center gap-2 px-5 py-4 border-b border-white/5 bg-[#06090f]">
                             <div className="w-3 h-3 rounded-full bg-[#ff5f56]" />
                             <div className="w-3 h-3 rounded-full bg-[#ffbd2e]" />
                             <div className="w-3 h-3 rounded-full bg-[#27c93f]" />
-                            <span className="ml-3 text-[9px] font-mono text-white/20 uppercase tracking-widest">main.js</span>
+                            <span className="ml-3 text-[9px] font-mono text-white/20  tracking-widest">main.js</span>
                         </div>
-                        <div className="p-6 min-h-[220px]">
+                        <div className="p-6 min-h-55">
                             <pre className="font-mono text-sm leading-relaxed whitespace-pre-wrap">
                                 {typedText.split('\n').map((line, i) => (
                                     <div key={i} className="flex gap-4">

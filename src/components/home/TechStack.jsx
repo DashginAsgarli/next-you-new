@@ -1,7 +1,7 @@
 import React from 'react';
 import * as Si from 'react-icons/si';
 import * as Fa from 'react-icons/fa';
-
+import { LuCpu } from "react-icons/lu";
 function TechStack() {
 
     const techs = [
@@ -22,12 +22,11 @@ function TechStack() {
     return (
         <section className="px-8 md:px-16  py-10 md:py-12 lg:py-16 overflow-hidden">
             <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-px bg-[#378079]" />
+                <LuCpu className='text-[#378079]' />
                 <span className="text-[10px] tracking-[0.3em] text-[#378079] uppercase font-bold">Texnologiyalar</span>
             </div>
             <h2 className="text-[#f0ebe2] font-black text-[2rem] md:text-[3rem] lg:text-[4rem] max-w-2xl leading-[1.07] tracking-[-0.01em] mb-10 md:mb-16 uppercase">
-                ÖYRƏNİLƏN{' '}
-                <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">TEXNOLOGİYALAR</span>
+                ÖYRƏNİLƏN{' '}<span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">TEXNOLOGİYALAR</span>
             </h2>
 
             <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">

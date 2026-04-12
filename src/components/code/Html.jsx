@@ -41,25 +41,23 @@ function Html() {
     { id: "Struktur", name: "Struktur", icon: <Layout size={16} />, count: lessons.filter(l => l.category === "Struktur").length },
   ];
 
-  if (activeLesson) {
-    return <HtmlLessonView lesson={activeLesson} onBack={() => setActiveLesson(null)} />;
-  }
+  if (activeLesson) { return <HtmlLessonView lesson={activeLesson} onBack={() => setActiveLesson(null)} />; }
 
   return (
     <section className=" w-full overflow-hidden relative">
       <div className='background-tor'></div>
       <div className='background-shadow'></div>
 
-      <div className="px-8 md:px-16 py-10 ">
+      <div className="px-8 md:px-16 py-10 md:p-16 ">
         <div className="mb-10 animate-[fadeUp_0.7s_ease_both]">
-          <Link to="/code" className="inline-flex items-center gap-2 mb-8 group text-[#378079]">
+          <Link to="/code/nextera" className="inline-flex items-center gap-2 mb-8 group text-[#378079]">
             <HiArrowLeft size={14} className="group-hover:-translate-x-1 transition-transform" />
             <span className="text-[9px] tracking-[0.4em] uppercase font-black">GERİ Qayıt</span>
           </Link>
         </div>
 
         <div className="text-center mb-10">
-          <h1 className="text-[#f0ebe2] font-black text-[2rem] md:text-[2.5rem] lg:text-[3.5rem] leading-[1.07] tracking-[-0.01em] mb-9 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.15s]">
+          <h1 className="text-[#f0ebe2] font-black text-[2rem] md:text-[3rem] lg:text-[4rem] leading-[1.07] tracking-[-0.01em] mb-9 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.15s]">
             HTML{" "}
             <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">
               KURSU
@@ -159,9 +157,6 @@ function Html() {
           </div>
         </div>
       </div>
-
-      <CodeEditor />
-
       <style>{`
         .swiper-grid-column .swiper-slide { margin-bottom: 24px !important; margin-top: 0 !important; }
         .custom-pagination .swiper-pagination-bullet {  background: #378079 !important;  opacity: 0.3;  width: 8px;  height: 8px;  margin: 0 !important  flex-shrink: 0}

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import { FaChartColumn } from "react-icons/fa6";
 function GenreVisual() {
 
   const genres = [
@@ -55,12 +55,12 @@ function GenreVisual() {
   const gridFractions = [0.25, 0.5, 0.75, 1];
 
   return (
-    <section className="px-8 md:px-16 py-10 relative overflow-hidden">
+    <section className="px-8 md:px-16 py-10 md:py-16 relative overflow-hidden">
       <div className="flex items-center gap-2 mb-4">
-        <div className="w-6 h-px bg-[#378079]" />
+        <FaChartColumn className='text-[#378079]' />
         <span className="text-[9px] tracking-[0.3em] text-[#378079] uppercase font-bold">Janr Analizi</span>
       </div>
-      <h2 className="text-[#f0ebe2] font-black text-[2rem] md:text-[2.5rem] leading-tight tracking-tighter uppercase mb-10">
+      <h2 className="text-[#f0ebe2] font-black text-[2rem] md:text-[3rem] lg:text-[4rem] leading-tight tracking-tighter uppercase mb-10">
         JANR <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">PROFİLİN</span>
       </h2>
 
@@ -70,13 +70,7 @@ function GenreVisual() {
             {gridFractions.map((f, fi) => {
               const gpts = getGridPoints(cx, cy, radius, f);
               return (
-                <polygon
-                  key={fi}
-                  points={gpts.map((p) => p[0].toFixed(1) + ',' + p[1].toFixed(1)).join(' ')}
-                  fill="none"
-                  stroke="rgba(255,255,255,0.06)"
-                  strokeWidth="1"
-                />
+                <polygon key={fi} points={gpts.map((p) => p[0].toFixed(1) + ',' + p[1].toFixed(1)).join(' ')} fill="none" stroke="rgba(255,255,255,0.06)" strokeWidth="1" />
               );
             })}
 
@@ -85,31 +79,14 @@ function GenreVisual() {
               const x2 = cx + radius * Math.cos(angle);
               const y2 = cy + radius * Math.sin(angle);
               return (
-                <line
-                  key={i}
-                  x1={cx} y1={cy}
-                  x2={x2.toFixed(1)} y2={y2.toFixed(1)}
-                  stroke="rgba(255,255,255,0.06)"
-                  strokeWidth="1"
-                />
+                <line key={i} x1={cx} y1={cy} x2={x2.toFixed(1)} y2={y2.toFixed(1)} stroke="rgba(255,255,255,0.06)" strokeWidth="1" />
               );
             })}
 
-            <path
-              d={pointsToPath(radarPts)}
-              fill="rgba(55,128,121,0.25)"
-              stroke="#378079"
-              strokeWidth="2"
-            />
+            <path d={pointsToPath(radarPts)} fill="rgba(55,128,121,0.25)" stroke="#378079" strokeWidth="2" />
 
             {radarPts.map((p, i) => (
-              <circle
-                key={i}
-                cx={p[0].toFixed(1)}
-                cy={p[1].toFixed(1)}
-                r="5"
-                fill="#378079"
-              />
+              <circle key={i} cx={p[0].toFixed(1)} cy={p[1].toFixed(1)} r="5" fill="#378079" />
             ))}
 
             {genres.map((g, i) => {
@@ -117,18 +94,7 @@ function GenreVisual() {
               const lx = cx + (radius + 22) * Math.cos(angle);
               const ly = cy + (radius + 22) * Math.sin(angle);
               return (
-                <text
-                  key={i}
-                  x={lx.toFixed(1)}
-                  y={ly.toFixed(1)}
-                  textAnchor="middle"
-                  dominantBaseline="central"
-                  fill={hovered === g.key ? '#378079' : 'rgba(240,235,226,0.6)'}
-                  fontSize="10"
-                  fontFamily="sans-serif"
-                  fontWeight="bold"
-                  style={{ textTransform: 'uppercase', letterSpacing: '1px' }}
-                >
+                <text key={i} x={lx.toFixed(1)} y={ly.toFixed(1)} textAnchor="middle" dominantBaseline="central" fill={hovered === g.key ? '#378079' : 'rgba(240,235,226,0.6)'} fontSize="10" fontFamily="sans-serif" fontWeight="bold" style={{ textTransform: 'uppercase', letterSpacing: '1px' }}>
                   {g.name}
                 </text>
               );
@@ -136,35 +102,19 @@ function GenreVisual() {
           </svg>
         </div>
 
-        <div className="space-y-5">
-          {genres.map((g) => (
-            <div
-              key={g.key}
-              onMouseEnter={function () { setHovered(g.key); }}
-              onMouseLeave={function () { setHovered(null); }}
-              className="group"
-            >
+        <div className="space-y-2">
+          {genres.map((item) => (
+            <div key={item.key} onMouseEnter={() => setHovered(item.key)} onMouseLeave={() => setHovered(null)} className="group">
               <div className="flex justify-between items-center mb-2">
                 <span className="text-[11px] font-bold tracking-[0.2em] uppercase text-[#f0ebe2]/70 group-hover:text-[#378079] transition-colors">
-                  {g.name}
+                  {item.name}
                 </span>
-                <span className="text-[11px] font-mono text-[#378079]">{values[g.key]}/10</span>
+                <span className="text-[11px] font-mono text-[#378079]">{values[item.key]}/10</span>
               </div>
               <div className="relative h-1.5 bg-white/5 rounded-full overflow-hidden">
-                <div
-                  className="absolute top-0 left-0 h-full bg-[#378079] transition-all duration-300 rounded-full"
-                  style={{ width: (values[g.key] * 10) + '%' }}
-                />
+                <div className="absolute top-0 left-0 h-full bg-[#378079] transition-all duration-300 rounded-full" style={{ width: (values[item.key] * 10) + '%' }} />
               </div>
-              <input
-                type="range"
-                min="1"
-                max="10"
-                value={values[g.key]}
-                onChange={function (e) { handleChange(g.key, e.target.value); }}
-                className="w-full mt-1 opacity-0 h-4 cursor-pointer absolute"
-                style={{ marginTop: '-22px', position: 'relative' }}
-              />
+              <input type="range" min="1" max="10" value={values[item.key]} onChange={(e) => handleChange(item.key, e.target.value)} className="w-full mt-1 opacity-0 h-4 cursor-pointer absolute" style={{ marginTop: '-22px', position: 'relative' }} />
             </div>
           ))}
         </div>

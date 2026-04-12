@@ -1,7 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Grid, Autoplay } from 'swiper/modules';
-
 import 'swiper/css';
 import 'swiper/css/grid';
 
@@ -40,7 +39,7 @@ function OtherLanguages() {
     );
 
     return (
-        <section className=" px-8 md:px-16 py-20 md:py-22  lg:pb-20 border-b border-b-white overflow-x-hidden">
+        <section className=" px-8 md:px-16 py-10 md:py-16 overflow-x-hidden">
             <div>
 
                 <div className="flex justify-center items-center gap-5 mb-10">
@@ -63,9 +62,7 @@ function OtherLanguages() {
                 </div>
 
                 <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {otherLang.map((lang, index) => (
-                        <LangCard key={index} lang={lang} />
-                    ))}
+                    {otherLang.map((lang, index) => <LangCard key={index} lang={lang} />)}
                 </div>
 
             </div>

@@ -27,6 +27,7 @@ import LeaderboardPage from './pages/analysis/LeaderboardPage'
 import NewsPage from './pages/content/NewsPage'
 import PortfolioPage from './pages/analysis/PortfolioPage'
 import GrowthPage from './pages/analysis/GrowthPage';
+import NexstEra from './components/code/NexstEra';
 
 function App() {
 
@@ -63,7 +64,7 @@ function App() {
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/planner" element={<PlannerPage />} />
             <Route path="/code/:courseId" element={<CourseDetail />} />
-            <Route path="/code/html" element={<Html />} />
+            <Route path="/code/nextera/html" element={<Html />} />
             <Route path="/dashboard" element={<DashboardPage />} />
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/events" element={<EventsPage />} />
@@ -72,6 +73,7 @@ function App() {
             <Route path="/news" element={<NewsPage />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
             <Route path="/growth" element={<GrowthPage />} />
+            <Route path="/code/nextera" element={<NexstEra />} />
           </Routes>
         </section>
         <Footer />

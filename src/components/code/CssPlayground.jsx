@@ -20,24 +20,19 @@ function CssPlayground() {
     ];
 
     return (
-        <section className="px-8 md:px-16 py-10 border-t border-white/5">
+        <section className="px-8 md:px-16 py-10 md:py-16">
             <div className="flex items-center gap-2 mb-4">
                 <div className="w-6 h-px bg-[#378079]" />
                 <span className="text-[9px] tracking-[0.3em] text-[#378079] uppercase font-bold">Editor</span>
             </div>
-            <h2 className="text-[#f0ebe2] font-black text-[2rem] md:text-[2.5rem] leading-tight tracking-tighter uppercase mb-8">
+            <h2 className="text-[#f0ebe2] font-black text-[2rem] md:text-[3rem] lg:text-[4rem] leading-tight tracking-tighter uppercase mb-8">
                 CSS <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">ANİMASİYA</span>
             </h2>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 max-w-4xl">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                 <div>
                     <p className="text-[9px] text-white/20 uppercase tracking-[0.2em] mb-2">CSS yaz</p>
-                    <textarea
-                        value={css}
-                        onChange={(e) => setCss(e.target.value)}
-                        className="w-full h-64 bg-[#0b0f17] border border-white/5 rounded-xl p-4 font-mono text-[12px] text-[#f0ebe2]/70 resize-none outline-none focus:border-[#378079]/30 transition-all scrollbar-hide"
-                        spellCheck="false"
-                    />
+                    <textarea value={css} onChange={(e) => setCss(e.target.value)} className="w-full h-64 bg-[#0b0f17] border border-white/5 rounded-xl p-4 font-mono text-[12px] text-[#f0ebe2]/70 resize-none outline-none focus:border-[#378079]/30 transition-all scrollbar-hide" spellCheck="false" />
                     <div className="flex flex-wrap gap-2 mt-3">
                         {presets.map((p) => (
                             <button key={p.label} onClick={() => setCss(p.css)} className="px-3 py-1.5 text-[9px] font-bold tracking-[0.15em] uppercase border border-white/10 text-white/30 hover:border-[#378079]/40 hover:text-[#378079] transition-all rounded-lg active:scale-95">

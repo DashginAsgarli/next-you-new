@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const DevStack = () => {
     const languages = [
-        { name: "HTML", icon: "SiHtml5", hex: "#E34F26", rank: "01", to: "/code/html" },
+        { name: "HTML", icon: "SiHtml5", hex: "#E34F26", rank: "01", to: "/code/nextera/html" },
         { name: "CSS", icon: "FaCss3Alt", hex: "#1572B6", rank: "02" },
         { name: "JavaScript", icon: "SiJavascript", hex: "#F7DF1E", rank: "03" },
         { name: "React", icon: "SiReact", hex: "#61DAFB", rank: "04" },
@@ -20,11 +20,9 @@ const DevStack = () => {
         <div className="  font-sans overflow-hidden">
 
             <section className="px-8 md:px-16 py-5 md:py-10 lg:py-10 relative z-10 ">
-                <h1 className="text-[#f0ebe2] uppercase text-center font-black text-[2.4rem] md:text-[3.5rem] lg:text-[5rem] leading-[1.07] tracking-[-0.01em] mb-14 md:mb-20 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.15s]">
+                <h1 className="text-[#f0ebe2] uppercase text-center font-black text-[2rem] md:text-[3rem] lg:text-[4rem] leading-[1.07] tracking-[-0.01em] mb-14 md:mb-20 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.15s]">
                     Kod{" "}
-                    <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">
-                        öyrenin
-                    </span>
+                    <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">öyrenin</span>
                 </h1>
 
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6">

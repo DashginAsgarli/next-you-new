@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { HiOutlineCode, HiOutlineBookOpen, HiOutlineMusicNote, HiOutlineAcademicCap, HiArrowRight } from 'react-icons/hi'
+import { LuLayoutGrid } from "react-icons/lu";
 
 function CategoryShowcase() {
 
@@ -14,12 +15,11 @@ function CategoryShowcase() {
     return (
         <section className="px-8 md:px-16 py-10 md:py-12 lg:py-16">
             <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-px bg-[#378079]" />
-                <span className="text-[10px] tracking-[0.3em] text-[#378079] uppercase font-bold">Kateqoriyalar</span>
+                <LuLayoutGrid className='text-[#378079]' />
+                <span className="text-[10px] tracking-[0.3em] text-[#378079] uppercase font-bold">KATEQORİYALAR</span>
             </div>
             <h2 className="text-[#f0ebe2] font-black text-[2rem] md:text-[3rem] lg:text-[4rem] leading-[1.07] tracking-[-0.01em] mb-10 lg::mb-16 uppercase">
-                NƏ{' '}
-                <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">ÖYRƏNİRSƏN</span>
+                NƏ{' '} <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">ÖYRƏNİRSƏN</span>
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -31,8 +31,7 @@ function CategoryShowcase() {
 
                             <div className="relative z-10">
                                 <div className="flex items-start justify-between mb-6">
-                                    <div className="p-3 border border-white/10 text-[#f0ebe2]"
-                                        style={{ borderLeftColor: cat.accent, borderLeftWidth: '2px' }}>
+                                    <div className="p-3 border border-white/10 text-[#f0ebe2]" style={{ borderLeftColor: cat.accent, borderLeftWidth: '2px' }}>
                                         {cat.icon}
                                     </div>
                                     <span className="text-[9px] font-mono tracking-[2px] text-[#f0ebe2]/30 uppercase">{cat.count}</span>

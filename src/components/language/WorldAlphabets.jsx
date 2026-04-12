@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { TbAlphabetGreek } from "react-icons/tb";
 function WorldAlphabets() {
     const alphabetsData = [
         {
@@ -63,13 +63,13 @@ function WorldAlphabets() {
     const activeAlphabet = alphabetsData[selectedIndex];
 
     return (
-        <section className="px-8 md:px-16 py-16 border-t border-white/5 bg-[#06090f]">
+        <section className="px-8 md:px-16 py-10 md:py-16">
             <div className="flex items-center gap-2 mb-4">
-                <div className="w-6 h-px bg-[#378079]" />
+                <TbAlphabetGreek className="text-[#378079] text-xl" />
                 <span className="text-[9px] tracking-[0.3em] text-[#378079] uppercase font-bold">Linqvistik Arxiv</span>
             </div>
 
-            <h2 className="text-[#f0ebe2] font-black text-[2rem] md:text-[2.5rem] leading-tight tracking-tighter uppercase mb-10">
+            <h2 className="text-[#f0ebe2] font-black text-[2rem] md:text-[2.5rem] lg:text-[3.5rem] leading-tight tracking-tighter uppercase mb-10">
                 Qlobal <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">Əlifbalar</span>
             </h2>
 
@@ -90,7 +90,7 @@ function WorldAlphabets() {
                 <div className="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-8 lg:grid-cols-10 gap-3 relative z-10">
                     {activeAlphabet.letters.map((letter) => (
                         <div key={letter} className="aspect-square rounded-xl flex items-center justify-center text-lg font-black transition-all hover:scale-110 border group cursor-default" style={{ backgroundColor: activeAlphabet.color + '05', borderColor: activeAlphabet.color + '20', color: activeAlphabet.color }}>
-                            <span className="group-hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]">
+                            <span >
                                 {letter}
                             </span>
                         </div>

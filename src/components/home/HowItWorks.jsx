@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import { LuListChecks } from "react-icons/lu";
 function HowItWorks() {
     const [activeStep, setActiveStep] = useState(0)
 
@@ -13,12 +13,11 @@ function HowItWorks() {
     return (
         <section className="px-8 md:px-16 py-10 md:py-12 lg:py-16 ">
             <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-px bg-[#378079]" />
-                <span className="text-[10px] tracking-[0.3em] text-[#378079] uppercase font-bold">Necə İşləyir</span>
+                <LuListChecks className='text-[#378079]' />
+                <span className="text-[10px] tracking-[0.3em] text-[#378079] uppercase font-bold">NECƏ İŞLƏYİR</span>
             </div>
             <h2 className="text-[#f0ebe2] font-black text-[2rem] md:text-[3rem] lg:text-[4rem] leading-[1.07] tracking-[-0.01em] mb-10 lg::mb-16 uppercase">
-                4 ADDIMDA{' '}
-                <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">UĞUR</span>
+                4 ADDIMDA{' '} <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">UĞUR</span>
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
@@ -41,11 +40,7 @@ function HowItWorks() {
                     <h3 className="font-black text-3xl md:text-4xl text-[#f0ebe2] uppercase tracking-tighter mb-6">{steps[activeStep].title}</h3>
                     <p className="text-[15px] text-[#f0ebe2]/60 leading-relaxed">{steps[activeStep].detail}</p>
                     <div className="flex items-center gap-2 mt-8">
-                        {steps.map((_, index) => {
-                            return (
-                                <button key={index} onClick={() => setActiveStep(index)} className={`h-1 transition-all duration-300 ${activeStep === index ? 'w-8 bg-[#378079]' : 'w-2 bg-white/10'}`} />
-                            )
-                        })}
+                        {steps.map((_, index) => <button key={index} onClick={() => setActiveStep(index)} className={`h-1 transition-all duration-300 ${activeStep === index ? 'w-8 bg-[#378079]' : 'w-2 bg-white/10'}`} />)}
                     </div>
                 </div>
             </div>

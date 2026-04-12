@@ -1,7 +1,8 @@
 import React from 'react';
 import { HiSearch } from "react-icons/hi";
+import { GiMusicSpell } from "react-icons/gi";
 
-const MusicHeader = ({ searchTerm, setSearchTerm, onSearch, activeTab, setActiveTab, isLoading }) => {
+function MusicHeader({ searchTerm, setSearchTerm, onSearch, activeTab, setActiveTab, isLoading }) {
   const tabs = [
     { id: "all", label: "Qlobal", display: "Bütün Mahnılar" },
     { id: "favorites", label: "Sənin Seçimin", display: "Bəyəndiklərim" },
@@ -11,11 +12,10 @@ const MusicHeader = ({ searchTerm, setSearchTerm, onSearch, activeTab, setActive
   return (
     <div className="relative pt-24 pb-10 px-8 md:px-16 flex flex-col items-center text-center overflow-hidden">
       <div className="flex items-center gap-3 mb-8 relative z-10 animate-[fadeUp_0.7s_ease_both]">
-        <div className="w-8 h-px bg-[#378079]/40" />
+        <GiMusicSpell className='text-[#378079]' />
         <span className="text-[10px] tracking-[0.45em] text-[#378079] uppercase font-bold">
-          BİR KLİKLƏ ANINDA İSTƏDİYİN MUSİQİNİ DİNLƏ
+          BİR KLİKLƏ MUSİQİ DİNLƏ
         </span>
-        <div className="w-8 h-px bg-[#378079]/40" />
       </div>
 
       <h1 className="text-[#f0ebe2] font-black text-[2rem] md:text-[3rem] lg:text-[5rem] leading-[1.07] tracking-[-0.01em] mb-9 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.15s]">
@@ -42,7 +42,7 @@ const MusicHeader = ({ searchTerm, setSearchTerm, onSearch, activeTab, setActive
             const isActive = activeTab === tab.id;
             return (
               <div key={tab.id} onClick={() => setActiveTab(tab.id)} className={`relative cursor-pointer transition-all duration-500 flex flex-col items-center shrink-0 min-w-20 px-4 md:px-6 group ${i !== 0 ? 'md:before:absolute md:before:left-0 md:before:top-1/2 md:before:-translate-y-1/2 md:before:h-6 md:before:w-px md:before:bg-[#378079]/15' : ''}`}>
-                <span className={`font-black text-[0.8rem] md:text-[1rem] leading-none tracking-[0.12em] transition-all uppercase ${isActive ? 'text-[#378079] scale-110' : 'text-white/20 group-hover:text-white/40'}`}>
+                <span className={`font-bold text-[0.8rem] md:text-[1rem] leading-none tracking-[0.12em] transition-all uppercase ${isActive ? 'text-[#378079] scale-110' : 'text-white/20 group-hover:text-white/40'}`}>
                   {tab.display}
                 </span>
 

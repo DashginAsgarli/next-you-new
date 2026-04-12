@@ -1,5 +1,7 @@
 import React from 'react'
 import Planner from '../../components/planner/Planner'
+import LifeGoalMap from '../../components/planner/LifeGoalMap'
+import GrowthChart from '../../components/planner/GrowthChart'
 
 function PlannerPage() {
     return (
@@ -8,6 +10,8 @@ function PlannerPage() {
                 <div className='background-tor'></div>
                 <div className='background-shadow'></div>
                 <Planner />
+                <LifeGoalMap />
+                <GrowthChart />
             </section>
         </>
     )

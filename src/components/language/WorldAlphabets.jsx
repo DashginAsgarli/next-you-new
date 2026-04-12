@@ -28,12 +28,12 @@ function WorldAlphabets() {
             color: '#9a7a2a'
         },
         {
-            name: 'Hind (Devanagari)',
+            name: 'Hind',
             letters: ['अ', 'आ', 'इ', 'ई', 'उ', 'ऊ', 'ऋ', 'ए', 'ऐ', 'ओ', 'औ', 'क', 'ख', 'ग', 'घ', 'ङ', 'च', 'छ', 'ज', 'झ', 'ञ'],
             color: '#d45d2a'
         },
         {
-            name: 'Koreya (Hangul)',
+            name: 'Koreya',
             letters: ['ㄱ', 'ㄴ', 'ㄷ', 'ㄹ', 'ㅁ', 'ㅂ', 'ㅅ', 'ㅇ', 'ㅈ', 'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ', 'ㅏ', 'ㅑ', 'ㅓ', 'ㅕ', 'ㅗ', 'ㅛ', 'ㅜ', 'ㅠ', 'ㅡ', 'ㅣ'],
             color: '#6d3a4a'
         },
@@ -43,7 +43,7 @@ function WorldAlphabets() {
             color: '#7a3a9a'
         },
         {
-            name: 'Tay (Thailand)',
+            name: 'Tay',
             letters: ['ก', 'ข', 'ค', 'ง', 'ज', 'ฉ', 'ช', 'ซ', 'ญ', 'ฎ', 'ฏ', 'ฐ', 'ฑ', 'ฒ', 'ณ', 'ด', 'ต', 'ถ', 'ท', 'ธ', 'น'],
             color: '#d42a5b'
         },
@@ -53,7 +53,7 @@ function WorldAlphabets() {
             color: '#ffcc00'
         },
         {
-            name: 'Qədim Finikiya',
+            name: 'Finikiya',
             letters: ['𐤀', '𐤁', '𐤂', '𐤃', '𐤄', '𐤅', '𐤆', '𐤇', '𐤈', '𐤉', '𐤊', '𐤋', '𐤌', '𐤍', '𐤎', '𐤏', '𐤐', '𐤑', '𐤒', '𐤓', '𐤔', '𐤕'],
             color: '#7a7a7a'
         }
@@ -69,7 +69,7 @@ function WorldAlphabets() {
                 <span className="text-[9px] tracking-[0.3em] text-[#378079] uppercase font-bold">Linqvistik Arxiv</span>
             </div>
 
-            <h2 className="text-[#f0ebe2] font-black text-[2rem] md:text-[2.5rem] lg:text-[3.5rem] leading-tight tracking-tighter uppercase mb-10">
+            <h2 className="text-[#f0ebe2] font-black text-[2rem] md:text-[3rem] lg:text-[4rem] leading-tight tracking-tighter uppercase mb-10">
                 Qlobal <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">Əlifbalar</span>
             </h2>
 
@@ -84,12 +84,10 @@ function WorldAlphabets() {
                 })}
             </div>
 
-            <div className="bg-[#0b0f17] border border-white/5 p-8 rounded-3xl relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-40 h-40 blur-[100px] opacity-10" style={{ backgroundColor: activeAlphabet.color }} />
-
-                <div className="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-8 lg:grid-cols-10 gap-3 relative z-10">
+            <div className="bg-[#0b0f17] border border-white/5 p-4 md:p-6 rounded-2xl relative overflow-hidden">
+                <div className="grid grid-cols-4 md:grid-cols-9 lg:grid-cols-12 gap-2 md:gap-3 relative z-10">
                     {activeAlphabet.letters.map((letter) => (
-                        <div key={letter} className="aspect-square rounded-xl flex items-center justify-center text-lg font-black transition-all hover:scale-110 border group cursor-default" style={{ backgroundColor: activeAlphabet.color + '05', borderColor: activeAlphabet.color + '20', color: activeAlphabet.color }}>
+                        <div key={letter} className="aspect-square rounded-[7px]  flex items-center justify-center text-lg font-bold transition-all hover:scale-110 border group cursor-default" style={{ backgroundColor: activeAlphabet.color + '05', borderColor: activeAlphabet.color + '20', color: activeAlphabet.color }}>
                             <span >
                                 {letter}
                             </span>

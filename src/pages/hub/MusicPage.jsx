@@ -12,8 +12,6 @@ function MusicPage() {
                 <Music />
                 <GenreVisual />
                 <ListeningJournal />
-                {/* <MusicHistory /> */}
-                {/* <MusicGlossary /> */}
             </section>
         </>
     )

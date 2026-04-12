@@ -19,7 +19,6 @@ function Footer() {
             title: 'Kəşf Et',
             links: [
                 { to: '/explore', label: 'Kəşfet' },
-                { to: '/blog', label: 'Blog' },
                 { to: '/news', label: 'Xəbərlər' },
                 { to: '/events', label: 'Tədbirlər' },
             ]
@@ -29,7 +28,6 @@ function Footer() {
             links: [
                 { to: '/planner', label: 'Planlayıcı' },
                 { to: '/quiz', label: 'Quiz' },
-                { to: '/tools', label: 'Alətlər' },
             ]
         },
         {

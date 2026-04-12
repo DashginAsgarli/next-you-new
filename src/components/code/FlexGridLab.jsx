@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import { TbChartGridDots } from "react-icons/tb";
 function FlexGridLab() {
 
     const flexProps = {
@@ -59,8 +59,8 @@ function FlexGridLab() {
     return (
         <section className="px-8 md:px-16 py-10 md:py-16">
             <div className="flex items-center gap-2 mb-2">
-                <div className="w-6 h-px bg-[#378079]" />
-                <span className="text-[9px] tracking-[0.3em] text-[#378079] uppercase font-bold">C-07 · CSS Lab</span>
+                <TbChartGridDots className="text-[#378079]" />
+                <span className="text-[9px] tracking-[0.3em] text-[#378079] uppercase font-bold">CSS Lab</span>
             </div>
 
             <h2 className="text-[#f0ebe2] font-black text-[2rem] md:text-[3rem] lg:text-[4rem] leading-tight tracking-tighter uppercase mb-6">

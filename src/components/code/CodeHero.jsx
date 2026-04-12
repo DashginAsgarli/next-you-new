@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { HiOutlineRocketLaunch, HiOutlinePlay } from "react-icons/hi2";
-
+import { FaLaptopCode } from "react-icons/fa6";
 function CodeHero() {
     const [typedText, setTypedText] = useState('');
     const lines = [
@@ -35,7 +35,7 @@ function CodeHero() {
 
                 <div className="flex-1 w-full">
                     <div className="flex items-center gap-2 mb-6">
-                        <div className="w-8 h-px bg-[#378079]" />
+                        <FaLaptopCode className="text-[#378079]" />
                         <span className="text-[9px] font-black uppercase tracking-[3px] text-[#378079]">Proqramlaşdırma</span>
                     </div>
                     <h1 className="text-[#f0ebe2] font-black text-[2.4rem] md:text-[3.5rem] lg:text-[5rem] leading-[1.07] tracking-[-0.01em] mb-6 uppercase">

@@ -11,7 +11,7 @@ import LanguagePage from './pages/hub/LanguagePage';
 import CodePage from './pages/hub/CodePage';
 import Login from './components/auth/Login';
 import ContactPage from './pages/contact/ContactPage';
-import PlannerPage from './pages/workspace/PlannerPage';
+import PlannerPage from './pages/analysis/PlannerPage';
 
 import CourseDetail from "./components/code/CourseDetail"
 import Register from './components/auth/Register';
@@ -20,13 +20,10 @@ import Html from './components/code/Html';
 
 import Footer from './layout/Footer'
 import DashboardPage from './pages/analysis/DashboardPage'
-import BlogPage from './pages/content/BlogPage'
 import EventsPage from './pages/content/EventsPage'
-import ToolsPage from './pages/workspace/ToolsPage'
 import LeaderboardPage from './pages/analysis/LeaderboardPage'
 import NewsPage from './pages/content/NewsPage'
 import PortfolioPage from './pages/analysis/PortfolioPage'
-import GrowthPage from './pages/analysis/GrowthPage';
 import NexstEra from './components/code/NexstEra';
 
 function App() {
@@ -66,13 +63,10 @@ function App() {
             <Route path="/code/:courseId" element={<CourseDetail />} />
             <Route path="/code/nextera/html" element={<Html />} />
             <Route path="/dashboard" element={<DashboardPage />} />
-            <Route path="/blog" element={<BlogPage />} />
             <Route path="/events" element={<EventsPage />} />
-            <Route path="/tools" element={<ToolsPage />} />
             <Route path="/leaderboard" element={<LeaderboardPage />} />
             <Route path="/news" element={<NewsPage />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
-            <Route path="/growth" element={<GrowthPage />} />
             <Route path="/code/nextera" element={<NexstEra />} />
           </Routes>
         </section>

@@ -27,7 +27,7 @@ function HowItWorks() {
                             <button key={index} onClick={() => setActiveStep(index)} className={`text-left p-4 md:p-6 border transition-all duration-300 z-10 ${activeStep === index ? 'border-[#378079] bg-[#378079]' : 'border-white bg-[#06090f] hover:border-white/30'}`}>
                                 <div className="flex items-center gap-4 mb-2">
                                     <span className="font-bebas text-[1.5rem]">{step.num}</span>
-                                    <h3 className="font-black text-lg  uppercase tracking-tight">{step.title}</h3>
+                                    <h3 className="font-bold text-lg  uppercase tracking-tight">{step.title}</h3>
                                 </div>
                                 <p className="text-[12px] text-[#f0ebe2]/40 leading-relaxed">{step.desc}</p>
                             </button>
@@ -37,7 +37,7 @@ function HowItWorks() {
 
                 <div className="bg-[#06090f] z-10 border border-white p-5 md:p-8 flex flex-col justify-center">
                     <span className="font-bebas text-[6rem] text-[#378079]/10 leading-none block">{steps[activeStep].num}</span>
-                    <h3 className="font-black text-3xl md:text-4xl text-[#f0ebe2] uppercase tracking-tighter mb-6">{steps[activeStep].title}</h3>
+                    <h3 className="font-bold text-3xl md:text-4xl text-[#f0ebe2] uppercase tracking-tighter mb-6">{steps[activeStep].title}</h3>
                     <p className="text-[15px] text-[#f0ebe2]/60 leading-relaxed">{steps[activeStep].detail}</p>
                     <div className="flex items-center gap-2 mt-8">
                         {steps.map((_, index) => <button key={index} onClick={() => setActiveStep(index)} className={`h-1 transition-all duration-300 ${activeStep === index ? 'w-8 bg-[#378079]' : 'w-2 bg-white/10'}`} />)}

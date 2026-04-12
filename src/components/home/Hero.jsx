@@ -21,7 +21,7 @@ function Hero() {
             </span>
           </div>
 
-          <h1 className="text-[#f0ebe2] font-black text-[2.4rem] md:text-[3.5rem] lg:text-[5rem] leading-[1.07] tracking-[-0.01em] mb-9 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.15s]">
+          <h1 className="text-[#f0ebe2] font-black text-[2.5rem] md:text-[4rem] lg:text-[5rem] leading-[1.07] tracking-[-0.01em] mb-9 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.15s]">
             ÖZ{" "}
             <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">
               TEMPİNDƏ
@@ -30,7 +30,7 @@ function Hero() {
           </h1>
 
           <div className="flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-8 mb-10  md:mb-14 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.3s]">
-            <button className="beveled-box flex items-center justify-center gap-2.5 px-9 h-14 border border-white text-white text-[10px] font-bold tracking-[0.18em] uppercase transition-all duration-200 cursor-pointer hover:translate-x-2   w-fit relative overflow-hidden">
+            <button className="beveled-box flex items-center justify-center gap-2.5 px-4 md:px-9 h-11 md:h-14 border border-white text-white text-[10px] font-bold tracking-[0.18em] uppercase transition-all duration-200 cursor-pointer hover:translate-x-2   w-fit relative overflow-hidden">
               <HiSparkles size={16} />Kəşfetməyə başla
             </button>
 

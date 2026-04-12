@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import { GrValidate } from "react-icons/gr";
 function HTMLValidator() {
     const [htmlContent, setHtmlContent] = useState('<div>\n  <p>Salam</p\n  <img src="photo.jpg">\n  <button>Klik et</div>');
     const [validationIssues, setValidationIssues] = useState([]);
@@ -40,7 +40,7 @@ function HTMLValidator() {
     return (
         <section className="px-4 md:px-16 py-10 md:py-16">
             <div className="flex items-center gap-2 mb-2">
-                <div className="w-6 h-px bg-[#378079]" />
+                <GrValidate className="text-[#378079]" />
                 <span className="text-[9px] tracking-[0.3em] text-[#378079] uppercase font-bold">NextYOU · VALIDATOR</span>
             </div>
 

@@ -17,14 +17,11 @@ const Sidebar = function ({ isOpen, onClose }) {
         { to: "/dashboard", label: "Dashboard", icon: <HiOutlineChartBar size={18} /> },
         { to: "/planner", label: "Planlayıcı", icon: <HiOutlineCalendar size={18} /> },
         { to: "/leaderboard", label: "Liderboard", icon: <HiOutlineTrendingUp size={18} /> },
-        { to: "/tools", label: "Alətlər", icon: <HiOutlineLightBulb size={18} /> },
         { to: "/portfolio", label: "Portfolio", icon: <HiOutlineBriefcase size={18} /> },
-        { to: "/growth", label: "Böyümə", icon: <HiOutlineTrendingUp size={18} /> }
     ]
 
     const infoLinks = [
         { to: "/news", label: "Xəbərlər", icon: <HiOutlineNewspaper size={18} /> },
-        { to: "/blog", label: "Blog", icon: <HiOutlineGlobe size={18} /> },
         { to: "/events", label: "Tədbirlər", icon: <HiOutlineStar size={18} /> },
         { to: "/contact", label: "Əlaqə", icon: <HiOutlineLink size={18} /> },
     ]

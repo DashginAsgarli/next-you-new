@@ -17,7 +17,7 @@ function LangTerminal() {
                         <div className="line h-px w-8 bg-[#378079]"></div>
                     </div>
 
-                    <h1 className="text-[clamp(2.4rem,6vw,5rem)] font-black leading-[1.1] tracking-[-1px] text-[#f0ebe2]">
+                    <h1 className="text-3xl md:text-5xl lg:text-6xl font-black leading-[1.1] tracking-[-1px] text-[#f0ebe2]">
                         DİL ÖYRƏNMƏNİN <br />
                         <span className="outline-text text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">
                             EFEKTİV

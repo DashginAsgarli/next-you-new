@@ -1,7 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Grid, Autoplay } from 'swiper/modules';
-
 import 'swiper/css';
 import 'swiper/css/grid';
 
@@ -63,9 +62,7 @@ function OtherLanguages() {
                 </div>
 
                 <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {otherLang.map((lang, index) => (
-                        <LangCard key={index} lang={lang} />
-                    ))}
+                    {otherLang.map((lang, index) => <LangCard key={index} lang={lang} />)}
                 </div>
 
             </div>

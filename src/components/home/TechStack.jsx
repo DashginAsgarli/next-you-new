@@ -26,8 +26,7 @@ function TechStack() {
                 <span className="text-[10px] tracking-[0.3em] text-[#378079] uppercase font-bold">Texnologiyalar</span>
             </div>
             <h2 className="text-[#f0ebe2] font-black text-[2rem] md:text-[3rem] lg:text-[4rem] max-w-2xl leading-[1.07] tracking-[-0.01em] mb-10 md:mb-16 uppercase">
-                ÖYRƏNİLƏN{' '}
-                <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">TEXNOLOGİYALAR</span>
+                ÖYRƏNİLƏN{' '}<span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">TEXNOLOGİYALAR</span>
             </h2>
 
             <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">

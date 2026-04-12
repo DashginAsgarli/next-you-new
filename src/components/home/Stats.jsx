@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
-const statsData = [
-    { label: 'Aktiv Tələbə', value: 15420, suffix: '+' },
-    { label: 'Tamamlanmış Kurs', value: 98700, suffix: '+' },
-    { label: 'Sertifikat Verildi', value: 4320, suffix: '+' },
-    { label: 'Öyrənmə Saatı', value: 250000, suffix: '+' },
-];
-
 function Stats() {
+
+    const statsData = [
+        { label: 'Aktiv Tələbə', value: 15420, suffix: '+' },
+        { label: 'Tamamlanmış Kurs', value: 98700, suffix: '+' },
+        { label: 'Sertifikat Verildi', value: 4320, suffix: '+' },
+        { label: 'Öyrənmə Saatı', value: 250000, suffix: '+' },
+    ];
     const [counts, setCounts] = useState([0, 0, 0, 0]);
 
     useEffect(() => {

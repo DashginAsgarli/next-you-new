@@ -18,8 +18,7 @@ function NewsletterSignup() {
                 </div>
 
                 <h2 className="text-[#f0ebe2] font-black text-[2rem] md:text-[3rem] lg:text-[4rem]  max-w-2xl leading-[1.1] tracking-[-0.01em] mb-6 uppercase">
-                    YENİLİKLƏRDƏN{' '}
-                    <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">XƏBƏRDAR OL</span>
+                    YENİLİKLƏRDƏN{' '} <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">XƏBƏRDAR OL</span>
                 </h2>
                 <p className="text-[14px] text-[#f0ebe2]/40 mb-6 md:mb-10 leading-relaxed">
                     Yeni kurslar, tədbirlər və xüsusi təkliflər haqqında birinci ol.

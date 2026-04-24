@@ -3,7 +3,7 @@ import { HiOutlineSparkles } from "react-icons/hi";
 function WordOfTheDayStatic() {
     return (
         <>
-            <section className="px-8 md:px-16 py-14 bg-[#06090f]">
+            <section className="px-8 md:px-16 py-14">
                 <div className="flex items-center gap-2 mb-6">
                     <HiOutlineSparkles size={16} className="text-[#378079]" />
                     <span className="text-[9px] font-black uppercase tracking-[3px] text-[#378079]">

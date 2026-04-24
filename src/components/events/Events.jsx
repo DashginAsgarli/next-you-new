@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { TbRosetteDiscount } from "react-icons/tb";
 function Events() {
     const events = [
         { id: 1, title: 'React Bootcamp — Sıfırdan İlk Layihəyə', date: '20 Fevral 2026', time: '18:00', type: 'Webinar', spots: 45, total: 100 },
@@ -18,15 +18,15 @@ function Events() {
     return (
         <section>
             <div className="px-8 md:px-16 py-16">
-                <div className="flex items-center gap-2 mb-4">
-                    <div className="w-8 h-px bg-[#378079]" />
-                    <span className="text-[10px] tracking-[0.3em] text-[#378079] uppercase font-bold">
-                        Tədbirlər
+                <div className="flex items-center gap-2 mb-4 text-[#378079]">
+                    <TbRosetteDiscount/>
+                    <span className="text-[10px] tracking-[0.3em] uppercase font-bold">
+                        Endirimlər
                     </span>
                 </div>
 
                 <h1 className="text-[#f0ebe2] font-black text-[2.4rem] md:text-[4rem] leading-[1.07] tracking-[-0.01em] mb-12 uppercase">
-                    AKTİV <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">TƏDBİRLƏR</span>
+                    AKTİV <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">Kurslar</span>
                 </h1>
 
                 <div className="space-y-4">

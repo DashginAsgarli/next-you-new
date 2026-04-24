@@ -32,7 +32,7 @@ function LangDictionary() {
     };
 
     return (
-        <div className="w-full  px-8 md:px-16 py-16 md:py-20  lg:py-24 border-b border-b-white relative overflow-hidden">
+        <div className="w-full  px-8 md:px-16 py-16 md:py-20  lg:py-24 relative overflow-hidden">
 
             <div className="relative z-10">
 

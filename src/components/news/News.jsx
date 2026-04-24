@@ -29,7 +29,7 @@ function News() {
                 </div>
 
                 <h1 className="text-[2.4rem] md:text-[4rem] font-black leading-[1.07] tracking-tighter mb-12 uppercase">
-                    DEV <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">XƏBƏRLƏR</span>
+                    NEXTYOU <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">XƏBƏRLƏR</span>
                 </h1>
 
                 {loading ? (

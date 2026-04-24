@@ -22,7 +22,6 @@ function AchievementBadges() {
     <div className="bg-[#06090f] border border-white/10 p-8 rounded-xl">
       <div className="flex items-center justify-between mb-8">
         <div>
-          <p className="text-[9px] font-bold uppercase tracking-[3px] text-[#378079]">Nailiyyətlər</p>
           <h2 className="text-[#f0ebe2] text-xl font-semibold mt-1">Sənin Yolun</h2>
         </div>
         <span className="text-[10px] font-mono px-3 py-1 bg-white/5 rounded-md text-[#f0ebe2]/40 border border-white/5">
@@ -32,7 +31,7 @@ function AchievementBadges() {
 
       <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-3">
         {badges.map((badge, item) => (
-          <div key={item} className={`group flex flex-col items-center gap-3 p-4 border rounded-lg transition-all duration-300 cursor-help ${badge.earned ? 'border-[#378079]/40 bg-[#378079]/5 text-white hover:bg-[#378079]/10' : 'border-white/5 bg-white/2 text-white/10 opacity-30 grayscale'}`} title={`${badge.name}: ${badge.desc}`}>
+          <div key={item} className={`group flex flex-col items-center gap-3 p-4 border rounded-lg transition-all duration-300 ${badge.earned ? 'border-[#378079]/40 bg-[#378079]/5 text-white hover:bg-[#378079]/10' : 'border-white/5 bg-white/2 text-white/10 opacity-30 grayscale'}`} title={`${badge.name}: ${badge.desc}`}>
             <div className="text-xl transition-transform group-hover:scale-110">
               {badge.icon}
             </div>

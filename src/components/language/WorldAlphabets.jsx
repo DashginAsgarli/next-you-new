@@ -77,7 +77,7 @@ function WorldAlphabets() {
                 {alphabetsData.map((alphabet, index) => {
                     const isActive = selectedIndex === index;
                     return (
-                        <button key={index} onClick={() => setSelectedIndex(index)} className={`px-4 py-2 text-[10px] font-black tracking-[0.1em] uppercase border transition-all duration-300 rounded-lg ${isActive ? 'border-[#378079] text-[#06090f] bg-[#378079]' : 'border-white/5 text-white/30 hover:border-white/20 hover:text-white/60'}`}>
+                        <button key={index} onClick={() => setSelectedIndex(index)} className={`px-4 py-2 text-[10px] font-black tracking-widest uppercase border transition-all duration-300 rounded-lg ${isActive ? 'border-[#378079] text-[#06090f] bg-[#378079]' : 'border-white/5 text-white/30 hover:border-white/20 hover:text-white/60'}`}>
                             {alphabet.name}
                         </button>
                     );
@@ -88,9 +88,7 @@ function WorldAlphabets() {
                 <div className="grid grid-cols-4 md:grid-cols-9 lg:grid-cols-12 gap-2 md:gap-3 relative z-10">
                     {activeAlphabet.letters.map((letter) => (
                         <div key={letter} className="aspect-square rounded-[7px]  flex items-center justify-center text-lg font-bold transition-all hover:scale-110 border group cursor-default" style={{ backgroundColor: activeAlphabet.color + '05', borderColor: activeAlphabet.color + '20', color: activeAlphabet.color }}>
-                            <span >
-                                {letter}
-                            </span>
+                            <span >{letter}</span>
                         </div>
                     ))}
                 </div>

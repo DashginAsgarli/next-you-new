@@ -16,7 +16,7 @@ function Feedback() {
                         </span>
                     </div>
 
-                    <h1 className="text-[#f0ebe2] font-black text-[2.4rem] md:text-[3.5rem] lg:text-[5rem] leading-[1.07] tracking-[-0.01em] mb-6 md:mb-10 lg:mb-12 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.15s]">
+                    <h1 className="text-[#f0ebe2] font-black text-[2rem] md:text-[3rem] lg:text-[4.5rem] leading-[1.07] tracking-[-0.01em] mb-6 md:mb-10 lg:mb-12 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.15s]">
                         FİKİR{" "}
                         <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">VƏ</span><br />
                         <span className="text-[#378079]">TÖVSİYƏLƏR</span>

@@ -1,7 +1,6 @@
 import React from 'react'
 import Music from '../../components/music/Music'
 import GenreVisual from '../../components/music/GenreVisual'
-import ListeningJournal from '../../components/music/ListeningJournal'
 
 function MusicPage() {
     return (
@@ -11,7 +10,6 @@ function MusicPage() {
                 <div className='background-shadow'></div>
                 <Music />
                 <GenreVisual />
-                <ListeningJournal />
             </section>
         </>
     )

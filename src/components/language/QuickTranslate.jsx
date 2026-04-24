@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowRight, Loader2, Copy, RotateCcw, Languages, ArrowLeftRight } from 'lucide-react';
-
+import { RiTranslate2 } from "react-icons/ri";
 function QuickTranslate() {
   const [text, setText] = useState("");
   const [result, setResult] = useState("");
@@ -53,9 +53,8 @@ function QuickTranslate() {
 
         <div className=" mb-10">
           <div className="flex items-center gap-3 mb-4 text-[#378079] opacity-80">
-            <div className="w-10 h-px bg-current" />
+            <RiTranslate2/>
             <span className="text-[10px] tracking-[0.5em] font-mono font-black uppercase">HƏR GÜN BİR SÖZ ÖYRƏN</span>
-            <div className="w-10 h-px bg-current" />
           </div>
 
           <h1 className="text-[#f0ebe2] font-black text-[2rem] md:text-[2.5rem] lg:text-[3.5rem] leading-[1.07] tracking-[-0.01em] mb-9 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.15s]">

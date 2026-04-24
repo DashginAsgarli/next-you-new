@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaGithubAlt } from "react-icons/fa";
 
 function Portfolio() {
     const [activeTab, setActiveTab] = useState('projects');
@@ -32,17 +33,13 @@ function Portfolio() {
             <div className="px-8 md:px-16 py-16">
                 <div className="flex items-start justify-between mb-12 flex-wrap gap-6">
                     <div>
-                        <div className="flex items-center gap-2 mb-4">
-                            <div className="w-8 h-px bg-[#378079]" />
-                            <span className="text-[10px] tracking-[0.3em] text-[#378079] uppercase font-bold">Şəxsi Portfolio</span>
+                        <div className="flex items-center gap-2 mb-4 text-[#378079] ">
+                            <FaGithubAlt/>
+                            <span className="text-[10px] tracking-[0.3em] uppercase font-bold">Şəxsi Portfolio</span>
                         </div>
                         <h1 className="text-[#f0ebe2] font-black text-[2.4rem] md:text-[4rem] leading-[1.07] tracking-[-0.01em] uppercase">
                             MƏNİM <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">İŞLƏRİM</span>
                         </h1>
-                    </div>
-                    <div className="flex flex-col gap-2">
-                        <div className="w-20 h-20 bg-[#378079]/20 border border-[#378079]/30 flex items-center justify-center font-black text-[#378079] text-2xl">NX</div>
-                        <span className="text-[8px] font-mono text-[#f0ebe2]/20 text-center">NextYou User</span>
                     </div>
                 </div>
 
@@ -83,7 +80,7 @@ function Portfolio() {
                 )}
 
                 {activeTab === 'skills' && (
-                    <div className="max-w-xl space-y-5">
+                    <div className="space-y-5">
                         {skills.map((skill, index) => {
                             return (
                                 <div key={index}>

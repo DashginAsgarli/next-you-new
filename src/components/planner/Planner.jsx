@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { HiOutlinePlus, HiOutlineTrash, HiCheck, HiOutlineX } from 'react-icons/hi';
+import { GrPlan } from "react-icons/gr";
 
 const  priorities = [
   { id: 'high', label: 'Yüksək', color: '#ef4444' },
@@ -71,11 +72,11 @@ function PlannerPage() {
         <div className="px-8 md:px-16 py-16 min-h-screen">
           <div className="flex items-start justify-between mb-12 flex-wrap gap-6">
             <div>
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-px bg-[#378079]" />
-                <span className="text-[10px] tracking-[0.3em] text-[#378079] uppercase font-bold">Zaman İdarəetmə</span>
+              <div className="text-[#378079] flex items-center gap-2 mb-4">
+                <GrPlan/>
+                <span className="text-[10px] tracking-[0.3em]  uppercase font-bold">Zaman İdarəetmə</span>
               </div>
-              <h1 className="text-[#f0ebe2] font-black text-[2.4rem] md:text-[4rem] leading-[1.07] tracking-[-0.01em] uppercase">
+              <h1 className="text-[#f0ebe2] font-black text-[2rem] md:text-[3rem] lg:text-[4rem] leading-[1.07] tracking-[-0.01em] uppercase">
                 SMART{' '}
                 <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">PLANNER</span>
               </h1>

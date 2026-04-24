@@ -6,10 +6,14 @@ import HowItWorks from '../../components/home/HowItWorks'
 import CategoryShowcase from '../../components/home/CategoryShowcase'
 import NewsletterSignup from '../../components/home/NewsletterSignup'
 import TechStack from '../../components/home/TechStack'
+import { Helmet } from "react-helmet";
 
 function HomePage() {
     return (
         <>
+            <Helmet>
+                <title>Next You</title>
+            </Helmet>
             <section className=" w-full overflow-hidden relative">
                 <div className='background-tor'></div>
                 <div className='background-shadow'></div>

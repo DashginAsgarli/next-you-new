@@ -27,7 +27,6 @@ function Footer() {
             title: 'Alətlər',
             links: [
                 { to: '/planner', label: 'Planlayıcı' },
-                { to: '/quiz', label: 'Quiz' },
             ]
         },
         {

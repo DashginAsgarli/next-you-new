@@ -42,7 +42,7 @@ function Library() {
         <div className="text-[#f0ebe2] px-8 md:px-16 py-6">
             <div>
                 <LibraryHeader searchQuery={searchQuery} setSearchQuery={setSearchQuery} onSearch={fetchBooks} activeView={activeView} setActiveView={setActiveView} isLoading={isLoading} />
-                {activeView === "rating" ? (<ReadingTracker books={books} />) : (<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 mt-10">        {filteredBooks.map(b => (<BookCard key={b.id} book={b} isFavorite={favorites.includes(b.id)} toggleFavorite={toggleFav} />))}    </div>)}
+                {activeView === "rating" ? (<ReadingTracker books={books} />) : (<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 mt-10">{filteredBooks.map(b => (<BookCard key={b.id} book={b} isFavorite={favorites.includes(b.id)} toggleFavorite={toggleFav} />))}    </div>)}
             </div>
         </div>
     );

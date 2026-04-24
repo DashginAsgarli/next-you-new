@@ -25,7 +25,7 @@ const DevStack = () => {
                     <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">öyrenin</span>
                 </h1>
 
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
                     {languages.map((lang) => {
                         const IconComponent = Si[lang.icon] || Fa[lang.icon] || Vsc[lang.icon] || Vsc.VscCode;
 

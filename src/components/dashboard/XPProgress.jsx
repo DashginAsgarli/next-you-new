@@ -8,7 +8,7 @@ function XPProgress() {
     const progress = Math.round(((xp - prevLevelXp) / (nextLevelXp - prevLevelXp)) * 100)
 
     return (
-        <div className="bg-[#06090f] z-10 border border-white/10 p-6 md:p-8 h-full w-full">
+        <div className="bg-[#06090f] z-10 border border-white/10 p-6 md:p-8 h-full w-full rounded-lg">
 
             <div className="flex items-start justify-between mb-8 gap-4">
                 <div>
@@ -23,7 +23,7 @@ function XPProgress() {
                     </div>
                 </div>
 
-                <div className="flex flex-col items-center bg-[#378079]/10 border border-[#378079]/20 px-3 py-2 md:px-4 md:py-3 min-w-15 md:min-w-20">
+                <div className="flex flex-col items-center bg-[#378079]/10 border border-[#378079]/20 px-3 py-2 md:px-4 md:py-3 min-w-15 md:min-w-20 rounded-lg">
                     <span className="text-[10px] md:text-[8px] font-bold uppercase tracking-[2px] text-[#378079]/60">Səviyyə</span>
                     <span className="font-bebas text-3xl md:text-[2.5rem] text-[#378079] leading-none">{level}</span>
                 </div>

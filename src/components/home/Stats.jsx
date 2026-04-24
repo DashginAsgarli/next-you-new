@@ -3,10 +3,10 @@ import React, { useState, useEffect } from 'react';
 function Stats() {
 
     const statsData = [
-        { label: 'Aktiv Tələbə', value: 15420, suffix: '+' },
-        { label: 'Tamamlanmış Kurs', value: 98700, suffix: '+' },
-        { label: 'Sertifikat Verildi', value: 4320, suffix: '+' },
-        { label: 'Öyrənmə Saatı', value: 250000, suffix: '+' },
+        { label: 'Aktiv Tələbə', value: 15420 },
+        { label: 'Tamamlanmış Kurs', value: 98700 },
+        { label: 'Sertifikat Verildi', value: 4320 },
+        { label: 'Öyrənmə Saatı', value: 250000 },
     ];
     const [counts, setCounts] = useState([0, 0, 0, 0]);
 
@@ -31,7 +31,7 @@ function Stats() {
                 {statsData.map((stat, index) => (
                     <div key={index} className="flex flex-col items-center py-3 border border-white/5 bg-[#378079] z-10">
                         <span className="font-bebas text-[1.8rem] md:text-[2.2rem] lg:text-[3rem] text-white">
-                            {counts[index].toLocaleString()}{stat.suffix}
+                            {counts[index].toLocaleString()}+
                         </span>
                         <span className="text-[5px] md:text-[9px] tracking-[3px] uppercase text-white font-bold">
                             {stat.label}

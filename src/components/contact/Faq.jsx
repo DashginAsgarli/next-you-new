@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { HiOutlineChevronDown, HiOutlineQuestionMarkCircle } from "react-icons/hi2";
+import { BsQuestionSquare } from "react-icons/bs";
 
 function FAQ() {
     const [activeIndex, setActiveIndex] = useState(null);
@@ -25,12 +26,12 @@ function FAQ() {
 
             <div className="relative z-10 px-8 md:px-16 py-10 md:py-16">
 
-                <div className="flex items-center gap-2.5 mb-8 animate-[fadeUp_0.7s_ease_both]">
-                    <div className="w-8 h-px bg-[#378079]" />
-                    <span className="text-[9px] md:text-[10px] tracking-[0.3em] text-[#378079] uppercase font-bold">Tez-tez verilən suallar</span>
+                <div className="flex items-center gap-2.5 mb-8 animate-[fadeUp_0.7s_ease_both] text-[#378079]">
+                    <BsQuestionSquare/>
+                    <span className="text-[9px] md:text-[10px] tracking-[0.3em]  uppercase font-bold">Tez-tez verilən suallar</span>
                 </div>
 
-                <h1 className="font-black text-[2.4rem] md:text-[3.5rem] lg:text-[5rem] leading-none mb-6 md:mb-10 lg:mb-12 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.15s] uppercase text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">
+                <h1 className="font-black text-[2rem] md:text-[3rem] lg:text-[4rem] leading-none mb-6 md:mb-10 lg:mb-12 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.15s] uppercase text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">
                     SUALLAR
                 </h1>
 

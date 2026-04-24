@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { GiMultipleTargets } from "react-icons/gi";
 
 function LifeGoalMap() {
 
@@ -60,11 +61,11 @@ function LifeGoalMap() {
 
     return (
         <section className="px-8 md:px-16 py-10">
-            <div className="flex items-center gap-2 mb-4">
-                <div className="w-6 h-px bg-[#378079]" />
-                <span className="text-[9px] tracking-[0.3em] text-[#378079] uppercase font-bold">Hədəflər</span>
+            <div className="flex items-center gap-2 mb-4 text-[#378079]">
+                <GiMultipleTargets />
+                <span className="text-[9px] tracking-[0.3em]  uppercase font-bold">Hədəflər</span>
             </div>
-            <h2 className="text-[#f0ebe2] font-black text-[2rem] md:text-[2.5rem] uppercase mb-8">
+            <h2 className="text-[#f0ebe2] font-black text-[2rem] md:text-[3rem] lg:text-[4rem] uppercase mb-8">
                 HƏYAT <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">HƏDƏFLƏRİ</span>
             </h2>
 

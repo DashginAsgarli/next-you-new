@@ -28,8 +28,6 @@ body {
 }
 
 
-/* Arxa fon tor ve reng */
-
 .background-tor {
     position: absolute;
     top: 0;
@@ -127,4 +125,34 @@ body {
     50% {
         transform: translateY(-1.5rem);
     }
+}
+
+
+.card-3d-effect {
+  transition: all 500ms ease-in-out;
+  will-change: transform;
+}
+
+.card-3d-effect:hover {
+  transform: perspective(500px) rotateY(10deg) rotateX(5deg) translateY(-10px);
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #06090f;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #378079;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555
 }

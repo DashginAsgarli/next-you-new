@@ -69,7 +69,7 @@ function CodeChallenge() {
                                 {ch.tag}
                             </span>
 
-                            <p className="text-[12px] text-white/40 mt-4 mb-6 leading-relaxed min-h-[40px]">
+                            <p className="text-[12px] text-white/40 mt-4 mb-6 leading-relaxed min-h-10">
                                 {ch.desc}
                             </p>
 

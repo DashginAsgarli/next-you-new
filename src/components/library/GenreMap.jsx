@@ -80,7 +80,6 @@ function GenreMap() {
                     {genres.map(g => {
                         const isActive = active === g.key;
                         const sizes = { lg: 'px-6 py-5 text-[13px]', md: 'px-5 py-4 text-[12px]', sm: 'px-4 py-3 text-[11px]' };
-
                         return (
                             <button key={g.key} onClick={() => setActive(isActive ? null : g.key)} className={'border rounded-2xl font-black tracking-[0.15em] uppercase transition-all ' + sizes[g.size]} style={{ borderColor: isActive ? g.color : 'rgba(255,255,255,0.06)', background: isActive ? g.color + '20' : '#0b0f17', color: isActive ? g.color : 'rgba(240,235,226,0.5)', }}>
                                 {g.label}

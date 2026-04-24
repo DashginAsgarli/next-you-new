@@ -1,42 +1,41 @@
 import React, { useState, useEffect } from 'react';
+import { ImNewspaper } from "react-icons/im";
 
 function News() {
     const [articles, setArticles] = useState([]);
     const [loading, setLoading] = useState(true);
 
-    // useEffect(() => {
-    //     fetch('https://dev.to/api/articles?tag=programming&per_page=12&state=rising')
-    //         .then(res => res.json())
-    //         .then(data => {
-    //             setArticles(data);
-    //             setLoading(false);
-    //         })
-    //         .catch(err => {
-    //             console.error("Xəta:", err);
-    //             setLoading(false);
-    //         });
-    // }, []);
+    useEffect(() => {
+        fetch('https://dev.to/api/articles?tag=programming&per_page=12&state=rising')
+            .then(res => res.json())
+            .then(data => {
+                setArticles(data);
+                setLoading(false);
+            })
+            .catch(err => {
+                console.error("Xəta:", err);
+                setLoading(false);
+            });
+    }, []);
 
     return (
         <section>
             <div className="px-8 md:px-16 py-16">
 
-                <div className="flex items-center gap-2 mb-4">
-                    <div className="w-8 h-px bg-[#378079]" />
-                    <span className="text-[10px] tracking-[0.3em] text-[#378079] uppercase font-bold">
-                        Canlı Akış
+                <div className="flex items-center gap-2 mb-4 text-[#378079] ">
+                    <ImNewspaper/>
+                    <span className="text-[10px] tracking-[0.3em] uppercase font-bold">
+                        Canlı XƏBƏRLƏR
                     </span>
                 </div>
 
-                <h1 className="text-[2.4rem] md:text-[4rem] font-black leading-[1.07] tracking-tighter mb-12 uppercase">
+                <h1 className="text-[2rem] md:text-[3rem] lg:text-[4rem] font-black leading-[1.07] tracking-tighter mb-12 uppercase">
                     NEXTYOU <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">XƏBƏRLƏR</span>
                 </h1>
 
                 {loading ? (
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {[1, 2, 3, 4, 5, 6].map(n => (
-                            <div key={n} className="h-64 bg-white/5 animate-pulse border border-white/5 rounded-lg" />
-                        ))}
+                        {[1, 2, 3, 4, 5, 6].map(n =>  <div key={n} className="h-64 bg-white/5 animate-pulse border border-white/5 rounded-lg" />)}
                     </div>
                 ) : (
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

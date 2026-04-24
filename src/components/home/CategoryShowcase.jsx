@@ -25,7 +25,7 @@ function CategoryShowcase() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 {categories.map(cat => {
                     return (
-                        <Link key={cat.id} to={cat.to} className="group beveled-box bg-[#06090f] border border-white p-8 md:p-10 flex flex-col justify-between min-h-64 transition-all duration-500 hover:border-white/40 hover:transform-[perspective(500px)_rotateY(10deg)_rotateX(5deg)_translateY(-10px)] relative overflow-hidden">
+                        <Link key={cat.id} to={cat.to} className="card-3d-effect group beveled-box bg-[#06090f] border border-white p-8 md:p-10 flex flex-col justify-between min-h-64 relative overflow-hidden">
 
                             <div className="absolute inset-0 opacity-0 group-hover:opacity-[0.03] transition-opacity duration-700" style={{ background: `radial-gradient(circle at bottom right, ${cat.accent}, transparent 60%)` }} />
 

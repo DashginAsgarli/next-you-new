@@ -33,7 +33,7 @@ function LanguageFamilyTree() {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-                <div className="bg-[#0b0f17] border rounded-2xl p-8 relative overflow-hidden transition-all duration-700" style={{ borderColor: `${fam.color}30` }}>
+                <div className="bg-[#06090f] border rounded-2xl p-8 relative overflow-hidden transition-all duration-700" style={{ borderColor: `${fam.color}30` }}>
                     <div className="absolute top-0 right-0 w-32 h-32 blur-[100px] opacity-10 pointer-events-none" style={{ backgroundColor: fam.color }} />
 
                     <div className="relative z-10">

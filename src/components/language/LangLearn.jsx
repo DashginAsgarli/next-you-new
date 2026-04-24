@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Clock, Star, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation, Grid as SwiperGrid } from 'swiper/modules';
-
+import { TbTextGrammar } from "react-icons/tb";
 import 'swiper/css';
 import 'swiper/css/grid';
 import 'swiper/css/pagination';
@@ -22,10 +22,9 @@ function LangLearn() {
   return (
     <div className=" px-6 md:px-10 lg:px-16 py-12">
       <div className=" mb-16">
-        <div className="flex items-center gap-2 mb-4">
-          <span className="h-px w-10 bg-[#378079]"></span>
-          <span className="text-[#378079] font-mono text-xs tracking-[0.3em] uppercase">Qramatikaya Başla</span>
-          <span className="h-px w-10 bg-[#378079]"></span>
+        <div className="text-[#378079] flex items-center gap-2 mb-4">
+          <TbTextGrammar/>
+          <span className=" font-mono text-xs tracking-[0.3em] uppercase">Qramatikaya Başla</span>
         </div>
         <h1 className="text-[#f0ebe2] font-black text-[2rem] md:text-[2.5rem] lg:text-[3.5rem] leading-[1.07] tracking-[-0.01em] mb-9 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.15s]">
           İNGİLİS{" "}

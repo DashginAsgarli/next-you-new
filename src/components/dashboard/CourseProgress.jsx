@@ -2,7 +2,7 @@ import React from 'react';
 import { HiCheckCircle } from 'react-icons/hi';
 
 function CourseProgress() {
-  
+
   const courses = [
     { name: 'HTML Kursu', progress: 100, lessons: 22, color: '#F97316', done: true },
     { name: 'CSS Kursu', progress: 78, lessons: 18, color: '#1572B6', done: false },
@@ -12,7 +12,7 @@ function CourseProgress() {
   ];
 
   return (
-    <div className="bg-[#06090f] border border-white/10 p-8">
+    <div className="bg-[#06090f] border border-white/10 p-8 rounded-lg">
       <p className="text-[9px] font-bold uppercase tracking-[3px] text-[#378079] mb-8">Kurs Tərəqqisi</p>
       <div className="space-y-6">
         {courses.map((course, i) => (
@@ -28,10 +28,7 @@ function CourseProgress() {
               </div>
             </div>
             <div className="h-1.5 bg-white/5 rounded-full overflow-hidden">
-              <div
-                className="h-full rounded-full transition-all duration-1000"
-                style={{ width: `${course.progress}%`, backgroundColor: course.color }}
-              />
+              <div className="h-full rounded-full transition-all duration-1000" style={{ width: `${course.progress}%`, backgroundColor: course.color }} />
             </div>
           </div>
         ))}

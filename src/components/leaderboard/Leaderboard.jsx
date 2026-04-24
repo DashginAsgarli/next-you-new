@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { HiLightningBolt, HiStar, HiFire } from 'react-icons/hi'
+import { GiBracers } from "react-icons/gi";
 
 function Leaderboard() {
     const allUsers = [
@@ -35,9 +36,9 @@ function Leaderboard() {
     return (
         <section >
             <div className="px-8 md:px-16 py-16">
-                <div className="flex items-center gap-2 mb-4">
-                    <div className="w-8 h-px bg-[#378079]" />
-                    <span className="text-[10px] tracking-[0.3em] text-[#378079] uppercase font-bold">Rəqabət</span>
+                <div className="flex items-center gap-2 mb-4 text-[#378079]">
+                    <GiBracers/>
+                    <span className="text-[10px] tracking-[0.3em]  uppercase font-bold">Rəqabət</span>
                 </div>
                 <h1 className="text-[#f0ebe2] font-black text-[2rem] md:text-[3rem] lg:text-[4rem] leading-[1.07] tracking-[-0.01em] mb-12 uppercase">
                     LİDER <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">BOARD</span>
@@ -79,7 +80,7 @@ function Leaderboard() {
                 <div className="flex justify-end mb-8">
                     <div className="flex gap-2">
                         {categoryTabs.map((tab) => (
-                            <button key={tab.id} onClick={() => setSelectedCategory(tab.id)} className={`flex items-center gap-2 px-4 py-2 text-[9px] font-black uppercase tracking-widest border transition-all         ${selectedCategory === tab.id ? 'bg-[#378079]/20 border-[#378079]/50 text-[#378079]' : 'border-white/10 text-[#f0ebe2]/30'}`}>
+                            <button key={tab.id} onClick={() => setSelectedCategory(tab.id)} className={`flex items-center gap-2 px-4 py-2 text-[9px] font-black uppercase tracking-widest border transition-all ${selectedCategory === tab.id ? 'bg-[#378079]/20 border-[#378079]/50 text-[#378079]' : 'border-white/10 text-[#f0ebe2]/30'}`}>
                                 {tab.icon} {tab.label}
                             </button>
                         ))}

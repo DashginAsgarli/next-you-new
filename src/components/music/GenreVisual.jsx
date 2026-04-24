@@ -69,35 +69,25 @@ function GenreVisual() {
           <svg width="320" height="320" viewBox="0 0 320 320">
             {gridFractions.map((f, fi) => {
               const gpts = getGridPoints(cx, cy, radius, f);
-              return (
-                <polygon key={fi} points={gpts.map((p) => p[0].toFixed(1) + ',' + p[1].toFixed(1)).join(' ')} fill="none" stroke="rgba(255,255,255,0.06)" strokeWidth="1" />
-              );
+              return (<polygon key={fi} points={gpts.map((p) => p[0].toFixed(1) + ',' + p[1].toFixed(1)).join(' ')} fill="none" stroke="rgba(255,255,255,0.06)" strokeWidth="1" />);
             })}
 
             {genres.map((g, i) => {
               const angle = (Math.PI * 2 * i) / genres.length - Math.PI / 2;
               const x2 = cx + radius * Math.cos(angle);
               const y2 = cy + radius * Math.sin(angle);
-              return (
-                <line key={i} x1={cx} y1={cy} x2={x2.toFixed(1)} y2={y2.toFixed(1)} stroke="rgba(255,255,255,0.06)" strokeWidth="1" />
-              );
+              return (<line key={i} x1={cx} y1={cy} x2={x2.toFixed(1)} y2={y2.toFixed(1)} stroke="rgba(255,255,255,0.06)" strokeWidth="1" />);
             })}
 
             <path d={pointsToPath(radarPts)} fill="rgba(55,128,121,0.25)" stroke="#378079" strokeWidth="2" />
 
-            {radarPts.map((p, i) => (
-              <circle key={i} cx={p[0].toFixed(1)} cy={p[1].toFixed(1)} r="5" fill="#378079" />
-            ))}
+            {radarPts.map((p, i) => <circle key={i} cx={p[0].toFixed(1)} cy={p[1].toFixed(1)} r="5" fill="#378079" />)}
 
             {genres.map((g, i) => {
               const angle = (Math.PI * 2 * i) / genres.length - Math.PI / 2;
               const lx = cx + (radius + 22) * Math.cos(angle);
               const ly = cy + (radius + 22) * Math.sin(angle);
-              return (
-                <text key={i} x={lx.toFixed(1)} y={ly.toFixed(1)} textAnchor="middle" dominantBaseline="central" fill={hovered === g.key ? '#378079' : 'rgba(240,235,226,0.6)'} fontSize="10" fontFamily="sans-serif" fontWeight="bold" style={{ textTransform: 'uppercase', letterSpacing: '1px' }}>
-                  {g.name}
-                </text>
-              );
+              return (<text key={i} x={lx.toFixed(1)} y={ly.toFixed(1)} textAnchor="middle" dominantBaseline="central" fill={hovered === g.key ? '#378079' : 'rgba(240,235,226,0.6)'} fontSize="10" fontFamily="sans-serif" fontWeight="bold" style={{ textTransform: 'uppercase', letterSpacing: '1px' }}>    {g.name}  </text>);
             })}
           </svg>
         </div>

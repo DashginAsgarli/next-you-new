@@ -28,13 +28,12 @@ function IdiomLearn() {
       </h2>
 
       <div >
-        <div className="bg-[#0b0f17] border border-white/5 rounded-2xl p-6 md:p-10 relative overflow-hidden group hover:border-[#378079]/30 transition-all duration-500">
+        <div className="bg-[#0d1117] border border-white/5 rounded-2xl p-6 md:p-10 relative overflow-hidden group hover:border-[#378079]/30 transition-all duration-500">
 
           <div className="flex justify-between items-center mb-10">
             <span className="text-[10px] font-mono text-white/20 uppercase tracking-[0.3em]">
               {(currentIdx + 1).toString().padStart(2, '0')} / {IDIOMS.length.toString().padStart(2, '0')}
             </span>
-            <div className="w-12 h-px bg-[#378079]/30" />
           </div>
 
           <div className="mb-10">
@@ -48,7 +47,6 @@ function IdiomLearn() {
             </div>
           </div>
 
-          {/* Detallar Paneli */}
           <div className="space-y-6 pt-8 border-t border-white/5">
             <div>
               <p className="text-[9px] text-white/20 uppercase tracking-[0.2em] mb-2 font-bold">Nümunə Cümlə</p>
@@ -69,10 +67,6 @@ function IdiomLearn() {
             NÖVBƏTİ KART →
           </button>
         </div>
-
-        <p className="mt-6 text-[9px] text-white/10 italic font-mono uppercase tracking-[0.2em]">
-          * İngilis dili idiomları peşəkar kommunikasiyada kritik rol oynayır.
-        </p>
       </div>
     </section>
   );

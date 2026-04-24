@@ -1,13 +1,14 @@
 import React from 'react';
+import { GrDocumentPerformance } from "react-icons/gr";
 
 function GrowthChart() {
     const weeks = ['W1', 'W2', 'W3', 'W4', 'W5', 'W6', 'W7', 'W8'];
 
     const tracks = [
-        { key: 'code', label: 'Code', color: '#378079', data: [20, 35, 45, 60, 55, 70, 80, 90] },
-        { key: 'books', label: 'Books', color: '#3a6d9a', data: [15, 25, 30, 40, 50, 45, 65, 72] },
-        { key: 'music', label: 'Music', color: '#9a7a2a', data: [10, 18, 22, 28, 35, 40, 38, 50] },
-        { key: 'language', label: 'Language', color: '#7a3a9a', data: [5, 12, 20, 30, 35, 42, 50, 60] },
+        { key: 'code', label: 'KOD', color: '#378079', data: [20, 35, 45, 60, 55, 70, 80, 90] },
+        { key: 'books', label: 'KİTAB', color: '#3a6d9a', data: [15, 25, 30, 40, 50, 45, 65, 72] },
+        { key: 'music', label: 'MUSİQİ', color: '#9a7a2a', data: [10, 18, 22, 28, 35, 40, 38, 50] },
+        { key: 'language', label: 'DİL', color: '#7a3a9a', data: [5, 12, 20, 30, 35, 42, 50, 60] },
     ];
 
     const width = 600;
@@ -28,16 +29,16 @@ function GrowthChart() {
     return (
         <section className="px-8 md:px-16 py-10">
             <div className="mb-8">
-                <div className="flex items-center gap-2 mb-2">
-                    <div className="w-8 h-0.5 bg-[#378079]" />
-                    <span className="text-[10px] tracking-[0.4em] text-[#378079] uppercase font-black">Performance</span>
+                <div className="flex items-center gap-2 mb-2 text-[#378079]">
+                    <GrDocumentPerformance/>
+                    <span className="text-[10px] tracking-[0.4em]  uppercase font-black">Performance</span>
                 </div>
-                <h2 className="text-4xl md:text-5xl font-black uppercase leading-none">
-                    Growth <span className="text-transparent [-webkit-text-stroke:1px_#f0ebe2] opacity-50">Chart</span>
+                <h2 className="text-[2rem] md:text-[3rem] lg:text-[4rem] font-black uppercase leading-none">
+                    Growth <span className="text-transparent [-webkit-text-stroke:1px_#f0ebe2]">Chart</span>
                 </h2>
             </div>
 
-            <div className="bg-[#0b101a] border border-white/5 rounded-2xl p-6 mb-6">
+            <div className="bg-[#0b0f17] border border-white/5 rounded-2xl p-6 mb-6">
                 <svg width="100%" viewBox={`0 0 ${width} ${height}`} className="overflow-visible">
                     {[0, 50, 100].map(v => (
                         <g key={v}>

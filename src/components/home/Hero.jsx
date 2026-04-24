@@ -16,16 +16,13 @@ function Hero() {
         <div className="relative z-10 px-8 md:px-16 py-14 md:py-20">
           <div className="flex items-center gap-2.5 mb-8 md:mb-10 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.05s]">
             <LuGraduationCap className='text-[#378079]' />
-            <span className="text-[10px] md:text-[11px] tracking-[0.22em] text-[#378079] uppercase font-semibold">
+            <span className="text-[10px] md:text-[11px] tracking-[0.22em] text-[#378079] uppercase font-bold">
               Öyrən. Yarat. İrələ.
             </span>
           </div>
 
           <h1 className="text-[#f0ebe2] font-black text-[2.5rem] md:text-[4rem] lg:text-[5rem] leading-[1.07] tracking-[-0.01em] mb-9 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.15s]">
-            ÖZ{" "}
-            <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">
-              TEMPİNDƏ
-            </span><br />
+            ÖZ{" "}<span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">TEMPİNDƏ</span><br />
             <span className="text-[#378079]">İRƏLİLƏ</span>
           </h1>
 

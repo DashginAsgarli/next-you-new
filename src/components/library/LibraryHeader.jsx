@@ -13,17 +13,14 @@ const LibraryHeader = ({ searchQuery, setSearchQuery, onSearch, activeView, setA
     <div className="relative pt-24 pb-20 mb-12 flex flex-col items-center text-center">
 
       <div className="flex items-center gap-3 mb-8 relative z-10 animate-[fadeUp_0.7s_ease_both]">
-        <FaBookReader className='text-[#378079]'/>
+        <FaBookReader className='text-[#378079]' />
         <span className="text-[10px] tracking-[0.45em] text-[#378079] uppercase font-bold">
           Rəqəmsal Kolleksiya
         </span>
       </div>
 
-      <h1 className="text-[#f0ebe2] font-black text-[2.4rem] md:text-[3.5rem] lg:text-[5rem] leading-[1.07] tracking-[-0.01em] mb-9 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.15s]">
-        KİTAB{" "}
-        <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">
-          XANA
-        </span><br />
+      <h1 className="text-[#f0ebe2] font-black text-[2rem] md:text-[3rem] lg:text-[4rem] leading-[1.07] tracking-[-0.01em] mb-9 animate-[fadeUp_0.7s_ease_both] [animation-delay:0.15s]">
+        KİTAB{" "}<span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">  XANA</span><br />
       </h1>
 
 

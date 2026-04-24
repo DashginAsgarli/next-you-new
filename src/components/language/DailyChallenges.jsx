@@ -21,7 +21,7 @@ function DailyChallenges() {
                         </h3>
                     </div>
                 </div>
-                <div className='bg-[#0d1117] border border-white/5 rounded-2xl p-6 md:p-10'>
+                <div className='bg-[#06090f] border border-white/5 rounded-2xl p-6 md:p-10'>
                     <div className="mb-6 md:mb-12">
                         <div className="flex justify-between items-end mb-3 font-mono">
                             <span className="text-[10px] font-bold uppercase tracking-[2px] opacity-60">Status</span>

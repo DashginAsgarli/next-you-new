@@ -21,9 +21,9 @@ function CodeMap() {
                     </span>
                 </h1>
 
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
                     {courses.map((course) => (
-                        <div key={course.id} className="beveled-box bg-[#06090f] p-5 md:p-8 border border-white relative transition-all duration-500 hover:transform-[perspective(500px)_rotateY(10deg)_rotateX(5deg)_translateY(-10px)] ">
+                        <div key={course.id} className="beveled-box bg-[#06090f] p-8 md:p-8 border border-white relative transition-all duration-500 hover:transform-[perspective(500px)_rotateY(10deg)_rotateX(5deg)_translateY(-10px)] ">
                             <div className="mb-6 text-[#f0ebe2]" style={{ borderLeft: `2px solid ${course.accent}`, paddingLeft: '12px' }}>
                                 <div className="p-1">
                                     {course.icon}

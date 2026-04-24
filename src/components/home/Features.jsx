@@ -26,10 +26,10 @@ function Features() {
                 </p>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 {features.map((feat, index) => {
                     return (
-                        <div key={index} className="card-3d-effect beveled-box group p-5 md:py-5 md:px-4 lg:p-8 border border-white bg-[#06090f]  relative overflow-hidden">
+                        <div key={index} className="card-3d-effect beveled-box group p-5 md:py-7 md:px-6 lg:p-8 border border-white bg-[#06090f]  relative overflow-hidden">
                             <div className="text-white mb-4 ">{feat.icon}</div>
                             <h3 className=" font-black text-md md:text-lg uppercase tracking-tight mb-3">{feat.title}</h3>
                             <p className="text-[10px] md:text-[13px] lg:text-[15px] text-[#f0ebe2]/40 leading-relaxed">{feat.desc}</p>

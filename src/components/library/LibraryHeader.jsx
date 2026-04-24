@@ -10,7 +10,7 @@ const LibraryHeader = ({ searchQuery, setSearchQuery, onSearch, activeView, setA
   ];
 
   return (
-    <div className="relative pt-24 pb-20 mb-12 flex flex-col items-center text-center">
+    <div className="relative pt-20 pb-20 mb-12 flex flex-col items-center text-center">
 
       <div className="flex items-center gap-3 mb-8 relative z-10 animate-[fadeUp_0.7s_ease_both]">
         <FaBookReader className='text-[#378079]' />

@@ -29,7 +29,7 @@ function CssPlayground() {
                 CSS <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">ANİMASİYA</span>
             </h2>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1  md:grid-cols-2 gap-4">
                 <div>
                     <p className="text-[9px] text-white/20 uppercase tracking-[0.2em] mb-2">CSS yaz</p>
                     <textarea value={css} onChange={(e) => setCss(e.target.value)} className="w-full h-64 bg-[#0b0f17] border border-white/5 rounded-xl p-4 font-mono text-[12px] text-[#f0ebe2]/70 resize-none outline-none focus:border-[#378079]/30 transition-all scrollbar-hide" spellCheck="false" />

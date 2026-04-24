@@ -3,7 +3,6 @@ import CertificateBadge from '../../components/code/CertificateBadge'
 import DevStack from '../../components/code/DevStack'
 import CodeMap from '../../components/code/CodeMap'
 import CodingStats from '../../components/code/CodingStats'
-// import GithubTrending from '../../components/code/GithubTrending'
 import CodeHero from '../../components/code/CodeHero'
 
 function CodePage() {
@@ -14,7 +13,6 @@ function CodePage() {
                 <div className='background-shadow'></div>
                 <CodeHero />
                 <CodeMap />
-                {/* <GithubTrending /> */}
                 <CodingStats />
                 <CertificateBadge />
             </section>

@@ -26,6 +26,9 @@ import NewsPage from './pages/content/NewsPage'
 import PortfolioPage from './pages/analysis/PortfolioPage'
 import NexstEra from './components/code/NexstEra';
 
+
+import EnglishLang from './components/language/EnglishLang';
+
 function App() {
 
   const [open, setOpen] = useState(false);
@@ -68,6 +71,7 @@ function App() {
             <Route path="/news" element={<NewsPage />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
             <Route path="/code/nextera" element={<NexstEra />} />
+            <Route path="/language/english" element={<EnglishLang />} />
           </Routes>
         </section>
         <Footer />

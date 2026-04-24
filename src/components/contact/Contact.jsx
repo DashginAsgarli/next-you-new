@@ -1,7 +1,7 @@
 import React from 'react';
 import { HiOutlineArrowUpRight, HiOutlineGlobeAlt, HiOutlineChatBubbleLeftRight, HiOutlineHashtag, HiOutlineUserGroup } from "react-icons/hi2";
 import { FaGithub, FaLinkedinIn, FaInstagram, FaFacebookF } from "react-icons/fa";
-
+import { MdOutlineContactEmergency } from "react-icons/md";
 const socialLinks = [
     { name: "Github", icon: <FaGithub size={22} />, url: "https://github.com/", id: "01", label: "Open Source", tag: <HiOutlineGlobeAlt size={12} /> },
     { name: "Linkedin", icon: <FaLinkedinIn size={22} />, url: "https://www.linkedin.com/", id: "02", label: "Professional", tag: <HiOutlineChatBubbleLeftRight size={12} /> },
@@ -24,6 +24,7 @@ function Contact() {
             <div className="relative z-10 px-8 md:px-16 py-10 md:py-16">
                 <div className="flex items-center gap-2.5 mb-8 animate-[fadeUp_0.7s_ease_both]">
                     <div className="w-8 h-px bg-[#378079]" />
+                    <MdOutlineContactEmergency/>
                     <span className="text-[9px] md:text-[10px] tracking-[0.3em] text-[#378079] uppercase font-bold text-nowrap">Əlaqə Məlumatları</span>
                 </div>
 

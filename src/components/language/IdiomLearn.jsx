@@ -27,7 +27,7 @@ function IdiomLearn() {
         İDİOM <span className="text-transparent [-webkit-text-stroke:1.5px_#f0ebe2]">KARTLARI</span>
       </h2>
 
-      <div className="max-w-xl">
+      <div >
         <div className="bg-[#0b0f17] border border-white/5 rounded-2xl p-6 md:p-10 relative overflow-hidden group hover:border-[#378079]/30 transition-all duration-500">
 
           <div className="flex justify-between items-center mb-10">

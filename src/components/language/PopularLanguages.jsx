@@ -1,4 +1,5 @@
 import React from 'react';
+import { Routes, Route, Link, NavLink, Outlet } from "react-router-dom";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 
@@ -6,7 +7,7 @@ import 'swiper/css';
 
 function PopularLanguages() {
     const topLang = [
-        { id: 1, name: "İNGİLİS DİLİ", students: "8.53 MLN", rank: "01" },
+        { id: 1, name: "İNGİLİS DİLİ", students: "8.53 MLN", rank: "01" ,to:"/language/english"},
         { id: 2, name: "ALMAN DİLİ", students: "1.82 MLN", rank: "02" },
         { id: 3, name: "RUS DİLİ", students: "979 K", rank: "03" },
         { id: 4, name: "İSPAN DİLİ", students: "304 K", rank: "04" }
@@ -29,7 +30,7 @@ function PopularLanguages() {
                 <Swiper modules={[Autoplay]} spaceBetween={16} slidesPerView={1.2} centeredSlides={false} autoplay={{ delay: 5000, disableOnInteraction: false }} breakpoints={{ 640: { slidesPerView: 2.5, spaceBetween: 20 }, 1024: { slidesPerView: 3.2, spaceBetween: 24 }, 1280: { slidesPerView: 4, spaceBetween: 24, allowTouchMove: false, autoplay: false } }} className="overflow-visible! cursor-grab active:cursor-grabbing">
                     {topLang.map((lang) => (
                         <SwiperSlide key={lang.id} className="h-auto pt-4">
-                            <div className="beveled-box group relative bg-[#06090f] border border-white p-8 transition-all duration-700  ease-[cubic-bezier(0.23,1,0.32,1)] hover:transform-[perspective(500px)_rotateY(10deg)_rotateX(5deg)_translateY(-10px)] h-full flex flex-col ">
+                            <Link to={lang.to} className="beveled-box group relative bg-[#06090f] border border-white p-8 transition-all duration-700  ease-[cubic-bezier(0.23,1,0.32,1)] hover:transform-[perspective(500px)_rotateY(10deg)_rotateX(5deg)_translateY(-10px)] h-full flex flex-col ">
 
                                 <div className="flex items-center gap-4 mb-10 relative z-10">
                                     <span className="text-[14px] font-black text-[#378079] font-mono leading-none">
@@ -50,7 +51,7 @@ function PopularLanguages() {
                                         {lang.students}
                                     </div>
                                 </div>
-                            </div>
+                            </Link>
                         </SwiperSlide>
                     ))}
                 </Swiper>

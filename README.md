@@ -4,7 +4,7 @@
 
 **A feature-rich web application built for young people to grow across five key life skills.**
 
-[![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-next--you--pro.vercel.app-22c55e?style=for-the-badge)](https://next-you-pro.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-next--you-22c55e?style=for-the-badge)](https://dashginasgarli.github.io/next-you/)
 [![GitHub Issues](https://img.shields.io/badge/GitHub-Issues-181717?style=for-the-badge&logo=github)](https://github.com/DashginAsgarli/NextYou/issues)
 
 </div>

@@ -17,11 +17,11 @@ NextYou is a multi-module self-development platform designed to help young peopl
 
 
 >[!NOTE]
-> <p> 🎵 Music - Search and listen to music via the iTunes API</p> 
-> <p> 📚 Books - Discover and explore books via OpenLibrary</p>
-> <p> 💻 Code - Learn programming with curated resources </p>
-> <p> 🌐 Language - Look up English word meanings and definitions </p>
-> <p> 📝 Planner - Organize your goals and daily tasks </p>
+> <p> Music - Search and listen to music via the iTunes API</p> 
+> <p> Books - Discover and explore books via OpenLibrary</p>
+> <p> Code - Learn programming with curated resources </p>
+> <p> Language - Look up English word meanings and definitions </p>
+> <p> Planner - Organize your goals and daily tasks </p>
 
 
 ## Tech Stack

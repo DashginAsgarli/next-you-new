@@ -2,7 +2,7 @@
  
 # NextYou — Self Development Platform
 
-**A feature-rich web application built for young people to grow across five key life skills.**
+A feature-rich web application built for young people to grow across five key life skills.**
 
 [![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-next--you-22c55e?style=for-the-badge)](https://dashginasgarli.github.io/next-you/)
 [![GitHub Issues](https://img.shields.io/badge/GitHub-Issues-181717?style=for-the-badge&logo=github)](https://github.com/DashginAsgarli/NextYou/issues)
@@ -25,20 +25,21 @@ NextYou is a multi-module self-development platform designed to help young peopl
 
 
 ## Tech Stack
-[![My Skills](https://skillicons.dev/icons?i=react,tailwind,git,github,vercel,vscode,figma&theme=dark)](https://skillicons.dev)
+
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /> <img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+<img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" />
 
 ---
 
 ## APIs Used
 
-### [OpenLibrary API](https://openlibrary.org/developers/api)
-> **Purpose:** To search for books and retrieve detailed bibliographic metadata.
+### [OpenLibrary API](https://openlibrary.org/developers/api) - To search for books and retrieve detailed bibliographic metadata.
 
-### [Dictionary API](https://dictionaryapi.dev/)
-   > **Purpose:** Providing English word definitions, synonyms, and audio pronunciations.
+### [Dictionary API](https://dictionaryapi.dev/) - Providing English word definitions, synonyms, and audio pronunciations.
 
-### [iTunes Search API](https://itunes.apple.com/search)
-> **Purpose:** Searching for music, fetching album artwork, and streaming audio previews.
+### [iTunes Search API](https://itunes.apple.com/search) - Searching for music, fetching album artwork, and streaming audio previews.
 
 
 ---

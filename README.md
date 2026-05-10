@@ -35,11 +35,11 @@ NextYou is a multi-module self-development platform designed to help young peopl
 
 ## APIs Used
 
-### [OpenLibrary API](https://openlibrary.org/developers/api) - To search for books and retrieve detailed bibliographic metadata.
+#### [OpenLibrary API](https://openlibrary.org/developers/api) - To search for books and retrieve detailed bibliographic metadata.
 
-### [Dictionary API](https://dictionaryapi.dev/) - Providing English word definitions, synonyms, and audio pronunciations.
+#### [Dictionary API](https://dictionaryapi.dev/) - Providing English word definitions, synonyms, and audio pronunciations.
 
-### [iTunes Search API](https://itunes.apple.com/search) - Searching for music, fetching album artwork, and streaming audio previews.
+#### [iTunes Search API](https://itunes.apple.com/search) - Searching for music, fetching album artwork, and streaming audio previews.
 
 
 ---
